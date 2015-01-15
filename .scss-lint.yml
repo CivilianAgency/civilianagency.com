@@ -1,0 +1,12 @@
+exclude: [
+  'node_modules/**',
+  'assets/src/style/webfontkit-20141208-130438/**',
+  'assets/src/style/partials/_reset.scss',
+  'assets/src/style/partials/_colorbox.scss'
+]
+
+linters:
+  PropertySortOrder:
+    enabled: false
+  ZeroUnit:
+    enabled: false

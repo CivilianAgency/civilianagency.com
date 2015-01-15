@@ -1,0 +1,26 @@
+{
+  "name": "cvln",
+  "version": "1.0.0",
+  "description": "",
+  "authors": [
+    {
+      "name": "Robert Sefer",
+      "email": "rsefer@gmail.com",
+      "homepage": "http://rsefer.com"
+    }
+  ],
+  "devDependencies": {
+    "browser-sync": "^1.8.2",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-concat": "^2.4.3",
+    "gulp-filter": "^2.0.0",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.2.4",
+    "gulp-scss-lint": "^0.1.4",
+    "gulp-uglify": "^1.0.2",
+    "imagemin-pngquant": "^4.0.0"
+  }
+}

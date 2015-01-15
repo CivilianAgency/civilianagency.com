@@ -3,8 +3,6 @@ html {
   width: 100%;
 }
 
-/* test */
-
 body {
   color: $white;
   background-color: $black;
@@ -1198,6 +1196,10 @@ a {
   .arrow {
     width: 26px;
     height: 142px;
+  }
+
+  .anmite .inner .inner2 {
+    font: Helvetica;
   }
 
   .animate {

@@ -42,7 +42,7 @@ h6 {
 header {
   height: 60px;
   width: 100%;
-  background: transparentize($gray-darkest, .1);
+  background: transparentize($gray-darkest, .90);
   position: fixed;
   z-index: 20;
 }

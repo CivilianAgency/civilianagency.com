@@ -39,22 +39,7 @@ h6 {
   font-weight: 200;
 }
 
-header {
-  height: 60px;
-  width: 100%;
-  background: transparentize($gray-darkest, .1);
-  position: fixed;
-  z-index: 20;
-}
 
-.navigation-container {
-  float: right;
-  position: relative;
-  top: 23px;
-  right: 60px;
-  width: 100%;
-  text-align: right;
-}
 
 .nav-li {
 

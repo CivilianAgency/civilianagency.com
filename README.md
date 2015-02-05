@@ -10,7 +10,8 @@ Install [Node.js](http://nodejs.org/) on your local machine.
 
 ### First Time
 1. Navigate to the working directory of the site on your local machine on the command line (ex. `cd /Users/yourusername/sites/CVLN`)
-2. Run `npm install` to install the various modules listed in `package.json`
+2. Install sass locally by running `gem install sass`. Note: if you receive an error, try running `sudo gem install sass`.
+3. Run `npm install` to install the various modules listed in `package.json`
 
 ### Every time
 

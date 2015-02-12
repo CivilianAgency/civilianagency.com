@@ -104,7 +104,6 @@ var map_styles = [
     }
 ];
 
-
 var client_location = new google.maps.LatLng(41.8906110, -87.6247160);
 
 var map = new google.maps.Map(document.getElementById("google-map"), {

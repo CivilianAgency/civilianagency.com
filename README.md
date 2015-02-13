@@ -13,6 +13,9 @@ Install [Node.js](http://nodejs.org/) on your local machine.
 2. Install sass locally by running `gem install sass`. Note: if you receive an error, try running `sudo gem install sass`.
 3. Run `npm install` to install the various modules listed in `package.json`
 
+\* When running gulp, if gulp command not found
+4. Run sudo npm install -g gulp
+
 ### Every time
 
 1. Run `gulp` to start the build/dev process\*. This automatically does the following (these tasks can be found in `gulpfile.js`):

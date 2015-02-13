@@ -147,7 +147,7 @@ var map = new google.maps.Map(document.getElementById("google-map"), {
     lat: 41.890716,
     lng: -87.624351
   },
-  zoom: 17,
+  zoom: 16,
   styles: map_styles,
   disableDefaultUI: true,
   disableDoubleClickZoom: true,

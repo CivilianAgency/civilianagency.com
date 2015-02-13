@@ -2,6 +2,18 @@
 var map_styles = [
     {
         "featureType": "all",
+        "elementType": "all",
+        "stylers": [
+            {
+                "lightness": "50"
+            },
+            {
+                "gamma": "1.00"
+            }
+        ]
+    },
+    {
+        "featureType": "all",
         "elementType": "labels",
         "stylers": [
             {
@@ -52,11 +64,35 @@ var map_styles = [
         ]
     },
     {
-        "featureType": "road",
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.business",
         "elementType": "all",
         "stylers": [
             {
-                "hue": "#ffffff"
+                "visibility": "off"
+            },
+            {
+                "lightness": "90"
+            },
+            {
+                "gamma": "1"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.government",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
             }
         ]
     },
@@ -82,20 +118,23 @@ var map_styles = [
         ]
     },
     {
-        "featureType": "road.highway",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
         "featureType": "road.arterial",
         "elementType": "geometry",
         "stylers": [
             {
                 "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "lightness": "50"
             }
         ]
     }
@@ -108,7 +147,7 @@ var map = new google.maps.Map(document.getElementById("google-map"), {
     lat: 41.8925,
     lng: -87.6247160
   },
-  zoom: 16,
+  zoom: 18,
   styles: map_styles,
   disableDefaultUI: true,
   disableDoubleClickZoom: true,

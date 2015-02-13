@@ -1,8 +1,7 @@
 // map styling from https://snazzymaps.com/style/102/clean-grey
 var map_styles = [
     {
-        "featureType": "administrative",
-        "elementType": "all",
+        "featureType": "poi",
         "stylers": [
             {
                 "visibility": "off"
@@ -10,56 +9,61 @@ var map_styles = [
         ]
     },
     {
-        "featureType": "landscape",
-        "elementType": "all",
         "stylers": [
             {
-                "visibility": "simplified"
+                "saturation": -70
             },
             {
-                "hue": "#0066ff"
+                "lightness": 37
             },
             {
-                "saturation": 74
-            },
-            {
-                "lightness": 100
+                "gamma": 1.15
             }
         ]
     },
     {
-        "featureType": "poi",
-        "elementType": "all",
+        "elementType": "labels",
         "stylers": [
             {
-                "visibility": "simplified"
+                "gamma": 0.26
+            },
+            {
+                "visibility": "off"
             }
         ]
     },
     {
         "featureType": "road",
-        "elementType": "all",
         "stylers": [
             {
-                "visibility": "simplified"
+                "lightness": 0
+            },
+            {
+                "saturation": 0
+            },
+            {
+                "hue": "#ffffff"
+            },
+            {
+                "gamma": 0
             }
         ]
     },
     {
-        "featureType": "road.highway",
-        "elementType": "all",
+        "featureType": "road",
+        "elementType": "labels.text.stroke",
         "stylers": [
             {
                 "visibility": "off"
-            },
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
             {
-                "weight": 0.6
-            },
-            {
-                "saturation": -85
-            },
-            {
-                "lightness": 61
+                "lightness": 20
             }
         ]
     },
@@ -68,13 +72,30 @@ var map_styles = [
         "elementType": "geometry",
         "stylers": [
             {
-                "visibility": "on"
+                "lightness": 50
+            },
+            {
+                "saturation": 0
+            },
+            {
+                "hue": "#ffffff"
             }
         ]
     },
     {
-        "featureType": "road.arterial",
-        "elementType": "all",
+        "featureType": "administrative.province",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "lightness": -50
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "labels.text.stroke",
         "stylers": [
             {
                 "visibility": "off"
@@ -82,38 +103,11 @@ var map_styles = [
         ]
     },
     {
-        "featureType": "road.local",
-        "elementType": "all",
+        "featureType": "administrative.province",
+        "elementType": "labels.text",
         "stylers": [
             {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            },
-            {
-                "color": "#5f94ff"
-            },
-            {
-                "lightness": 26
-            },
-            {
-                "gamma": 5.86
+                "lightness": 20
             }
         ]
     }

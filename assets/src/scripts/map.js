@@ -276,3 +276,5 @@ google.maps.event.addListener(marker, 'mouseover', function() {
 google.maps.event.addListener(marker, 'mouseout', function() {
   infoWindow.close();
 });
+
+google.maps.event.trigger(gmarkers[marker_image], "click");

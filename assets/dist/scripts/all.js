@@ -59,7 +59,16 @@ var map_styles = [
         "elementType": "all",
         "stylers": [
             {
-                "visibility": "off"
+                "visibility": "simplified"
+            },
+            {
+                "lightness": "1"
+            },
+            {
+                "gamma": "1"
+            },
+            {
+                "saturation": "0"
             }
         ]
     },
@@ -73,14 +82,32 @@ var map_styles = [
         ]
     },
     {
+        "featureType": "poi",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "color": "#c8c8c8"
+            },
+            {
+                "lightness": "-15"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
         "featureType": "poi.business",
         "elementType": "all",
         "stylers": [
             {
-                "visibility": "off"
-            },
-            {
-                "lightness": "90"
+                "lightness": "75"
             },
             {
                 "gamma": "1"
@@ -88,11 +115,35 @@ var map_styles = [
         ]
     },
     {
-        "featureType": "poi.government",
-        "elementType": "all",
+        "featureType": "poi.business",
+        "elementType": "labels",
         "stylers": [
             {
                 "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "color": "#c8c8c8"
+            },
+            {
+                "lightness": "-20"
+            },
+            {
+                "gamma": "1.00"
             }
         ]
     },
@@ -118,6 +169,24 @@ var map_styles = [
         ]
     },
     {
+        "featureType": "road.highway",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway.controlled_access",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
         "featureType": "road.arterial",
         "elementType": "geometry",
         "stylers": [
@@ -128,13 +197,37 @@ var map_styles = [
     },
     {
         "featureType": "road.local",
-        "elementType": "labels.text",
+        "elementType": "all",
         "stylers": [
             {
                 "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "off"
             },
             {
                 "lightness": "50"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#58afc2"
+            },
+            {
+                "lightness": "50"
+            },
+            {
+                "gamma": "1.00"
             }
         ]
     }

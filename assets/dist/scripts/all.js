@@ -251,7 +251,7 @@ var map = new google.maps.Map(document.getElementById("google-map"), {
 
 var marker_image = {
   url: 'assets/images/map_marker.png',
-  scaledSize: new google.maps.Size(30, 30)
+  scaledSize: new google.maps.Size(35, 35)
 };
 
 var marker = new google.maps.Marker({

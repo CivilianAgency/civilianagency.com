@@ -277,6 +277,8 @@ google.maps.event.addListener(marker, 'mouseout', function() {
   infoWindow.close();
 });
 
+google.maps.event.trigger(gmarkers[marker_image], "click");
+
 /*
  * We trigger the factory() function is different
  * ways to support modular JavaScript libraries. See

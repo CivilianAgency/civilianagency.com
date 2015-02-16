@@ -260,6 +260,10 @@ var marker = new google.maps.Marker({
   icon: marker_image
 });
 
+google.maps.event.addListener(marker, 'click', function () {
+  window.location.href = 'http://www.google.com';
+});
+
 var infoWindow = new google.maps.InfoWindow({
   content: '<div style="text-align:left; line-height: 20px;">' +
     '<span style="font-weight:bold;">Civilian</span><br>' +
@@ -277,4 +281,4 @@ google.maps.event.addListener(marker, 'mouseout', function() {
   infoWindow.close();
 });
 
-google.maps.event.trigger(gmarkers[marker_image], "click");
+

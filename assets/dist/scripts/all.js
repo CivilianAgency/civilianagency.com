@@ -140,7 +140,7 @@ var map_styles = [
                 "color": "#c8c8c8"
             },
             {
-                "lightness": "-20"
+                "lightness": "-5"
             },
             {
                 "gamma": "1.00"

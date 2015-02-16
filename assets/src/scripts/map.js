@@ -237,8 +237,8 @@ var client_location = new google.maps.LatLng(41.8906110, -87.6247160);
 
 var map = new google.maps.Map(document.getElementById("google-map"), {
   center: {
-    lat: 41.890716,
-    lng: -87.624351
+    lat: 41.8925,
+    lng: -87.6247160
   },
   zoom: 16,
   styles: map_styles,

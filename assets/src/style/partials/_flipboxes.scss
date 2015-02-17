@@ -222,8 +222,8 @@
     background-image: url('../../images/clients/ally.png');
   }
 
-  &.kellogg {
-    background-image: url('../../images/clients/kellogg.png');
+  &.booth {
+    background-image: url('../../images/clients/booth.png');
   }
 
   &.devry {
@@ -375,8 +375,8 @@
     background-image: url('../../images/clients/flips/ally.jpg');
   }
 
-  .kellogg & {
-    background-image: url('../../images/clients/flips/kellogg.jpg');
+  .booth & {
+    background-image: url('../../images/clients/flips/booth.jpg');
   }
 
   .devry & {
@@ -440,7 +440,7 @@
 
 .clearchoice,
 .ally,
-.kellogg,
+.booth,
 .devry,
 .nar,
 .erie,
@@ -463,7 +463,7 @@
 .clarke,
 .carrie,
 .meghan,
-.kellogg,
+.booth,
 .devry,
 .nar {
 
@@ -619,7 +619,7 @@
   .carrie,
   .jessica,
   .clearchoice,
-  .kellogg,
+  .booth,
   .nar,
   .uscellular,
   .honeywell {

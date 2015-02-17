@@ -261,7 +261,6 @@ var marker = new google.maps.Marker({
 });
 
 google.maps.event.addListener(marker, 'click', function () {
-  window.location.href = 'https://www.google.com/maps/place/444+N+Michigan+Ave,+Chicago,+IL+60611/data=!4m2!3m1!1s0x880e2cac24f11229:0x2afc2357830fea2d?sa=X&ei=M3jiVNO9NczjsATa1ILQBg&ved=0CCQQ8gEwAQ';
   window.open('https://www.google.com/maps/place/444+N+Michigan+Ave,+Chicago,+IL+60611/data=!4m2!3m1!1s0x880e2cac24f11229:0x2afc2357830fea2d?sa=X&ei=M3jiVNO9NczjsATa1ILQBg&ved=0CCQQ8gEwAQ', '_blank');
 });
 

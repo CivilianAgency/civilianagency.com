@@ -493,10 +493,7 @@
 
 @media only screen and (max-width: 967px) {
 
-  .tim,
-  .cathy,
-  .bridget,
-  .jessica,
+  .clarke,
   .nar {
 
     .bigshow {
@@ -506,8 +503,9 @@
   }
 
   .david,
-  .clarke,
-  .lori,
+  .bridget,
+  .cathy,
+  .jessica {
 
     .bigshow {
       left: -195px;
@@ -613,7 +611,6 @@
      &.katie {
       background-position: -105px 0px;
     }
-
 
     &.bridget {
       background-position: -95px 0px;

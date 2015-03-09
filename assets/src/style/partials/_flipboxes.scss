@@ -148,6 +148,18 @@
 
   }
 
+    &.katie {
+
+    background-image: url('../../images/team/14-Katie.jpg');
+    background-position: -131px -5px;
+    background-size: 190%;
+
+    .flip {
+      background-image: url('../../images/team/person/katie.jpg');
+    }
+
+  }
+
   &.jessica {
 
     background-image: url('../../images/team/12-Jessica.jpg');
@@ -332,6 +344,11 @@
     background-position: -271px -5px;
   }
 
+  .katie & {
+    background-image: url('../../images/team/14-Katie.jpg');
+    background-position: -271px -5px;
+  }
+
   .bridget & {
     background-image: url('../../images/team/7-Bridget.jpg');
     background-position: -230px -10px;
@@ -461,6 +478,7 @@
 .mattm,
 .david,
 .clarke,
+.katie,
 .carrie,
 .meghan,
 .booth,
@@ -582,11 +600,15 @@
       background-position: -105px 0px;
     }
 
-     &.cathy {
+    &.clarke {
       background-position: -105px 0px;
     }
 
-    &.clarke {
+    &.cathy {
+      background-position: -105px 0px;
+    }
+
+     &.katie {
       background-position: -105px 0px;
     }
 
@@ -638,6 +660,7 @@
   .mattm,
   .alicia,
   .clarke,
+  .katie,
   .matts,
   .lori,
   .meghan,

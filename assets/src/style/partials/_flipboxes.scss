@@ -493,7 +493,10 @@
 
 @media only screen and (max-width: 967px) {
 
-  .clarke,
+  .tim,
+  .cathy,
+  .bridget,
+  .jessica,
   .nar {
 
     .bigshow {
@@ -503,9 +506,8 @@
   }
 
   .david,
-  .bridget,
-  .cathy,
-  .jessica {
+  .clarke,
+  .lori,
 
     .bigshow {
       left: -195px;
@@ -605,7 +607,7 @@
     }
 
     &.cathy {
-      background-position: -105px -58px;
+      background-position: -105px 0px;
     }
 
      &.katie {
@@ -614,7 +616,7 @@
 
 
     &.bridget {
-      background-position: -105px -58px;
+      background-position: -95px 0px;
     }
 
     &.matts {
@@ -630,7 +632,7 @@
     }
 
     &.jessica {
-      background-position: -105px -58px;
+      background-position: -85px -20px;
     }
 
     &.meghan {

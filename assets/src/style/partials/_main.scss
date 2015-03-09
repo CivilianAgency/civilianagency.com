@@ -1047,19 +1047,16 @@ a {
   }
 
   .filler-03,
-  .filler-06 {
     width: $box-dimension;
   }
 
   .filler-05,
   .filler-06,
-  .filler-07 {
+  .filler-07,
+  .filler-04 {
     display: none;
   }
 
-  .filler-07 {
-    display: inline-block;
-  }
 
   .our-work {
     background-position: center center;

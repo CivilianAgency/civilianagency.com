@@ -577,34 +577,6 @@
 
 }
 
-@media only screen and (max-width: 788px) {
-
-  .len,
-  .bridget,
-  .lori,
-  .devry {
-
-    .bigshow {
-      left: 0;
-    }
-
-  }
-
-  .erie,
-  .katie,
-  .carrie,
-  .jessica,
-  .honeywell {
-
-    .bigshow {
-      left: -195px;
-    }
-
-  }
-
-}
-
-
 @media only screen and (max-width: 773px) {
 
   .len,
@@ -630,26 +602,6 @@
   }
 
 }
-
-@media only screen and (max-width: 593px) {
-
-  .mobile-col-clearfix {
-
-    display: block;
-    height: 0px;
-
-    &:before,
-    &:after {
-      content: ' ';
-      display: table;
-    }
-
-    &:after {
-      clear: both;
-    }
-
-  }
-
 
 @media only screen and (max-width: 577px) {
 
@@ -684,6 +636,10 @@
       background-position: -60px -10px;
     }
 
+    &.alicia {
+      background-position: -105px 0px;
+    }
+
     &.len {
       background-position: -105px 0px;
     }
@@ -693,11 +649,11 @@
     }
 
     &.cathy {
-      background-position: -70px -5px;
+      background-position: -105px 0px;
     }
 
     &.katie {
-      background-position: -91px -19px;
+      background-position: -54px -12px;
     }
 
     &.bridget {
@@ -721,7 +677,7 @@
     }
 
     &.meghan {
-      background-position: -107px -26px;
+      background-position: -145px -45px;
     }
 
   }

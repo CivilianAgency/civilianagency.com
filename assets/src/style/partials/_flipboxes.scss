@@ -495,6 +495,23 @@
 
 }
 
+@media only screen and (max-width: 982px) {
+  
+  .person.producer {
+
+    .producer-name {
+      top: auto;
+      bottom: 4px;
+      padding: 0px 8px;
+      color: $white;
+      text-shadow: 0px 0px 4px $black;
+      font-size: 14px;
+    }
+
+  }
+
+}
+
 @media only screen and (max-width: 967px) {
 
   .cathy,
@@ -532,7 +549,7 @@
 
     .producer-name {
       top: auto;
-      bottom: 24px;
+      bottom: 4px;
       padding: 0px 8px;
       color: $white;
       text-shadow: 0px 0px 4px $black;

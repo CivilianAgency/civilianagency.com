@@ -64,6 +64,18 @@
 
   }
 
+  &.alicia {
+
+    background-image: url('../../images/team/5-Alicia.jpg');
+    background-position: -127px -10px;
+    background-size: 200%;
+
+    .flip {
+      background-image: url('../../images/team/person/alicia.jpg');
+    }
+
+  }
+
   &.len {
 
     background-image: url('../../images/team/6-Len.jpg');
@@ -115,8 +127,8 @@
   &.cathy {
 
     background-image: url('../../images/team/10-Cathy.jpg');
-    background-position: -82px -4px;
-    background-size: 155%;
+    background-position: -113px -26px;
+    background-size: 180%;
 
     .flip {
       background-image: url('../../images/team/person/cathy.jpg');
@@ -139,7 +151,7 @@
   &.katie {
 
     background-image: url('../../images/team/14-Katie.jpg');
-    background-position: -109px -31px;
+    background-position: -67px -27px;
     background-size: 175%;
 
     .flip {
@@ -163,8 +175,8 @@
   &.meghan {
 
     background-image: url('../../images/team/13-Meghan.jpg');
-    background-position: -125px -20px;
-    background-size: 195%;
+    background-position: -178px -64px;
+    background-size: 320%;
 
     .flip {
       background-image: url('../../images/team/person/meghan.jpg');
@@ -322,6 +334,11 @@
     background-position: -125px -10px;
   }
 
+  .alicia & {
+    background-image: url('../../images/team/5-Alicia.jpg');
+    background-position: -260px -10px;
+  }
+
   .clarke & {
     background-image: url('../../images/team/11-Clarke.jpg');
     background-position: -271px -5px;
@@ -329,8 +346,8 @@
 
   .katie & {
     background-image: url('../../images/team/14-Katie.jpg');
-    background-position: -227px -64px;
-    background-size: 175%;
+    background-position: -150px -70px;
+    background-size: 180%;
   }
 
   .bridget & {
@@ -345,8 +362,8 @@
 
   .cathy & {
     background-image: url('../../images/team/10-Cathy.jpg');
-    background-position: --201px -41px;
-    background-size: 165%;
+    background-position: -236px -45px;
+    background-size: 180%;
   }
 
   .jessica & {
@@ -580,6 +597,10 @@
 
     &.david {
       background-position: -60px -10px;
+    }
+
+    &.alicia {
+      background-position: -105px 0px;
     }
 
     &.len {

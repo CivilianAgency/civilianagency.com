@@ -591,6 +591,7 @@
   }
 
   .erie,
+  .katie,
   .carrie,
   .jessica,
   .honeywell {
@@ -629,6 +630,26 @@
   }
 
 }
+
+@media only screen and (max-width: 593px) {
+
+  .mobile-col-clearfix {
+
+    display: block;
+    height: 0px;
+
+    &:before,
+    &:after {
+      content: ' ';
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+
+  }
+
 
 @media only screen and (max-width: 577px) {
 

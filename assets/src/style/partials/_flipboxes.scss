@@ -64,18 +64,6 @@
 
   }
 
-  &.alicia {
-
-    background-image: url('../../images/team/5-Alicia.jpg');
-    background-position: -127px -10px;
-    background-size: 200%;
-
-    .flip {
-      background-image: url('../../images/team/person/alicia.jpg');
-    }
-
-  }
-
   &.len {
 
     background-image: url('../../images/team/6-Len.jpg');
@@ -332,11 +320,6 @@
   .david & {
     background-image: url('../../images/team/4-David.jpg');
     background-position: -125px -10px;
-  }
-
-  .alicia & {
-    background-image: url('../../images/team/5-Alicia.jpg');
-    background-position: -260px -10px;
   }
 
   .clarke & {
@@ -597,10 +580,6 @@
 
     &.david {
       background-position: -60px -10px;
-    }
-
-    &.alicia {
-      background-position: -105px 0px;
     }
 
     &.len {

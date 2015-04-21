@@ -496,6 +496,23 @@
 }
 
 @media only screen and (max-width: 982px) {
+
+  .carrie,
+  .david {
+
+    .bigshow {
+      left: 0;
+    }
+
+  }
+
+  .cathy {
+
+    .bigshow {
+      left: -195px;
+    }
+
+  }
   
   .person.producer {
 
@@ -515,6 +532,7 @@
 @media only screen and (max-width: 967px) {
 
   .cathy,
+  .carrie,
   .katie,
   .meghan {
 
@@ -526,7 +544,6 @@
 
   .len,
   .matts,
-  .carrie,
   .david,
   .jessica
    {

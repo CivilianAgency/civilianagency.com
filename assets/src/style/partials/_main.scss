@@ -96,11 +96,6 @@ header {
   height: 158px;
   margin: 0 auto;
   background: transparentize($gray-darkest, .25);
-  background-image: url('../../images/Splash.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
   padding-top: 43px;
   box-sizing: border-box;
 }

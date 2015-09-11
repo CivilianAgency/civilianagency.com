@@ -738,7 +738,7 @@ a {
   width: 32.53333%;
   height: 200px;
   display: inline-block;
-  text-align: left;
+  text-align: right;
   margin-top: -22px;
   padding-top: 175px;
   box-sizing: border-box;
@@ -759,8 +759,9 @@ a {
 
 .footer-logo {
   position: relative;
-  top: -64px;
-  right: 40px;
+  top: -72px;
+  right: -125px;
+  width: 145px;
 }
 
 .footer-copy {
@@ -776,6 +777,7 @@ a {
   font-weight: 100;
   font-size: 14px;
   text-align: left;
+  margin-top: 15px;
 }
 
 .client-login-area {

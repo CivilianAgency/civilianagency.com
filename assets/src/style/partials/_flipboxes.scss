@@ -64,14 +64,14 @@
 
   }
 
-  &.alicia {
+  &.kristi {
 
-    background-image: url('../../images/team/5-Alicia.jpg');
-    background-position: -127px -10px;
-    background-size: 200%;
+    background-image: url('../../images/team/5-Kristi.jpg');
+    background-position: -21px -16px;
+    background-size: 115%;
 
     .flip {
-      background-image: url('../../images/team/person/alicia.jpg');
+      background-image: url('../../images/team/person/kristi.jpg');
     }
 
   }
@@ -334,9 +334,10 @@
     background-position: -125px -10px;
   }
 
-  .alicia & {
-    background-image: url('../../images/team/5-Alicia.jpg');
-    background-position: -260px -10px;
+  .kristi & {
+    background-image: url('../../images/team/5-Kristi.jpg');
+    background-position: -0px -5px;
+    background-size: 100%;
   }
 
   .clarke & {
@@ -374,7 +375,7 @@
 
   .meghan & {
     background-image: url('../../images/team/13-Meghan.jpg');
-    background-position: -189px -26px;
+    background-position: -170px -26px;
     background-size: 160%;
   }
 
@@ -484,6 +485,7 @@
 .vanessa,
 .katie,
 .carrie,
+.kristi,
 .meghan,
 .lori,
 .booth,
@@ -499,7 +501,7 @@
 @media only screen and (max-width: 982px) {
 
   .carrie,
-  .david {
+  .kristi {
 
     .bigshow {
       left: 0;
@@ -507,7 +509,9 @@
 
   }
 
-  .cathy {
+  .cathy,
+  .jessica
+   {
 
     .bigshow {
       left: -195px;
@@ -535,7 +539,11 @@
   .cathy,
   .carrie,
   .katie,
-  .meghan {
+  .meghan,
+  .jessica,
+  .matts,
+  .len,
+  .mattm {
 
     .bigshow {
       left: 0;
@@ -543,10 +551,10 @@
 
   }
 
-  .len,
-  .matts,
+  .kristi,
+  .cathy,
   .david,
-  .jessica {
+   {
 
     .bigshow {
       left: -195px;
@@ -577,10 +585,13 @@
 
 }
 
-@media only screen and (max-width: 773px) {
+@media only screen and (max-width: 788px) {
 
-  .len,
   .vanessa,
+  .kristi,
+  .katie,
+  .jessica,
+  .carrie,
   .lori,
   .devry {
 
@@ -591,9 +602,8 @@
   }
 
   .erie,
-  .katie,
-  .carrie,
-  .jessica,
+  .clarke,
+  .matts,
   .honeywell {
 
     .bigshow {
@@ -604,7 +614,7 @@
 
 }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 593px) {
 
   .mobile-col-clearfix {
 
@@ -683,13 +693,12 @@
   .tim,
   .david,
   .len,
-  .cathy,
-  .vanessa,
-  .carrie,
-  .clarke,
-  .meghan,
+  .matts,
+  .lori,
+  .katie,
   .clearchoice,
   .booth,
+  .jessica,
   .nar,
   .uscellular,
   .honeywell {
@@ -701,12 +710,13 @@
   }
 
   .mattm,
-  .len,
-  .katie,
-  .matts,
-  .lori,
-  .jessica,
+  .clarke,
+  .carrie,
+  .meghan,
+  .cathy,
+  .vanessa,
   .ally,
+  .kristi,
   .devry,
   .erie,
   .wilson,

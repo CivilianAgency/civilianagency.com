@@ -1252,9 +1252,19 @@ a {
     }
 
     .bigshow {
-      width: 311px;
-      height: 306px;
+      width: 0;
+      height: 0;
+      display: none;
+       
+      &::before  {
+          display: none;
+        }
+      }
+
+    .detail-copy {
+      display: none;
     }
+
 
     &.filler {
       display: none;

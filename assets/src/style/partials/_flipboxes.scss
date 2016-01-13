@@ -80,7 +80,7 @@
 
     background-image: url('../../images/team/6-Susan.jpg');
     background-position: -137px -20px;
-    background-size: 200%;
+    background-size: 175%;
 
     .flip {
       background-image: url('../../images/team/person/susan.jpg');
@@ -91,7 +91,7 @@
   &.vanessa {
 
     background-image: url('../../images/team/7-Vanessa.jpg');
-    background-position: -106px -3px;
+    background-position: -113px 0px;
     background-size: 170%;
 
     .flip {
@@ -381,7 +381,8 @@
 
   .susan & {
     background-image: url('../../images/team/6-Susan.jpg');
-    background-position: -237px -20px;
+    background-position: -177px 0px;
+    background-size: 150%;
   }
 
   .matts & {

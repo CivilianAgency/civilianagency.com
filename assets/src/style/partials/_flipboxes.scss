@@ -76,14 +76,14 @@
 
   }
 
-  &.len {
+  &.susan {
 
-    background-image: url('../../images/team/6-Len.jpg');
+    background-image: url('../../images/team/6-Susan.jpg');
     background-position: -137px -20px;
     background-size: 200%;
 
     .flip {
-      background-image: url('../../images/team/person/len.jpg');
+      background-image: url('../../images/team/person/susan.jpg');
     }
 
   }
@@ -379,8 +379,8 @@
     background-size: 160%;
   }
 
-  .len & {
-    background-image: url('../../images/team/6-Len.jpg');
+  .susan & {
+    background-image: url('../../images/team/6-Susan.jpg');
     background-position: -237px -20px;
   }
 
@@ -543,7 +543,7 @@
   .meghan,
   .jessica,
   .matts,
-  .len,
+  .susan,
   .mattm {
 
     .bigshow {
@@ -666,7 +666,7 @@
     }
 
 
-    &.len {
+    &.susan {
       background-position: -105px 0px;
     }
 
@@ -710,7 +710,7 @@
 
   .tim,
   .david,
-  .len,
+  .susan,
   .matts,
   .lori,
   .katie,

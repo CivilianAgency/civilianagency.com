@@ -52,14 +52,14 @@
 
   }
 
-  &.david {
+  &.larry {
 
-    background-image: url('../../images/team/4-David.jpg');
+    background-image: url('../../images/team/4-Larry.jpg');
     background-position: -77px -20px;
     background-size: 220%;
 
     .flip {
-      background-image: url('../../images/team/person/david.jpg');
+      background-image: url('../../images/team/person/larry.jpg');
     }
 
   }
@@ -329,8 +329,8 @@
     background-position: -260px -10px;
   }
 
-  .david & {
-    background-image: url('../../images/team/4-David.jpg');
+  .larry & {
+    background-image: url('../../images/team/4-Larry.jpg');
     background-position: -125px -10px;
   }
 
@@ -482,7 +482,7 @@
 }
 
 .mattm,
-.david,
+.larry,
 .vanessa,
 .katie,
 .carrie,
@@ -554,7 +554,7 @@
 
   .kristi,
   .cathy,
-  .david,
+  .larry,
    {
 
     .bigshow {
@@ -661,7 +661,7 @@
       background-position: -120px 0px;
     }
 
-    &.david {
+    &.larry {
       background-position: -60px -10px;
     }
 
@@ -709,7 +709,7 @@
   }
 
   .tim,
-  .david,
+  .larry,
   .susan,
   .matts,
   .lori,

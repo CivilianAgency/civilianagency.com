@@ -165,7 +165,7 @@ header {
     right: 0px;
     top: 75px;
   }
-  
+
   .wrapper {
     margin-top: 0px;
   }
@@ -1257,11 +1257,12 @@ a {
       width: 0;
       height: 0;
       display: none;
-       
-      &::before  {
-          display: none;
-        }
+
+      &::before {
+        display: none;
       }
+      
+    }
 
     .detail-copy {
       display: none;

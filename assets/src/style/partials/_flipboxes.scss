@@ -100,7 +100,7 @@
 
   }
 
-    &.ken {
+  &.ken {
 
     background-image: url('../../images/team/15-Ken.jpg');
     background-position: -113px 0px;
@@ -523,8 +523,7 @@
 
   .carrie,
   .ken,
-  .nar
-   {
+  .nar {
 
     .bigshow {
       left: 0;
@@ -535,15 +534,14 @@
   .jessica,
   .kristi,
   .matts,
-  .wilson
-   {
+  .wilson {
 
     .bigshow {
       left: -195px;
     }
 
   }
-  
+
   .person.producer {
 
     .producer-name {
@@ -577,8 +575,7 @@
   .katie,
   .vanessa,
   .ken,
-  .larry,
-   {
+  .larry {
 
     .bigshow {
       left: -195px;
@@ -648,7 +645,7 @@
   .honeywell,
   .nar,
   .booth,
-  .meghan   {
+  .meghan {
 
     .bigshow {
       left: 0;
@@ -663,15 +660,15 @@
   .devry,
   .ally,
   .katie,
-  .mattm   {
+  .mattm {
 
     .bigshow {
       left: -194px;
     }
   }
 }
-  
-  
+
+
 
 @media only screen and (max-width: 577px) {
 

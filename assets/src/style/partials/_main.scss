@@ -782,6 +782,12 @@ a {
   margin-top: 15px;
 }
 
+.copyright-area {
+  margin-left: 125px;
+  margin-top: 24px;
+  text-align: left;
+}
+
 .client-login-area {
 
   a {
@@ -1127,6 +1133,10 @@ a {
       position: static;
     }
 
+    .copyright-area {
+      margin: 20px 0px 0px;
+    }
+
     .column3rds {
       display: block;
       margin: 0px;
@@ -1261,7 +1271,7 @@ a {
       &::before {
         display: none;
       }
-      
+
     }
 
     .detail-copy {

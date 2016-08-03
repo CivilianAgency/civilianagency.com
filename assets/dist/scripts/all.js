@@ -772,7 +772,7 @@ $(function() {
   var scrollSpyOffsetY = 400;
 
   // Scrollspy
-  var anchorOurPeopleDown = new Waypoint({
+  /*var anchorOurPeopleDown = new Waypoint({
     element: $('.our-people'),
     handler: function(direction) {
       if (direction === 'down') {
@@ -790,7 +790,7 @@ $(function() {
       }
     },
     offset: scrollSpyOffsetY * -2
-  });
+  });*/
 
   var anchorOurSpace = new Waypoint({
     element: $('.our-space'),

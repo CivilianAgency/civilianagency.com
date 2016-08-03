@@ -523,6 +523,7 @@
 
   .carrie,
   .ken,
+  .nar
    {
 
     .bigshow {
@@ -534,6 +535,7 @@
   .jessica,
   .kristi,
   .matts,
+  .wilson
    {
 
     .bigshow {
@@ -563,7 +565,6 @@
   .meghan,
   .matts,
   .susan,
-  .vanessa,
   .mattm {
 
     .bigshow {
@@ -574,6 +575,7 @@
 
   .kristi,
   .katie,
+  .vanessa,
   .ken,
   .larry,
    {
@@ -607,14 +609,12 @@
 
 }
 
-@media only screen and (max-width: 773px) {
+@media only screen and (max-width: 788px) {
 
-  .vanessa,
   .ken,
   .kristi,
   .katie,
   .carrie,
-  .lori,
   .devry {
 
     .bigshow {
@@ -623,7 +623,10 @@
 
   }
 
+  .lori,
+  .vanessa,
   .erie,
+  .nar,
   .clarke,
   .matts,
   .honeywell {
@@ -639,8 +642,13 @@
 @media only screen and (max-width: 593px) {
 
   .kristi,
+  .lori,
   .matts,
-  .larry {
+  .jessica,
+  .honeywell,
+  .nar,
+  .booth,
+  .meghan   {
 
     .bigshow {
       left: 0;
@@ -649,11 +657,12 @@
   }
 
 
-  .meghan,
   .ken,
+  .carrie,
+  .vanessa,
+  .devry,
+  .ally,
   .katie,
-  .lori,
-  .jessica,
   .mattm   {
 
     .bigshow {

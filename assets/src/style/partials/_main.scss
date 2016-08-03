@@ -61,6 +61,7 @@ header {
   display: inline-block;
   font-size: 14px;
   margin-right: 33px;
+  font-weight: 500;
 
   a {
 
@@ -401,7 +402,8 @@ $wide-dimension: 374px;
 
 .main-headline {
   text-transform: uppercase;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
   font-size: 42px;
 }
 

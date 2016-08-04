@@ -750,22 +750,28 @@ $(function() {
 
   // Card chooser
   $('ul.cards li').click(function() {
-    var transitionSpeed = 300;
-    var thisBigshow = $(this).find('.bigshow');
-    var thisCard = $(this);
-    $(this).siblings().removeClass('open');
-    if ($(this).hasClass('open')) {
-      $(this).find('.bigshow').removeClass('active');
-      setTimeout(function() {
-        thisCard.removeClass('open');
-      }, transitionSpeed);
-      shuffler.start();
+
+    if ($(this).hasClass('client-case')) {
+      var url = $(this).attr('data-url');
+      document.location.href = url;
     } else {
-      $(this).addClass('open');
-      setTimeout(function() {
-        thisBigshow.addClass('active');
-      }, transitionSpeed);
-      shuffler.stop();
+      var transitionSpeed = 300;
+      var thisBigshow = $(this).find('.bigshow');
+      var thisCard = $(this);
+      $(this).siblings().removeClass('open');
+      if ($(this).hasClass('open')) {
+        $(this).find('.bigshow').removeClass('active');
+        setTimeout(function() {
+          thisCard.removeClass('open');
+        }, transitionSpeed);
+        shuffler.start();
+      } else {
+        $(this).addClass('open');
+        setTimeout(function() {
+          thisBigshow.addClass('active');
+        }, transitionSpeed);
+        shuffler.stop();
+      }
     }
   });
 

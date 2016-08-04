@@ -239,7 +239,13 @@
 .client {
 
   &.clearchoice {
+
     background-image: url('../../images/clients/clearchoice.png');
+
+    &:hover {
+      background-image: url('../../images/clients/clearchoice-color.png');
+    }
+
   }
 
   &.ally {
@@ -275,7 +281,13 @@
   }
 
   &.ctca {
+
     background-image: url('../../images/clients/cancertreatment.png');
+
+    &:hover {
+      background-image: url('../../images/clients/cancertreatment-color.png');
+    }
+
   }
 
 }

@@ -73,5 +73,5 @@ gulp.task('default', ['scss-lint', 'sass', 'lint', 'minify', 'imagemin', 'browse
   gulp.watch('assets/src/style/**/*.scss', ['scss-lint', 'sass']);
   gulp.watch('assets/src/scripts/**/*.js', ['lint', 'minify']);
   gulp.watch('assets/images/**/*', ['imagemin']);
-  gulp.watch('*.html', ['bs-reload']);
+  gulp.watch(['*.html', 'cases/ctca/*.html'], ['bs-reload']);
 });

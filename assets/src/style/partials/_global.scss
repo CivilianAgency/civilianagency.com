@@ -16,6 +16,11 @@ body {
   width: 48rem;
 }
 
+.title-boxed-wrap {
+  z-index: 1;
+  position: relative;
+}
+
 .title-boxed {
   display: inline-block;
   padding: 0.45rem;
@@ -61,11 +66,42 @@ body {
 
 .case-main-content {
 
+  padding: 6rem 0px 0px;
   color: $black;
   background: $white;
 
   h2.title-boxed {
+    margin-bottom: 4rem;
+    color: $turquoise;
+    background: $white;
+    border-color: $turquoise;
     font-size: 1.75rem;
+  }
+
+}
+
+.timeline-solid {
+
+  position: relative;
+
+  &.timeline-red {
+
+    background: $red;
+
+    &:after {
+      content: ' ';
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      height: 4rem;
+      background: $red;
+    }
+
+  }
+
+  .title-boxed {
+    transform: translate(0px, -50%);
   }
 
 }
@@ -75,9 +111,11 @@ body {
   $circle-dimension: 5.5rem;
   $timeline-border-width: 3px;
 
+  position: relative;
+
   .timeline-circle {
 
-    z-index: 1;
+    z-index: 2;
     position: relative;
     display: inline-block;
     width: $circle-dimension;
@@ -98,6 +136,15 @@ body {
         height: $circle-dimension - 3rem;
       }
 
+    }
+
+    &.timeline-circle-main-logo {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: $white;
+      border-color: $turquoise;
     }
 
   }
@@ -167,6 +214,42 @@ body {
 
   }
 
+  .timeline-point-highlight {
+
+    z-index: 1;
+    position: relative;
+    display: block;
+    margin: -1.75rem auto 0px;
+    padding: 2rem;
+    width: 80%;
+    border-style: solid;
+    border-width: $timeline-border-width;
+    border-color: $white;
+    border-radius: 2rem;
+
+    &.turquoise {
+      background: $turquoise;
+    }
+
+    p {
+
+      font-size: 1.375rem;
+
+      &.highlight-title {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5;
+      }
+
+      &:last-child {
+        margin: 0px;
+      }
+
+    }
+
+  }
+
   .timeline-section {
 
     position: relative;
@@ -175,6 +258,7 @@ body {
 
     &:after {
       content: ' ';
+      z-index: 0;
       position: absolute;
       top: 0px;
       bottom: 0px;
@@ -212,6 +296,12 @@ body {
         background: $red;
       }
 
+      h2.title-boxed {
+        color: $red;
+        background: $white;
+        border-color: $red;
+      }
+
       .timeline-circle {
         background: $yellow;
         border-color: $red;
@@ -229,6 +319,62 @@ body {
 
     }
 
+    &.white {
+
+      color: $white;
+
+      &:after {
+        background: $white;
+      }
+
+      h2.title-boxed {
+        color: $white;
+        background: $red;
+        border-color: $white;
+      }
+
+      .timeline-circle {
+        background: $turquoise;
+        border-color: $white;
+      }
+
+      .timeline-point {
+
+        border-color: $white;
+
+        &:after {
+          background: $white;
+        }
+
+        .point-title {
+          color: $white;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.case-other-link {
+
+  padding: 6rem 2rem;
+  display: block;
+
+  &.turquoise {
+
+    background: $turquoise;
+
+    h2.title-boxed {
+      border-color: $white;
+    }
+
+  }
+
+  h2.case-other-link-title {
+    font-size: 2rem;
   }
 
 }

@@ -19,6 +19,7 @@ body {
 .title-boxed-wrap {
   z-index: 1;
   position: relative;
+  text-align: center;
 }
 
 .title-boxed {
@@ -118,8 +119,12 @@ body {
   color: $black;
   background: $white;
 
-  h2.title-boxed {
+  .title-boxed-wrap {
     margin-bottom: 4rem;
+  }
+
+  h2.title-boxed {
+    margin: 0px;
     color: $turquoise;
     background: $white;
     border-color: $turquoise;
@@ -423,6 +428,135 @@ body {
 
   h2.case-other-link-title {
     font-size: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .grid-wrapper {
+    padding: 0px 2rem;
+    width: auto;
+  }
+
+  .case-header {
+
+    .accents {
+      display: none;
+    }
+
+    .case-header-content {
+      padding: 8rem 1rem;
+    }
+
+  }
+
+  .case-main-content {
+
+    padding-top: 3rem;
+
+    .title-boxed-wrap {
+      margin: 0px;
+    }
+
+    h2.title-boxed {
+      font-size: 1.25rem;
+    }
+
+  }
+
+  .timeline-solid {
+
+    &.timeline-red:after {
+      display: none;
+    }
+
+  }
+
+  .case-timeline {
+
+    .timeline-section {
+
+      text-align: left;
+
+      &.timeline-section-first {
+
+        &:after {
+          top: 2rem;
+        }
+
+      }
+
+      &:after {
+        left: 0px;
+      }
+
+    }
+
+    .timeline-circle {
+
+      transform: translate(-50%, 50%);
+      width: 3rem;
+      height: 3rem;
+
+      img {
+
+        height: 2rem;
+
+        &.tall {
+          height: 1.5rem;
+        }
+
+      }
+
+    }
+
+    .timeline-point {
+
+      margin-top: 0px;
+      width: auto;
+
+      &.left,
+      &.right {
+
+        margin: 0px;
+        padding: 2rem;
+        transform: none;
+
+        .point-title {
+          top: -1.75rem;
+          left: 1rem;
+          right: 1rem;
+          font-size: 1.25rem;
+          text-align: right;
+        }
+
+      }
+
+      &:after {
+        left: auto;
+        right: 0px;
+        transform: translate(50%, -0.5rem);
+      }
+
+    }
+
+    .timeline-point-highlight {
+
+      padding: 1.5rem;
+
+      p {
+
+        font-size: 1rem;
+
+        &.highlight-title {
+          font-size: 1.25rem;
+        }
+
+      }
+
+    }
+
   }
 
 }

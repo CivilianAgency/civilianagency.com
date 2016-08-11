@@ -51,7 +51,7 @@ body {
   .case-header-content {
     z-index: 1;
     position: relative;
-    padding: 14rem 0px;
+    padding: 16rem 0px;
   }
 
   .title-boxed {
@@ -441,6 +441,14 @@ body {
 
 }
 
+@media screen and (max-width: 1199px) {
+
+  .case-header .case-header-content {
+    padding: 8rem 0px;
+  }
+
+}
+
 @media screen and (max-width: 767px) {
 
   .grid-wrapper {
@@ -456,6 +464,11 @@ body {
 
     .case-header-content {
       padding: 8rem 1rem;
+    }
+
+    video {
+      width: 889px;
+      height: 500px;
     }
 
   }

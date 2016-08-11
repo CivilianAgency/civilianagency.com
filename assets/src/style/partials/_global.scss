@@ -189,6 +189,10 @@ body {
         height: $circle-dimension - 3rem;
       }
 
+      &.vtall {
+        height: $circle-dimension - 3.5rem;
+      }
+
     }
 
     &.timeline-circle-main-logo {
@@ -198,6 +202,11 @@ body {
       transform: translate(-50%, -50%);
       background: $white;
       border-color: $turquoise;
+
+      .case-clearchoice & {
+        border-color: $blue-off;
+      }
+
     }
 
   }
@@ -505,6 +514,10 @@ body {
 
         &.tall {
           height: 1.5rem;
+        }
+
+        &.vtall {
+          height: 1rem;
         }
 
       }

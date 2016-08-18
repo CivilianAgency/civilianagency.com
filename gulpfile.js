@@ -42,13 +42,19 @@ gulp.task('sass', function() {
 });
 
 gulp.task('lint', function() {
-  return gulp.src('assets/src/scripts/**/*.js')
+  return gulp.src(['assets/src/scripts/**/*.js', ])
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
 
 gulp.task('minify', function() {
-  return gulp.src('assets/src/scripts/**/*.js')
+  gulp.src(['assets/src/scripts/vendor/jquery.waypoints.js', 'assets/src/scripts/cases/*.js'])
+    .pipe(concat('cases.js'))
+    .pipe(gulp.dest('assets/dist/scripts'))
+    .pipe(rename('cases.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('assets/dist/scripts'));
+  return gulp.src(['assets/src/scripts/*.js', 'assets/src/scripts/vendor/**/*.js'])
     .pipe(concat('all.js'))
     .pipe(gulp.dest('assets/dist/scripts'))
     .pipe(rename('all.min.js'))

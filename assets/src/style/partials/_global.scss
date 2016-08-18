@@ -218,12 +218,21 @@ body {
     padding: 1rem 2rem;
     margin-top: -1/2 * $circle-dimension;
     width: 50%;
-    border-style: solid;
-    border-top-width: $timeline-border-width;
     text-align: left;
 
     &:not(:last-child) {
       margin-bottom: 2rem;
+    }
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      transform: translate(0px, -50%);
+      height: $timeline-border-width;
+      background: $turquoise;
     }
 
     &:after {
@@ -344,6 +353,7 @@ body {
 
         border-color: $turquoise;
 
+        &:before,
         &:after {
           background: $turquoise;
         }
@@ -373,6 +383,7 @@ body {
 
         border-color: $red;
 
+        &:before,
         &:after {
           background: $red;
         }
@@ -404,6 +415,7 @@ body {
 
         border-color: $white;
 
+        &:before,
         &:after {
           background: $white;
         }
@@ -451,24 +463,93 @@ body {
 
 @media screen and (min-width: 768px) {
 
-  .case-timeline .timeline-point {
+  .case-timeline {
 
-    &.active {
+    .timeline-circle,
+    .title-boxed-wrap,
+    .timeline-point-highlight {
 
-      p {
+      opacity: 0;
+      transition: $transition;
+
+      &.active {
         opacity: 1;
       }
 
     }
 
-    p {
-      opacity: 0;
-      transition: all 300ms;
+    .timeline-point {
+
+      &,
+      &:before,
+      &:after {
+        transition: $transition;
+      }
+
+      &:after {
+        width: 0px;
+        height: 0px;
+      }
+
+      &.right {
+
+        &:before,
+        &:after {
+          right: 100%;
+        }
+
+      }
+
+      &.left {
+
+        &:before,
+        &:after {
+          left: 100%;
+        }
+
+      }
+
+      .point-title,
+      p {
+        opacity: 0;
+        transition: all 600ms;
+      }
+
+      &.active {
+
+        &:after {
+          width: 0.875rem;
+          height: 0.875rem;
+        }
+
+        &.right {
+
+          &:before,
+          &:after {
+            right: 0%;
+          }
+
+        }
+
+        &.left {
+
+          &:before,
+          &:after {
+            left: 0%;
+          }
+
+        }
+
+        .point-title,
+        p {
+          opacity: 1;
+        }
+
+      }
+
     }
 
   }
-
-
 
 }
 

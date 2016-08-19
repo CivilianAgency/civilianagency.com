@@ -466,14 +466,45 @@ body {
   .case-timeline {
 
     .timeline-circle,
-    .title-boxed-wrap,
-    .timeline-point-highlight {
+    .title-boxed-wrap {
 
       opacity: 0;
       transition: $transition;
 
       &.active {
         opacity: 1;
+      }
+
+    }
+
+    .timeline-point-highlight {
+
+      opacity: 0;
+      transition: $transition;
+      transform: scale(0.5, 0.5);
+
+      &.turquoise {
+        background: $red;
+      }
+
+      &.active {
+        opacity: 1;
+        transform: none;
+      }
+
+      &.color-fade {
+        background: $turquoise;
+      }
+
+
+    }
+
+    .timeline-circle:not(.timeline-circle-main-logo) {
+
+      transform: scale(.5, .5);
+
+      &.active {
+        transform: none;
       }
 
     }
@@ -513,6 +544,7 @@ body {
       p {
         opacity: 0;
         transition: all 600ms;
+        transition-delay: 600ms;
       }
 
       &.active {

@@ -471,6 +471,10 @@ body {
       opacity: 0;
       transition: $transition;
 
+      &.forced-display {
+        opacity: 1;
+      }
+
       &.active {
         opacity: 1;
       }

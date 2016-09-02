@@ -591,6 +591,10 @@ body {
 
 @media screen and (max-width: 767px) {
 
+  .nav-li-mobile {
+    box-sizing: content-box;
+  }
+
   .grid-wrapper {
     padding: 0px 2rem;
     width: auto;

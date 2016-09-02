@@ -440,6 +440,11 @@ body {
   &.turquoise {
 
     background: $turquoise;
+    transition: $transition;
+
+    &:hover {
+      background: $turquoise-dark;
+    }
 
     h2.title-boxed {
       border-color: $white;
@@ -610,7 +615,25 @@ body {
       padding: 8rem 1rem;
     }
 
+    .case-clearchoice & {
+      background: {
+        image: url('../../images/cases/backgrounds/clearchoice.jpg');
+        color: transparent;
+        position: center center;
+        size: cover;
+      }
+    }
+
+    .case-ctca & {
+      background: {
+        image: url('../../images/cases/backgrounds/ctca.jpg');
+        position: center center;
+        size: cover;
+      }
+    }
+
     video {
+      display: none;
       width: 889px;
       height: 500px;
     }
@@ -732,6 +755,18 @@ body {
 
     }
 
+  }
+
+}
+
+@media screen and (max-width: 499px) {
+
+  .case-header {
+
+    .case-header-content {
+      padding: 4rem 1rem;
+    }
+    
   }
 
 }

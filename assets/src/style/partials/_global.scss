@@ -51,7 +51,7 @@ body {
   .case-header-content {
     z-index: 1;
     position: relative;
-    padding: 16rem 0px;
+    padding: 30rem 0px;
   }
 
   .title-boxed {
@@ -458,7 +458,31 @@ body {
 
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1999px) {
+
+  .case-header .case-header-content {
+    padding: 24rem 0px;
+  }
+
+}
+
+@media screen and (max-width: 1699px) {
+
+  .case-header .case-header-content {
+    padding: 19rem 0px;
+  }
+
+}
+
+@media screen and (max-width: 1399px) {
+
+  .case-header .case-header-content {
+    padding: 14rem 0px;
+  }
+
+}
+
+@media screen and (max-width: 1099px) {
 
   .case-header .case-header-content {
     padding: 8rem 0px;
@@ -766,7 +790,7 @@ body {
     .case-header-content {
       padding: 4rem 1rem;
     }
-    
+
   }
 
 }

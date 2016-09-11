@@ -618,6 +618,24 @@ body {
 
 }
 
+@media screen and (max-width: 800px) and (min-width: 768px) {
+
+  .case-timeline .timeline-point.active {
+
+    &.left:before,
+    &.left:after {
+      left: 0.875rem;
+    }
+
+    &.right:before,
+    &.right:after {
+      right: 0.875rem;
+    }
+
+  }
+
+}
+
 @media screen and (max-width: 767px) {
 
   .nav-li-mobile {

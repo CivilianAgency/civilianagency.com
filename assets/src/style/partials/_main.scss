@@ -233,6 +233,30 @@ $wide-dimension: 374px;
   padding: 0px;
   box-sizing: border-box;
 
+  &.client-case {
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-width: 0px 0px 48px 48px;
+      border-style: solid;
+      border-color: $red transparent;
+    }
+
+    &:after {
+      content: '+';
+      position: absolute;
+      bottom: 3px;
+      right: 3px;
+      color: $black;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+  }
+
   .flip {
     width: $box-dimension;
     height: $box-dimension;
@@ -786,13 +810,17 @@ a {
   margin-left: 125px;
   margin-top: 24px;
   text-align: left;
+  font-family: 'Muli';
 }
 
 .client-login-area {
 
+  font-family: 'Muli';
+
   a {
     border: 0;
   }
+
 }
 
 .client-login-area-big {

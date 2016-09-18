@@ -1,9 +1,9 @@
 exclude: [
   'node_modules/**',
-  'assets/src/style/webfontkit-20141208-130438/**',
-  'assets/src/style/partials/_reset.scss',
-  'assets/src/style/partials/_colorbox.scss',
-  'assets/src/style/vendor/**'
+  'src/style/webfontkit-20141208-130438/**',
+  'src/style/partials/_reset.scss',
+  'src/style/partials/_colorbox.scss',
+  'src/style/vendor/**'
 ]
 
 linters:

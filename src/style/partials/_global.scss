@@ -317,6 +317,29 @@ a {
   line-height: 1.35;
 }
 
+.home-cases {
+
+  padding: 2rem 0px;
+  background: $grey-lightest;
+
+  .title-boxed {
+    color: $red;
+    border-color: $red;
+  }
+
+}
+
+.home-map {
+
+  padding: 2rem 0px;
+
+  .title-boxed {
+    color: $red;
+    border-color: $red;
+  }
+
+}
+
 .case-main-content {
 
   padding: 6rem 0px 0px;

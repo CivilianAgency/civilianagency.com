@@ -42,6 +42,33 @@
     </div>
   </div>
 </section>
+
+<section class="home-cases">
+  <div class="grid-wrapper">
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h3 class="title-boxed">Case Stories</h3>
+      </div>
+      <div class="pure-u-5-12"></div>
+    </div>
+  </div>
+</section>
+
+<section class="home-map">
+  <div class="grid-wrapper">
+    <div class="pure-g">
+      <div class="pure-u-1-6"></div>
+      <div class="pure-u-2-3">
+        <h3 class="title-boxed">Get To Know Us Better</h3>
+        <p>Hover over the map to see some of our favorite local spots.</p>
+      </div>
+      <div class="pure-u-1-6"></div>
+      <div class="pure-u-1-1">
+        MAP
+      </div>
+    </div>
+  </div>
+</section>
 <?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

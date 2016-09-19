@@ -9,6 +9,11 @@ body {
   font-family: 'ff-enzo-web', sans-serif;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .main-menu-toggle {
   display: none;
 }
@@ -132,10 +137,6 @@ a {
 
 }
 
-.template-case section {
-  font-family: 'ff-enzo-web', sans-serif;
-}
-
 .grid-wrapper {
   margin: 0px auto;
   width: 60rem;
@@ -250,15 +251,18 @@ a {
     z-index: 1;
     position: relative;
     padding: 30rem 0px;
+    text-align: center;
   }
 
   .title-boxed {
-    font-size: 1rem;
+    color: $white;
     border-color: $white;
+    font-size: 1rem;
   }
 
   h1 {
     margin: 0px;
+    color: $white;
   }
 
   .accent {
@@ -325,6 +329,23 @@ a {
   .title-boxed {
     color: $red;
     border-color: $red;
+  }
+
+  img {
+    margin-bottom: 1rem;
+  }
+
+  .arrow-link {
+
+    color: $turquoise-darkest;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    text-decoration: none;
+
+    &:after {
+      background-image: url('../images/chevron-with-circle-right-turquoise-darkest.svg');
+    }
+
   }
 
 }
@@ -663,6 +684,9 @@ a {
 
   padding: 6rem 2rem;
   display: block;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
 
   &.turquoise {
 
@@ -890,7 +914,7 @@ a {
 
     .case-clearchoice & {
       background: {
-        image: url('../../images/cases/backgrounds/clearchoice.jpg');
+        image: url('../images/cases/backgrounds/clearchoice.jpg');
         color: transparent;
         position: center center;
         size: cover;
@@ -899,7 +923,7 @@ a {
 
     .case-ctca & {
       background: {
-        image: url('../../images/cases/backgrounds/ctca.jpg');
+        image: url('../images/cases/backgrounds/ctca.jpg');
         position: center center;
         size: cover;
       }

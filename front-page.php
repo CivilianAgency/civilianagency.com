@@ -21,7 +21,7 @@
 <section class="home-previews">
   <div class="grid-wrapper">
     <div class="pure-g">
-      <?php while (have_rows('section_preview')) { the_row(); ?><div class="home-preview pure-u-1-3">
+      <?php while (have_rows('section_preview')) { the_row(); ?><div class="home-preview pure-u-md-1-3">
         <h3 class="title-boxed"><?php the_sub_field('boxed_title'); ?></h3>
         <h2><?php the_sub_field('subtitle'); ?></h2>
         <?php the_sub_field('content'); ?>
@@ -49,7 +49,17 @@
       <div class="pure-u-1-1">
         <h3 class="title-boxed">Case Stories</h3>
       </div>
-      <div class="pure-u-5-12"></div>
+      <?php
+      $cases_loop = new WP_Query(array('post_type' => 'case', 'posts_per_page' => 2));
+      $i = 0;
+      while ($cases_loop->have_posts()) { $cases_loop->the_post();
+      ?><div class="pure-u-11-24">
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+        <a class="arrow-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      </div><?php
+      if ($i == 0) { echo '<div class="pure-u-1-12"></div>'; }
+      $i++; }
+      ?>
     </div>
   </div>
 </section>

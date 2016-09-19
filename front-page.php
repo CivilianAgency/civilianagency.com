@@ -74,11 +74,27 @@
       </div>
       <div class="pure-u-1-6"></div>
       <div class="pure-u-1-1">
-        MAP
+        <div id="google-map" class="google-map"></div>
       </div>
     </div>
   </div>
 </section>
 <?php endwhile; endif; ?>
+
+<?php
+  if (have_rows('point_of_interest', 'option')) {
+    echo '<script>var pointsOI = [';
+    while (have_rows('point_of_interest', 'option')) {
+      the_row();
+      echo '[';
+        echo '"' . get_sub_field('title') . '",';
+        echo '"' . get_sub_field('description') . '",';
+        echo get_sub_field('latitude') . ',';
+        echo get_sub_field('longitude');
+      echo '],';
+    }
+    echo '];</script>';
+  }
+?>
 
 <?php get_footer(); ?>

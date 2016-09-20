@@ -727,6 +727,18 @@ a {
 
 }
 
+.facts {
+
+  padding: 2rem 0px;
+  color: $white;
+  background: $turquoise;
+
+  .title-boxed {
+    border-color: $white;
+  }
+
+}
+
 @media screen and (max-width: 1999px) {
 
   .case-header .case-header-content {
@@ -887,6 +899,22 @@ a {
 
 }
 
+@media screen and (max-width: 1023px) {
+
+  .grid-wrapper {
+    width: 46rem;
+  }
+
+  .home-preview {
+
+    p {
+      min-height: 0px;
+    }
+
+  }
+
+}
+
 @media screen and (max-width: 800px) and (min-width: 768px) {
 
   .case-timeline .timeline-point.active {
@@ -907,6 +935,10 @@ a {
 
 @media screen and (max-width: 767px) {
 
+  a.arrow-link {
+    padding-right: 1.375em;
+  }
+
   .nav-main-menu {
     display: none;
   }
@@ -918,6 +950,19 @@ a {
   .grid-wrapper {
     padding: 0px 2rem;
     width: auto;
+  }
+
+  .home-preview {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+
+  .home-cases {
+
+    .case-preview:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
   }
 
   .case-header {

@@ -1,6 +1,7 @@
 <?php
 
 require_once('includes/cases.php');
+require_once('includes/facts.php');
 
 define('GOOGLE_MAPS_API_KEY', 'AIzaSyBHVW-nW-K5seTUJmg-YoGuhzwTDJLbAmo');
 

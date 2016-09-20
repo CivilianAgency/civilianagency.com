@@ -15,3 +15,4 @@
     "http://www.linkedin.com/company/civilian-chicago"]
   }
 </script>
+<script>var themePath = '<?php echo get_template_directory_uri(); ?>/';</script>

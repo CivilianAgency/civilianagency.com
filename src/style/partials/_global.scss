@@ -231,14 +231,6 @@ a {
 
 }
 
-.home-map {
-
-  .google-map {
-    height: 32rem;
-  }
-
-}
-
 .case-header {
 
   overflow: hidden;
@@ -365,6 +357,24 @@ a {
   .title-boxed {
     color: $red;
     border-color: $red;
+  }
+
+  .google-map {
+    height: 32rem;
+  }
+
+  .map-infobubble {
+
+    padding: 0.5rem;
+    max-width: 10rem;
+    color: $turquoise-darkest;
+    font-size: 1rem;
+    text-align: center;
+
+    .point-title {
+      font-weight: bold;
+    }
+
   }
 
 }

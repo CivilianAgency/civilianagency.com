@@ -352,7 +352,7 @@ a {
 
 .home-map {
 
-  padding: 2rem 0px;
+  padding: 4rem 0px;
 
   .title-boxed {
     color: $red;
@@ -729,12 +729,58 @@ a {
 
 .facts {
 
-  padding: 2rem 0px;
+  padding: 4rem 0px;
   color: $white;
   background: $turquoise;
 
   .title-boxed {
+    margin-top: 0px;
     border-color: $white;
+  }
+
+  .fact {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+}
+
+footer {
+
+  padding: 4rem 0px;
+  color: $white;
+  background: $turquoise-darkest;
+
+  p:last-child {
+    margin-bottom: 0px;
+  }
+
+  a {
+    color: $white;
+  }
+
+  .social-list {
+
+    list-style-type: none;
+    margin: 0px 0px 1rem;
+    padding: 0px;
+
+    li {
+
+      display: inline-block;
+      vertical-align: middle;
+
+      &:not(:first-child) {
+        margin-left: 1rem;
+      }
+
+      img {
+        display: block;
+        width: 3rem;
+      }
+
+    }
+
   }
 
 }
@@ -909,6 +955,14 @@ a {
 
     p {
       min-height: 0px;
+    }
+
+  }
+
+  footer {
+
+    .footer-address {
+      margin-bottom: 2rem;
     }
 
   }

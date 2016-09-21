@@ -73,10 +73,16 @@
         <?php if (get_field('map_description', 'option')) {
           echo get_field('map_description', 'option');
         } ?>
+        <button id="mobile-map-launch" class="btn mobile-map-launch">Launch The Map</button>
       </div>
       <div class="pure-u-md-1-6"></div>
       <div class="pure-u-md-1-1">
-        <div id="google-map" class="google-map"></div>
+        <div class="google-map-wrap">
+          <div id="google-map" class="google-map"></div>
+          <div class="map-mobile-overlay">
+            <button id="google-map-close" class="map-close">&times;</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

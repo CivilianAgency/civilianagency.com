@@ -1,15 +1,13 @@
 var caseWaypoints = [];
-var infoBubble;
+var map, infoBubble;
+var mapCenter = new google.maps.LatLng(41.890687, -87.624778);
 var slideSpeed = 200;
 
 jQuery(document).ready(function($) {
 
   if ($('body').hasClass('home')) {
-    var map = new google.maps.Map(document.getElementById('google-map'), {
-      center: {
-        lat: 41.890672,
-        lng: -87.624769
-      },
+    map = new google.maps.Map(document.getElementById('google-map'), {
+      center: mapCenter,
       scrollwheel: false,
       zoom: 16,
       disableDefaultUI: true,
@@ -17,7 +15,7 @@ jQuery(document).ready(function($) {
     });
 
     var cvlnMarker = new google.maps.Marker({
-      position: new google.maps.LatLng(41.890687, -87.624778),
+      position: mapCenter,
       map: map,
       icon: {
         url: themePath + 'dist/images/civilian-man-circle.png',
@@ -98,6 +96,18 @@ jQuery(document).ready(function($) {
     $('.nav-main-menu').slideUp(slideSpeed);
     $('.main-menu-toggle').removeClass('open');
     $(this).removeClass('open');
+  });
+
+  $('#mobile-map-launch').click(function() {
+    $('.google-map-wrap').addClass('open');
+    google.maps.event.trigger(map, 'resize');
+    setTimeout(function() {
+      map.panTo(mapCenter);
+    }, slideSpeed);
+  });
+
+  $('#google-map-close').click(function() {
+    $('.google-map-wrap').removeClass('open');
   });
 
 });

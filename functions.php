@@ -33,11 +33,13 @@ add_action('init', 'register_custom_menus');
 if (function_exists('acf_add_options_page')) {
 
 	acf_add_options_page(array(
-		'page_title' 	=> 'Map',
-		'menu_title'	=> 'Map',
-		'menu_slug' 	=> 'map-settings',
-		'capability'	=> 'edit_posts',
-		'redirect'		=> false
+		'page_title' => 'Map',
+		'menu_title' => 'Map',
+		'menu_slug' => 'map-settings',
+		'capability' => 'edit_posts',
+		'redirect' => false,
+    'icon_url' => 'dashicons-location-alt',
+    'position' => '7.1'
 	));
 
 }

@@ -1,5 +1,6 @@
 var caseWaypoints = [];
 var infoBubble;
+var slideSpeed = 200;
 
 jQuery(document).ready(function($) {
 
@@ -80,6 +81,24 @@ jQuery(document).ready(function($) {
       }, { offset: '80%' });
     });
   }
+
+  $('.main-menu-toggle').click(function() {
+    if ($(this).hasClass('open')) {
+      $('.nav-main-menu').slideUp(slideSpeed);
+      $(this).removeClass('open');
+      $('.close-main-menu').removeClass('open');
+    } else {
+      $('.nav-main-menu').slideDown(slideSpeed);
+      $(this).addClass('open');
+      $('.close-main-menu').addClass('open');
+    }
+  });
+
+  $('.close-main-menu').click(function() {
+    $('.nav-main-menu').slideUp(slideSpeed);
+    $('.main-menu-toggle').removeClass('open');
+    $(this).removeClass('open');
+  });
 
 });
 

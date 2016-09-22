@@ -14,9 +14,7 @@ function civ_custom_scripts() {
   wp_enqueue_style('civ-fonts-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
   wp_enqueue_style('civ-style', get_template_directory_uri() . '/dist/style/style.css', null, $cacheVersion);
 
-  if (is_front_page()) {
-    wp_enqueue_script('google-map-js', '//maps.googleapis.com/maps/api/js?key=' . GOOGLE_MAPS_API_KEY, null, $cacheVersion);
-  }
+  wp_enqueue_script('google-map-js', 'https://maps.googleapis.com/maps/api/js?key=' . GOOGLE_MAPS_API_KEY, null, $cacheVersion);
   wp_enqueue_script('civ-js', get_template_directory_uri() . '/dist/scripts/all.js', array('jquery'), $cacheVersion);
 }
 add_action('wp_enqueue_scripts', 'civ_custom_scripts');

@@ -1,4 +1,4 @@
-<title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
+<title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | Chicago</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
 <script src="https://use.typekit.net/vlq5mkr.js"></script>

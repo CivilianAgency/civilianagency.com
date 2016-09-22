@@ -1,4 +1,4 @@
-<section class="facts">
+<?php if (!is_singular('case')) { ?><section class="facts">
   <div class="grid-wrapper">
     <div class="pure-g">
       <div class="pure-u-md-1-6"></div>
@@ -18,7 +18,7 @@
         </div>
     </div>
   </div>
-</section>
+</section><?php } ?>
 
 <footer>
   <div class="grid-wrapper">

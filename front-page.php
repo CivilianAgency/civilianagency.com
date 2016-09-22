@@ -73,7 +73,7 @@
         <?php if (get_field('map_description', 'option')) {
           echo get_field('map_description', 'option');
         } ?>
-        <button id="mobile-map-launch" class="btn mobile-map-launch">Launch The Map</button>
+        <button id="mobile-map-launch" class="btn mobile-map-launch"><?php echo get_field('map_mobile_button_text', 'option'); ?></button>
       </div>
       <div class="pure-u-md-1-6"></div>
       <div class="pure-u-md-1-1">

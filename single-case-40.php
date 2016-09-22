@@ -2,24 +2,7 @@
 
 <div class="case-ctca">
 
-<section class="case-header">
-	<video src="https://player.vimeo.com/external/178527149.hd.mp4?s=d04846ce791cc79e79ef66afd0827b264ea7ff8e&profile_id=119" loop autoplay muted>
-	</video>
-	<div class="accents">
-		<div class="accent right-top yellow"></div>
-		<div class="accent right-bottom turquoise"></div>
-		<div class="accent left-top red"></div>
-		<div class="accent left-bottom yellow"></div>
-	</div>
-	<div class="case-header-content">
-		<div class="pure-g">
-			<div class="pure-u-1-1">
-				<h2 class="title-boxed">CVLN Case Stories</h2>
-				<h1>Cancer Treatment Centers of America</h1>
-			</div>
-		</div>
-	</div>
-</section>
+<?php get_template_part('partials/case-header'); ?>
 
 <section class="case-main-content case-timeline">
 	<div class="timeline-circle timeline-circle-main-logo forced-display"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/cases/logos/ctca-tree.png"></div>
@@ -111,12 +94,7 @@
 	</div>
 </section>
 
-<section class="case-other-link-wrap">
-	<a class="case-other-link turquoise" href="<?php the_permalink(38); ?>">
-		<div class="title-boxed-wrap"><h2 class="title-boxed">CVLN Case Stories</h2></div>
-		<h2 class="case-other-link-title">ClearChoice Dental Implant Centers</h2>
-	</a>
-</section>
+<?php get_template_part('partials/featured-case'); ?>
 
 </div>
 

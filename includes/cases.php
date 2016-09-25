@@ -36,7 +36,7 @@ add_action('init', 'create_cases');
 add_filter('single_template', function($template) {
   global $post;
   if ($post->post_type === 'case') {
-    $locate_template = locate_template("single-case-{$post->ID}.php");
+    $locate_template = locate_template("single-case-{$post->slug}.php");
     if (!empty($locate_template)) {
       $template = $locate_template;
     }

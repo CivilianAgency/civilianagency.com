@@ -9,6 +9,10 @@ body {
   font-family: 'ff-enzo-web', sans-serif;
 }
 
+body {
+  padding-top: 74px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -49,6 +53,11 @@ button {
 
 header {
 
+  z-index: 999999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
   padding: 1.5rem 0px;
   background: $white;
   border-bottom: 2px solid $grey-light;
@@ -1027,6 +1036,10 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+
+  body {
+    padding-top: 66px;
+  }
 
   header {
 

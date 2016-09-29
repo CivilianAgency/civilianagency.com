@@ -18,6 +18,10 @@ img {
   height: auto;
 }
 
+.break-md-only {
+  display: none;
+}
+
 button {
 
   -webkit-appearance: none;
@@ -1013,6 +1017,14 @@ footer {
       margin-bottom: 2rem;
     }
 
+  }
+
+}
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+
+  .break-md-only {
+    display: block;
   }
 
 }

@@ -13,7 +13,7 @@
 				<div class="timeline-section timeline-section-first turquoise">
 					<div class="timeline-circle "><img src="<?php echo get_template_directory_uri(); ?>/dist/images/cases/icons/idea-wheel.svg"></div>
 					<div class="timeline-point left">
-						<p>In 2008, the first ClearChoice Dental Implant Center opened for business </p>
+						<p>In 2008, the first ClearChoice Dental Implant Center opened <br class="break-md-only">for business </p>
 					</div>
 					<div class="timeline-circle"><img class="tall" src="<?php echo get_template_directory_uri(); ?>/dist/images/cases/icons/search-tooth.svg"></div>
 					<div class="timeline-point right">
@@ -25,17 +25,17 @@
 					</div>
 					<div class="timeline-circle"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/cases/icons/person-stairs.svg"></div>
 					<div class="timeline-point right">
-						<p>Even with 30 centers nationwide, ClearChoice Dental Implant Centers were struggling to establish themselves as the clear leader in this immature yet rapidly growing category</p>
+						<p>Even with 30 centers nationwide, ClearChoice Dental Implant Centers were struggling to establish themselves as the clear leader <br class="break-md-only">in this immature yet rapidly growing category</p>
 					</div>
 				</div>
 				<div class="timeline-section red">
 					<div class="title-boxed-wrap"><h2 class="title-boxed">Connection Made</h2></div>
 					<div class="timeline-circle"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/cases/icons/person.svg"></div>
 					<div class="timeline-point left">
-						<p>ClearChoice was in need of a strategic partner to revitalize their brand and chose CIVILIAN as their AOR</p>
+						<p>ClearChoice was in need of a strategic partner to revitalize their brand and chose CIVILIAN as their Agency of Record</p>
 					</div>
 					<div class="timeline-point right">
-						<p>Initial research revealed no other dental implant provider offered patients the level of expertise, patient care and 100% transparency as the highly skilled specialists at the ClearChoice centers</p>
+						<p>Initial research revealed no other dental implant provider offered patients the level of expertise, patient care and 100% transparency as the highly skilled specialists at the <br class="break-md-only">ClearChoice centers</p>
 					</div>
 					<div class="timeline-circle"><img class="tall" src="<?php echo get_template_directory_uri(); ?>/dist/images/cases/icons/person-shine.svg"></div>
 					<div class="timeline-point left">
@@ -76,7 +76,7 @@
 						<div class="timeline-circle"><img class="tall" src="<?php echo get_template_directory_uri(); ?>/dist/images/cases/icons/chat-bubbles.svg"></div>
 						<div class="timeline-point right">
 							<div class="point-title">2015</div>
-							<p>Conversion on the ClearChoice website shot up from .5% to 2%</p>
+							<p>Conversion on the ClearChoice website shot up 300%</p>
 						</div>
 						<div class="timeline-point left">
 							<div class="point-title">2016</div>

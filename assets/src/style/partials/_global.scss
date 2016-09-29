@@ -638,6 +638,10 @@ body {
 
 @media screen and (max-width: 767px) {
 
+  .break-md {
+    display: none;
+  }
+
   .nav-li-mobile {
     box-sizing: content-box;
   }

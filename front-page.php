@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="home-header">
-  <video src="https://player.vimeo.com/external/184913141.hd.mp4?s=31b5250c935659be6e0d2143f3c413f2c4f9513d&profile_id=119" poster="<?php echo get_template_directory_uri(); ?>/dist/images/home-poster.jpg" loop autoplay muted></video>
+  <video src="https://player.vimeo.com/external/185059705.hd.mp4?s=43e0171da902788beeaa96cb67ced9f2b8d6b511&profile_id=119" poster="<?php echo get_template_directory_uri(); ?>/dist/images/home-poster.jpg" loop autoplay muted></video>
   <img class="cvln-bw" src="<?php echo get_template_directory_uri(); ?>/dist/images/cvln-bw.svg">
 </section>
 

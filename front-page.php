@@ -9,8 +9,8 @@
 <section class="content-main home-main">
   <div class="grid-wrapper">
     <div class="pure-g">
-      <div class="pure-u-md-1-6"></div>
-      <div class="pure-u-md-2-3">
+      <div class="pure-u-lg-1-8"></div>
+      <div class="pure-u-lg-3-4">
         <?php the_content(); ?>
       </div>
     </div>
@@ -25,7 +25,7 @@
         <h3 class="title-boxed"><?php the_sub_field('boxed_title'); ?></h3>
         <h2><?php the_sub_field('subtitle'); ?></h2>
         <?php the_sub_field('content'); ?>
-        <a class="arrow-link" href="<?php the_sub_field('link_target'); ?>"><?php the_sub_field('link_text'); ?></a>
+        <a class="arrow-link arrow-link-centered" href="<?php the_sub_field('link_target'); ?>"><?php the_sub_field('link_text'); ?></a>
       </div><?php } ?>
     </div>
   </div>
@@ -35,8 +35,8 @@
 <section class="content-main home-secondary">
   <div class="grid-wrapper">
     <div class="pure-g">
-      <div class="pure-u-md-1-6"></div>
-      <div class="pure-u-md-2-3">
+      <div class="pure-u-lg-1-8"></div>
+      <div class="pure-u-lg-3-4">
         <?php echo get_field('second_content_block'); ?>
       </div>
     </div>
@@ -67,16 +67,16 @@
 <section class="home-map">
   <div class="grid-wrapper">
     <div class="pure-g">
-      <div class="pure-u-md-1-6"></div>
-      <div class="pure-u-md-2-3">
+      <div class="pure-u-lg-1-8"></div>
+      <div class="pure-u-lg-3-4">
         <h3 class="title-boxed"><?php echo get_field('map_title', 'option'); ?></h3>
         <?php if (get_field('map_description', 'option')) {
           echo get_field('map_description', 'option');
         } ?>
         <button id="mobile-map-launch" class="btn mobile-map-launch"><?php echo get_field('map_mobile_button_text', 'option'); ?></button>
       </div>
-      <div class="pure-u-md-1-6"></div>
-      <div class="pure-u-md-1-1">
+      <div class="pure-u-lg-1-8"></div>
+      <div class="pure-u-lg-3-4">
         <div class="google-map-wrap">
           <div id="google-map" class="google-map"></div>
           <div class="map-mobile-overlay">

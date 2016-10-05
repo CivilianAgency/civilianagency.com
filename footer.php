@@ -46,6 +46,9 @@
             <p><a href="#" class="arrow-link">I want to join your client list</a></p>
             <p><a href="#" class="arrow-link">I just want to chat</a></p>
           </div>
+          <div class="copyright pure-u-lg-1-1">
+            <p>&copy; <?php echo date('Y'); ?> CIVILIAN | Proud member of the <a href="http://www.mdc-partners.com/#agencies/civilian">MDC Network</a></p>
+          </div>
         </div>
       </div>
     </div>

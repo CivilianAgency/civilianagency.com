@@ -58,7 +58,7 @@
         <a class="arrow-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
       </div><?php
       if ($i == 0) { echo '<div class="pure-u-sm-1-12"></div>'; }
-      $i++; }
+      $i++; wp_reset_query(); }
       ?>
     </div>
   </div>

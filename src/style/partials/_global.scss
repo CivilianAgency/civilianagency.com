@@ -87,6 +87,49 @@ header {
 
 }
 
+.page-header {
+
+  position: relative;
+  height: 400px;
+  background: {
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
+  }
+  border-bottom: 0.25rem solid $red-orange;
+
+  &.header-covered:after {
+    content: ' ';
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: $turquoise-darkest;
+    opacity: 0.5;
+  }
+
+  .page-header-meta {
+    z-index: 2;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .title-boxed {
+    margin: 0px;
+    padding: 0.375em 0.5em;
+    transform: translate(0px, 50%);
+    color: $red-orange;
+    background: $white;
+    border-color: $red-orange;
+    font-size: 1.75rem;
+  }
+
+}
+
 a {
 
   &.arrow-link {
@@ -234,6 +277,53 @@ a {
     right: 0px;
     transform: translate(0px, -50%);
     width: 100%;
+  }
+
+}
+
+.preview-card {
+
+  a {
+
+    display: block;
+    position: relative;
+
+    &:after {
+      z-index: 1;
+      position: absolute;
+      content: ' ';
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      height: 56%;
+      background: linear-gradient(to bottom, transparent 0%, $black 100%);
+    }
+
+  }
+
+  .preview-card-meta {
+    z-index: 2;
+    position: absolute;
+    bottom: 1.75rem;
+    left: 1.75rem;
+    right: 1.75rem;
+  }
+
+  .title-boxed {
+    margin: 0px 0px 0.5rem;
+    color: $yellow;
+    font-size: 0.875rem;
+    border-color: $yellow;
+    border-width: 0.125rem;
+  }
+
+  &-title {
+    width: 235px;
+    color: $white;
+    font-size: 1.375rem;
+    line-height: 1.3;
+    font-weight: bold;
+    text-decoration: none;
   }
 
 }
@@ -398,9 +488,16 @@ a {
 }
 
 %main-text {
+
   font-size: 1.35rem;
   letter-spacing: 0.5px;
   line-height: 1.5;
+
+  a {
+    color: $black;
+    font-weight: bold;
+  }
+
 }
 
 .content-main {
@@ -409,6 +506,10 @@ a {
 
   p {
     @extend %main-text;
+  }
+
+  h2 {
+    color: $red-orange;
   }
 
 }
@@ -1278,6 +1379,17 @@ footer {
 
   }
 
+  .page-header {
+
+    height: 50vw;
+    border-width: 2px;
+
+    .title-boxed {
+      font-size: 1.25rem;
+    }
+
+  }
+
   a.arrow-link {
     padding-right: 1.375em;
   }
@@ -1300,12 +1412,8 @@ footer {
     margin-right: -2rem;
   }
 
-  .home-cases {
-
-    .case-preview:not(:last-child) {
-      margin-bottom: 1.5rem;
-    }
-
+  .case-preview:not(:last-child) {
+    margin-bottom: 1.5rem;
   }
 
   .case-header {

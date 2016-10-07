@@ -110,6 +110,15 @@ jQuery(document).ready(function($) {
     $('.google-map-wrap').removeClass('open');
   });
 
+  $('.snacks .snacks-point').click(function() {
+    var thisIndex = $('.snacks-nav .snacks-point').index($(this));
+    var thisItem = $('.snacks .snacks-item').eq(thisIndex);
+    $(this).siblings().removeClass('active');
+    thisItem.siblings().removeClass('active');
+    $(this).addClass('active');
+    thisItem.addClass('active');
+  });
+
 });
 
 function poiClick(marker, i, map, content) {

@@ -27,7 +27,7 @@
   </div>
 </section>
 
-<section class="content-main work-cases">
+<section class="work-cases">
   <div class="grid-wrapper">
     <div class="pure-g">
       <?php
@@ -47,6 +47,52 @@
           </div>
         </a>
       </div><?php $i++; } wp_reset_query(); ?>
+    </div>
+    <div class="pure-g snacks">
+      <?php
+        $cases_loop = new WP_Query(array(
+          'post_type' => 'case',
+          'posts_per_page' => -1,
+          'meta_key' => 'case_snack_or_story',
+          'meta_value' => 'snack',
+          'orderby' => 'menu_order',
+          'order' => 'ASC'
+        ));
+      ?>
+      <div class="snacks-main">
+        <?php $i = 0; while ($cases_loop->have_posts()) { $cases_loop->the_post(); ?>
+        <div class="snacks-item<?php if ($i == 0) { echo ' active'; } ?>">
+          <div class="snacks-item-content">
+            <h2><?php the_title(); ?><?php if (get_field('case_snack_subtitle')) { echo ' <span class="subtitle">' . get_field('case_snack_subtitle') . '</span>'; } ?></h2>
+            <div class="pure-g">
+              <div class="ways-we-connected pure-u-md-1-2">
+                <h3>Ways We Connected</h3>
+                <?php while (have_rows('ways_we_connected')) {
+                  the_row();
+                  echo '<p>' . get_sub_field('title') . '</p>';
+                } ?>
+              </div><div class="pure-u-md-1-2">
+                <?php echo get_field('snack_content'); ?>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <?php $i++; } wp_reset_query(); ?>
+      </div>
+      <div class="snacks-nav">
+        <div div class="snacks-nav-line">
+          <?php $i = 0; while ($cases_loop->have_posts()) { $cases_loop->the_post(); ?><div class="snacks-point<?php if ($i == 0) { echo ' active'; } ?>">
+            <div class="snacks-dot"></div>
+            <div class="snacks-logo-wrap">
+              <?php
+                $image = get_field('case_brand_logo');
+                echo wp_get_attachment_image($image['ID'], 'full', false, array('data-sizes' => 'auto'));
+              ?>
+            </div>
+          </div><?php $i++; } wp_reset_query(); ?>
+        </div>
+      </div>
     </div>
   </div>
 </section>

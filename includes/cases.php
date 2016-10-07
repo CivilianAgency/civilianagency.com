@@ -23,7 +23,7 @@ function create_cases() {
     'has_archive' => true,
     'menu_position' => 5,
     'menu_icon' => 'dashicons-images-alt2',
-    'supports' => array('title', 'count', 'editor', 'thumbnail'),
+    'supports' => array('title', 'count', 'editor', 'thumbnail', 'page-attributes'),
     'rewrite' => array(
       'slug' => 'cases',
       'with_front' => false
@@ -43,6 +43,24 @@ add_filter('single_template', function($template) {
   }
   return $template;
 });
+
+function case_admin_get_snack_story($post_ID) {
+  return get_field('case_snack_or_story', $post_ID);
+}
+
+function case_admin_columns_head($defaults) {
+  $defaults['case_type'] = 'Case Type';
+  return $defaults;
+}
+
+function case_admin_columns_content($column_name, $post_ID) {
+  if ($column_name == 'case_type') {
+    echo case_admin_get_snack_story($post_ID);
+  }
+}
+
+add_filter('manage_posts_columns', 'case_admin_columns_head');
+add_action('manage_posts_custom_column', 'case_admin_columns_content', 10, 2);
 
 
 ?>

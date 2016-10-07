@@ -283,10 +283,27 @@ a {
 
 .preview-card {
 
+  &-tight {
+
+    margin-right: 2%;
+    width: 49%;
+
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+
+  }
+
   a {
 
     display: block;
     position: relative;
+    height: 350px;
+    background: {
+      size: cover;
+      position: center center;
+      repeat: no-repeat;
+    }
 
     &:after {
       z-index: 1;
@@ -1204,6 +1221,25 @@ footer {
 
   }
 
+  .preview-card {
+
+    &-tight {
+
+      margin-right: 2%;
+      width: 49%;
+
+      &:nth-child(2n) {
+        margin-right: 0px;
+      }
+
+    }
+
+    a {
+      height: 300px;
+    }
+
+  }
+
   footer {
 
     .footer-address {
@@ -1417,6 +1453,24 @@ footer {
   .home-preview {
     margin-left: -2rem;
     margin-right: -2rem;
+  }
+
+  .preview-card {
+
+    &-tight {
+
+      &,
+      &:nth-child(2n) {
+        margin: 0px;
+        width: 100%;
+      }
+
+    }
+
+    a {
+      height: 250px;
+    }
+
   }
 
   .case-preview:not(:last-child) {

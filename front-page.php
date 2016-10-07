@@ -50,7 +50,12 @@
         <h3 class="title-boxed">Case Stories</h3>
       </div>
       <?php
-      $cases_loop = new WP_Query(array('post_type' => 'case', 'posts_per_page' => 2));
+      $cases_loop = new WP_Query(array(
+        'post_type' => 'case',
+        'posts_per_page' => 2,
+        'meta_key' => 'case_snack_or_story',
+        'meta_value' => 'story'
+      ));
       $i = 0;
       while ($cases_loop->have_posts()) { $cases_loop->the_post();
       ?><div class="case-preview pure-u-sm-11-24">
@@ -58,7 +63,8 @@
         <a class="arrow-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
       </div><?php
       if ($i == 0) { echo '<div class="pure-u-sm-1-12"></div>'; }
-      $i++; wp_reset_query(); }
+      $i++; }
+      wp_reset_query();
       ?>
     </div>
   </div>

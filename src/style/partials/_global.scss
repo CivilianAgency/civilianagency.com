@@ -601,12 +601,40 @@ a {
 }
 
 .snacks {
+
+  position: relative;
   margin-top: 3.75rem;
+
+  .snacks-next {
+
+    z-index: 1;
+    position: absolute;
+    top: 176px;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    color: $white;
+    background: transparentize($yellow, 0.25);
+    -webkit-appearance: none;
+    font-size: 2rem;
+    line-height: 1;
+    border-radius: 4rem;
+    border: 0px;
+    outline: 0px;
+
+    &:hover {
+      cursor: pointer;
+      background: transparentize($yellow, 0.0);
+    }
+
+  }
+
 }
 
 .snacks-item {
 
   display: none;
+  position: relative;
 
   &.active {
     display: block;
@@ -631,11 +659,36 @@ a {
 
   }
 
-  &-content {
-    padding: 2.5rem;
-    width: 530px;
-    background: transparentize($red-orange, 0.1);
+  &-image {
 
+    z-index: 0;
+    position: absolute;
+    padding: 1.5rem;
+    width: 100%;
+    height: 400px;
+    background: {
+      size: cover;
+      position: center center;
+      repeat: no-repeat;
+    }
+
+    .title-boxed {
+      margin: 0px;
+      color: $yellow;
+      font-size: 0.875rem;
+      border-color: $yellow;
+      border-width: 0.125rem;
+    }
+
+  }
+
+  &-content {
+    position: relative;
+    transform: translate(1.5rem, 80px);
+    padding: 2.5rem;
+    width: 560px;
+    height: 440px;
+    background: transparentize($red-orange, 0.1);
   }
 
   p {
@@ -663,7 +716,7 @@ a {
 
 .snacks-nav {
 
-  margin-top: 2.5rem;
+  margin-top: 7.5rem;
   padding-bottom: 4rem;
   text-align: center;
 
@@ -1383,6 +1436,42 @@ footer {
 
   }
 
+  .snacks-nav {
+
+    .snacks-nav-line:before {
+      left: 0.75rem;
+      right: 0.75rem;
+      height: 0.1875rem;
+    }
+
+    .snacks-point {
+
+      &:not(:last-child) {
+        margin-right: 5rem;
+      }
+
+      .snacks-dot {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 1.5rem;
+        border-width: 0.1875rem;
+      }
+
+      .snacks-logo-wrap {
+
+        padding-top: 2.5rem;
+
+        img {
+          max-width: 5rem;
+          max-height: 2.5rem;
+        }
+
+      }
+
+    }
+
+  }
+
   footer {
 
     .footer-address {
@@ -1775,6 +1864,34 @@ footer {
 
     }
 
+  }
+
+  .snacks {
+
+    .snacks-next {
+      top: 76px;
+    }
+
+  }
+
+  .snacks-item {
+
+    .snacks-item-image {
+      position: static;
+      height: 200px;
+    }
+
+    &-content {
+      transform: none;
+      width: auto;
+      height: auto;
+      background: $red-orange;
+    }
+
+  }
+
+  .snacks-nav {
+    display: none;
   }
 
   .home-map {

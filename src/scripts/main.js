@@ -110,6 +110,15 @@ jQuery(document).ready(function($) {
     $('.google-map-wrap').removeClass('open');
   });
 
+  $('.snacks #snacks-next').click(function() {
+    var thisIndex = $('.snacks-nav .snacks-point').index($('.snacks-nav .snacks-point.active'));
+    if (thisIndex >= ($('.snacks-nav .snacks-point').length - 1)) {
+      $('.snacks-nav .snacks-point').eq(0).trigger('click');
+    } else {
+      $('.snacks-nav .snacks-point').eq(thisIndex + 1).trigger('click');
+    }
+  });
+
   $('.snacks .snacks-point').click(function() {
     var thisIndex = $('.snacks-nav .snacks-point').index($(this));
     var thisItem = $('.snacks .snacks-item').eq(thisIndex);

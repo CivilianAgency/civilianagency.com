@@ -60,8 +60,12 @@
         ));
       ?>
       <div class="snacks-main">
+        <button id="snacks-next" class="snacks-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
         <?php $i = 0; while ($cases_loop->have_posts()) { $cases_loop->the_post(); ?>
         <div class="snacks-item<?php if ($i == 0) { echo ' active'; } ?>">
+          <div class="snacks-item-image"<?php if (get_field('case_snack_image')) { echo ' style="background-image: url(\'' . get_field('case_snack_image')['url'] . '\');"'; } ?>>
+            <h3 class="title-boxed">CVLN Case Snacks</h3>
+          </div>
           <div class="snacks-item-content">
             <h2><?php the_title(); ?><?php if (get_field('case_snack_subtitle')) { echo ' <span class="subtitle">' . get_field('case_snack_subtitle') . '</span>'; } ?></h2>
             <div class="pure-g">

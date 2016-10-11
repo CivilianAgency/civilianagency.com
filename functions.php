@@ -42,4 +42,28 @@ if (function_exists('acf_add_options_page')) {
 
 }
 
+function instaItemOutput($imageObject = [], $isFiller = false, $isExtra = false) {
+  $content = '';
+  if ($isExtra) {
+    $content .= '<img src="' . $imageObject['image']['url'] . '">';
+  } else {
+    if ($isFiller) {
+      $instaItemClass = ' item-filler';
+    }
+    $content .= '<div class="insta-item' . $instaItemClass . '">';
+      $content .= '<div class="insta-item-img-wrap">';
+        $content .= '<div class="front">';
+          if ($isFiller) {
+            $content .= '<div class="image-filler"></div>';
+          } else {
+            $content .= '<img src="' . $imageObject['image']['url'] . '">';
+          }
+        $content .= '</div>';
+        $content.= '<div class="back"></div>';
+      $content .= '</div>';
+    $content .= '</div>';
+  }
+  return $content;
+}
+
 ?>

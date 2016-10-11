@@ -624,7 +624,7 @@ a {
 
     &:hover {
       cursor: pointer;
-      background: transparentize($yellow, 0.0);
+      background: transparentize($yellow, 0);
     }
 
   }
@@ -791,6 +791,101 @@ a {
       }
 
     }
+  }
+
+}
+
+.instagram-grid {
+
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  .insta-extra-wrap {
+    display: none;
+  }
+
+  .insta-item {
+
+    position: absolute;
+    top: 50%;
+    width: 20%;
+    height: 50%;
+    overflow: hidden;
+    perspective: 1000px;
+
+    &:nth-child(-n+5) {
+      top: 0%;
+    }
+
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}),
+      &:nth-child(#{5 + $i}) {
+        $x: percentage(($i - 1) / 5);
+        left: #{$x};
+      }
+    }
+
+    .insta-item-img-wrap {
+      position: relative;
+      height: 100%;
+      transition: 600ms;
+      transform-style: preserve-3d;
+    }
+
+    img,
+    .image-filler {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+      min-width: 100%;
+      max-width: 150%;
+      height: auto;
+      min-height: 100%;
+      max-height: 150%;
+    }
+
+    .front,
+    .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .front {
+      transform: rotateY(0deg);
+    }
+
+    .back {
+      transform: rotateY(180deg);
+    }
+
+    &.flipped {
+
+      .insta-item-img-wrap {
+        transform: rotateY(180deg);
+      }
+
+    }
+
+    &.item-filler {
+
+      &:nth-of-type(even) .image-filler {
+        background: $turquoise-dark;
+      }
+
+      &:nth-of-type(odd) .image-filler {
+        background: $red;
+      }
+
+    }
+
   }
 
 }

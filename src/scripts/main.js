@@ -128,6 +128,42 @@ jQuery(document).ready(function($) {
     thisItem.addClass('active');
   });
 
+  $.fn.random = function() {
+    return this.eq(Math.floor(Math.random() * this.length));
+  };
+
+  function instaFlip() {
+    var newImg = '<img src="' + $('.insta-extra-wrap img').first().attr('src') + '">';
+    $('.insta-extra-wrap img').first().remove();
+    var gridItemToBeFlipped = $('.instagram-grid .insta-item').random();
+    var flipSideChangeTo = '.back';
+    var flipSideChangeFrom = '.front';
+    var oldImageSrc, isFiller;
+    if (gridItemToBeFlipped.hasClass('flipped')) {
+      flipSideChangeTo = '.front';
+      flipSideChangeFrom = '.back';
+    }
+    gridItemToBeFlipped.find(flipSideChangeTo).html(newImg);
+    if (gridItemToBeFlipped.hasClass('item-filler')) {
+      isFiller = true;
+      gridItemToBeFlipped.removeClass('item-filler');
+    } else {
+      oldImageSrc = gridItemToBeFlipped.find(flipSideChangeFrom).find('img').attr('src');
+    }
+    gridItemToBeFlipped.find(flipSideChangeFrom).html();
+    setTimeout(function() {
+      gridItemToBeFlipped.toggleClass('flipped');
+      if (!isFiller) {
+        $('.insta-extra-wrap').append('<img src="' + oldImageSrc + '">');
+      }
+      instaFlip();
+    }, 3000);
+  }
+
+  if ($('body').hasClass('page-template-culture')) {
+    instaFlip();
+  }
+
 });
 
 function poiClick(marker, i, map, content) {

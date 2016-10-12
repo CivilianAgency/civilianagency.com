@@ -98,6 +98,10 @@ header {
   }
   border-bottom: 0.25rem solid $red-orange;
 
+  .page-template-culture & {
+    border-color: $red;
+  }
+
   &.header-covered:after {
     content: ' ';
     z-index: 1;
@@ -119,6 +123,7 @@ header {
   }
 
   .title-boxed {
+
     margin: 0px;
     padding: 0.375em 0.5em;
     transform: translate(0px, 50%);
@@ -126,6 +131,12 @@ header {
     background: $white;
     border-color: $red-orange;
     font-size: 1.75rem;
+
+    .page-template-culture & {
+      color: $red;
+      border-color: $red;
+    }
+
   }
 
 }
@@ -237,12 +248,39 @@ a {
 }
 
 .title-boxed-wrap {
+
   z-index: 1;
   position: relative;
   text-align: center;
+
+  &-line {
+
+    margin-bottom: 4rem;
+    text-align: left;
+
+    &:after {
+
+      content: ' ';
+      z-index: 0;
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      right: 0px;
+      height: 0.125rem;
+      background: $red-orange;
+
+      .page-template-culture & {
+        background: $red;
+      }
+
+    }
+
+  }
+
 }
 
 .title-boxed {
+
   display: inline-block;
   padding: 0.45rem;
   margin-bottom: 2rem;
@@ -251,6 +289,25 @@ a {
   letter-spacing: 0.5px;
   font-weight: bold;
   text-transform: uppercase;
+
+  &-line {
+
+    position: relative;
+    z-index: 1;
+    margin: 0px;
+    color: $red-orange;
+    background: $white;
+    border-color: $red-orange;
+    border-width: 0.125rem;
+    font-size: 0.875rem;
+
+    .page-template-culture & {
+      color: $red;
+      border-color: $red;
+    }
+
+  }
+
 }
 
 .home-header {
@@ -526,9 +583,19 @@ a {
   }
 
   h2 {
+
     color: $red-orange;
+
+    .page-template-culture & {
+      color: $red;
+    }
+
   }
 
+}
+
+.content-sub {
+  padding-bottom: 4rem;
 }
 
 .home-cases {
@@ -844,10 +911,10 @@ a {
       transform: translate(-50%, -50%);
       width: auto;
       min-width: 100%;
-      max-width: 150%;
+      max-width: 200%;
       height: auto;
       min-height: 100%;
-      max-height: 150%;
+      max-height: 200%;
     }
 
     .front,
@@ -886,6 +953,69 @@ a {
 
     }
 
+  }
+
+}
+
+.culture-believe {
+
+  h3 {
+
+    position: relative;
+    margin: 0px;
+    color: $turquoise-darkest;
+    font-size: 2.25rem;
+    line-height: 1.35;
+
+    &:before {
+      content: url('../images/guy-red.svg');
+      position: absolute;
+      left: -2.5rem;
+      top: 0.25rem;
+      width: 1.5rem;
+      height: 2.5rem;
+    }
+
+  }
+
+  p {
+
+    margin: 0px;
+    color: $turquoise-darkest;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+
+    &:not(:last-child) {
+      padding-bottom: 2.25rem;
+      margin-bottom: 2.25rem;
+      border-bottom: 0.125rem solid $red-orange;
+
+      .page-template-culture & {
+        border-color: $red;
+      }
+
+    }
+
+  }
+
+}
+
+.culture-jams {
+
+  img {
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  ul {
+    list-style-type: none;
+    column-count: 2;
+    color: $turquoise-darkest;
+    font-weight: bold;
+    line-height: 1.5;
   }
 
 }

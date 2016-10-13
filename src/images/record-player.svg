@@ -4,94 +4,94 @@
 	 viewBox="0 0 783.6 702" style="enable-background:new 0 0 783.6 702;" xml:space="preserve">
 <style type="text/css">
 
-		.st0{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.0496,0,12.0496,0,12.0496;}
+		.st0-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.0496,0,12.0496,0,12.0496;}
 
-		.st1{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,11.9403,0,11.9403,0,11.9403;}
+		.st1-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,11.9403,0,11.9403,0,11.9403;}
 
-		.st2{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,11.9406,0,11.9406,0,11.9406;}
+		.st2-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,11.9406,0,11.9406,0,11.9406;}
 
-		.st3{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,11.8905,0,11.8905,0,11.8905;}
+		.st3-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,11.8905,0,11.8905,0,11.8905;}
 
-		.st4{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.0798,0,12.0798,0,12.0798;}
+		.st4-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.0798,0,12.0798,0,12.0798;}
 
-		.st5{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.1212,0,12.1212,0,12.1212;}
+		.st5-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.1212,0,12.1212,0,12.1212;}
 
-		.st6{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.0702,0,12.0702,0,12.0702;}
+		.st6-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.0702,0,12.0702,0,12.0702;}
 
-		.st7{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.0226,0,12.0226,0,12.0226;}
+		.st7-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.0226,0,12.0226,0,12.0226;}
 
-		.st8{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,11.7989,0,11.7989,0,11.7989;}
+		.st8-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,11.7989,0,11.7989,0,11.7989;}
 
-		.st9{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.1805,0,12.1805,0,12.1805;}
+		.st9-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.1805,0,12.1805,0,12.1805;}
 
-		.st10{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.037,0,12.037,0,12.037;}
-	.st11{fill:none;stroke:#CE2030;stroke-width:8;stroke-miterlimit:10;}
-	.st12{fill:none;stroke:#54AFC3;stroke-width:8;stroke-miterlimit:10;}
-	.st13{fill:none;stroke:#EEBA1D;stroke-width:8;stroke-miterlimit:10;}
-	.st14{fill:none;stroke:#CE2031;stroke-width:8;stroke-miterlimit:10;}
-	.st15{fill:#CE2031;stroke:#CE2031;stroke-width:8;stroke-miterlimit:10;}
-	.st16{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
-	.st17{fill:#CE2031;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
-	.st18{fill:#CE2031;}
-	.st19{fill:none;stroke:#CE2031;stroke-width:2;stroke-miterlimit:10;}
+		.st1-recordplayer0{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.037,0,12.037,0,12.037;}
+	.st1-recordplayer1{fill:none;stroke:#CE2030;stroke-width:8;stroke-miterlimit:10;}
+	.st1-recordplayer2{fill:none;stroke:#54AFC3;stroke-width:8;stroke-miterlimit:10;}
+	.st1-recordplayer3{fill:none;stroke:#EEBA1D;stroke-width:8;stroke-miterlimit:10;}
+	.st1-recordplayer4{fill:none;stroke:#CE2031;stroke-width:8;stroke-miterlimit:10;}
+	.st1-recordplayer5{fill:#CE2031;stroke:#CE2031;stroke-width:8;stroke-miterlimit:10;}
+	.st1-recordplayer6{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
+	.st1-recordplayer7{fill:#CE2031;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st1-recordplayer8{fill:#CE2031;}
+	.st1-recordplayer9{fill:none;stroke:#CE2031;stroke-width:2;stroke-miterlimit:10;}
 </style>
 <g id="Record" class="record">
 	<g id="Dots" class="dots">
 		<g>
-			<circle class="st0" cx="351" cy="351" r="333.7"/>
+			<circle class="st0-recordplayer" cx="351" cy="351" r="333.7"/>
 		</g>
 		<g>
-			<circle class="st1" cx="351" cy="351" r="319.2"/>
+			<circle class="st1-recordplayer" cx="351" cy="351" r="319.2"/>
 		</g>
 		<g>
-			<circle class="st2" cx="351" cy="351" r="290.8"/>
+			<circle class="st2-recordplayer" cx="351" cy="351" r="290.8"/>
 		</g>
 		<g>
-			<circle class="st3" cx="351" cy="351" r="278.2"/>
+			<circle class="st3-recordplayer" cx="351" cy="351" r="278.2"/>
 		</g>
 		<g>
-			<circle class="st4" cx="351" cy="351" r="248"/>
+			<circle class="st4-recordplayer" cx="351" cy="351" r="248"/>
 		</g>
 		<g>
-			<circle class="st5" cx="351" cy="351" r="237.3"/>
+			<circle class="st5-recordplayer" cx="351" cy="351" r="237.3"/>
 		</g>
 		<g>
-			<circle class="st6" cx="351" cy="351" r="207.5"/>
+			<circle class="st6-recordplayer" cx="351" cy="351" r="207.5"/>
 		</g>
 		<g>
-			<circle class="st7" cx="351" cy="351" r="195.2"/>
+			<circle class="st7-recordplayer" cx="351" cy="351" r="195.2"/>
 		</g>
 		<g>
-			<circle class="st8" cx="351" cy="351" r="169"/>
+			<circle class="st8-recordplayer" cx="351" cy="351" r="169"/>
 		</g>
 		<g>
-			<circle class="st9" cx="351" cy="351" r="157"/>
+			<circle class="st9-recordplayer" cx="351" cy="351" r="157"/>
 		</g>
 		<g>
-			<circle class="st10" cx="351" cy="351" r="143.7"/>
+			<circle class="st1-recordplayer0" cx="351" cy="351" r="143.7"/>
 		</g>
 	</g>
 	<g id="Circles" class="circles">
-		<circle class="st11" cx="351" cy="351" r="347"/>
-		<circle class="st12" cx="351" cy="351" r="305.5"/>
-		<circle class="st13" cx="351" cy="351" r="263.6"/>
-		<circle class="st14" cx="351" cy="351" r="222.1"/>
-		<circle class="st12" cx="351" cy="351" r="181.7"/>
-		<circle class="st15" cx="351" cy="351" r="128.5"/>
-		<circle class="st16" cx="351" cy="351" r="7"/>
+		<circle class="st1-recordplayer1" cx="351" cy="351" r="347"/>
+		<circle class="st1-recordplayer2" cx="351" cy="351" r="305.5"/>
+		<circle class="st1-recordplayer3" cx="351" cy="351" r="263.6"/>
+		<circle class="st1-recordplayer4" cx="351" cy="351" r="222.1"/>
+		<circle class="st1-recordplayer2" cx="351" cy="351" r="181.7"/>
+		<circle class="st1-recordplayer5" cx="351" cy="351" r="128.5"/>
+		<circle class="st1-recordplayer6" cx="351" cy="351" r="7"/>
 	</g>
 </g>
 <g id="Arm" class="arm">
-	<circle class="st15" cx="746.4" cy="45.5" r="33.1"/>
-	<circle class="st17" cx="746.4" cy="45.5" r="31"/>
+	<circle class="st1-recordplayer5" cx="746.4" cy="45.5" r="33.1"/>
+	<circle class="st1-recordplayer7" cx="746.4" cy="45.5" r="31"/>
 	<g>
-		<line class="st14" x1="737.2" y1="77.5" x2="637.4" y2="449.7"/>
+		<line class="st1-recordplayer4" x1="737.2" y1="77.5" x2="637.4" y2="449.7"/>
 
-			<rect x="727.7" y="79.2" transform="matrix(0.9659 0.2588 -0.2588 0.9659 47.0767 -187.368)" class="st18" width="14.9" height="11.8"/>
+			<rect x="727.7" y="79.2" transform="matrix(0.9659 0.2588 -0.2588 0.9659 47.0767 -187.368)" class="st1-recordplayer8" width="14.9" height="11.8"/>
 	</g>
 	<g id="Layer_5">
-		<rect x="630.4" y="441" class="st15" width="17.7" height="42.7"/>
-		<line class="st19" x1="627.6" y1="451" x2="601.8" y2="451"/>
+		<rect x="630.4" y="441" class="st1-recordplayer5" width="17.7" height="42.7"/>
+		<line class="st1-recordplayer9" x1="627.6" y1="451" x2="601.8" y2="451"/>
 	</g>
 </g>
 </svg>

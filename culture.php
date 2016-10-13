@@ -83,9 +83,10 @@
       <div class="pure-u-lg-1-1">
         <p>Artists you'll hear playing in our office.</p>
       </div>
-      <div class="pure-u-md-1-3">
+      <div class="pure-u-md-1-6"></div>
+      <div class="pure-u-md-1-4">
         <?php echo file_get_contents(get_template_directory_uri() . '/dist/images/record-player.svg'); ?>
-      </div><div class="pure-u-md-1-12"></div><div class="pure-u-md-1-2">
+      </div><div class="pure-u-md-1-12"></div><div class="pure-u-md-5-12">
         <ul>
           <?php while (have_rows('office_bands')) {
             the_row();
@@ -115,6 +116,29 @@
       <div class="pure-u-lg-1-1">
         <div class="title-boxed-wrap title-boxed-wrap-line">
           <h2 class="title-boxed title-boxed-line">Local Spots We Love</h2>
+        </div>
+        <p>Team meeting? Birthday bash? Just ‘cuz?<br>These are our favorite happy hour hangouts.</p>
+      </div>
+    </div>
+    <div class="pure-u-md-1-12"></div>
+    <div class="pure-u-md-5-6">
+      <?php echo file_get_contents(get_template_directory_uri() . '/dist/images/chicago_flag.svg'); ?>
+      <div class="star-titles">
+        <div class="star-title star-title-1">
+          <div class="star-percentage">35%</div>
+          <div class="star-name">Howells &amp; Hood</div>
+        </div>
+        <div class="star-title star-title-2">
+          <div class="star-percentage">30%</div>
+          <div class="star-name">Three Dots and a Dash</div>
+        </div>
+        <div class="star-title star-title-3">
+          <div class="star-percentage">20%</div>
+          <div class="star-name">Snicker's</div>
+        </div>
+        <div class="star-title star-title-4">
+          <div class="star-percentage">15%</div>
+          <div class="star-name">Brehon Pub</div>
         </div>
       </div>
     </div>

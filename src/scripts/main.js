@@ -2,6 +2,7 @@ var caseWaypoints = [];
 var map, infoBubble;
 var mapCenter = new google.maps.LatLng(41.890687, -87.624778);
 var slideSpeed = 200;
+var transitionSpeed = 600;
 
 jQuery(document).ready(function($) {
 
@@ -64,6 +65,12 @@ jQuery(document).ready(function($) {
     }
   }
 
+  $('.title-boxed-wrap-line').each(function() {
+    $(this).waypoint(function(direction) {
+      $(this.element).addClass('active');
+    }, { offset: '65%' });
+  });
+
   if ($('body').hasClass('single-case')) {
     $('.title-boxed-wrap, .timeline-point, .timeline-circle, .timeline-point-highlight').each(function() {
       $(this).waypoint(function(direction) {
@@ -78,6 +85,27 @@ jQuery(document).ready(function($) {
         }
       }, { offset: '80%' });
     });
+  }
+
+  if ($('body').hasClass('page-template-culture')) {
+    $('.culture-local').waypoint(function(direction) {
+      if (direction == 'down') {
+        $('.st3-chicagoflag').addClass('moved');
+        $('.star-title-1').addClass('active');
+        setTimeout(function() {
+          $('.st4-chicagoflag').addClass('moved');
+          $('.star-title-2').addClass('active');
+          setTimeout(function() {
+            $('.st5-chicagoflag').addClass('moved');
+            $('.star-title-3').addClass('active');
+            setTimeout(function() {
+              $('.st6-chicagoflag').addClass('moved');
+              $('.star-title-4').addClass('active');
+            }, transitionSpeed);
+          }, transitionSpeed);
+        }, transitionSpeed);
+      }
+    }, { offset: '50%' });
   }
 
   $('.main-menu-toggle').click(function() {

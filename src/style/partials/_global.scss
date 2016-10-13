@@ -603,7 +603,16 @@ a {
 
   padding-bottom: 4rem;
 
+  &-with-copy {
+
+    .title-boxed-wrap {
+      margin-bottom: 3rem;
+    }
+
+  }
+
   p {
+    margin-bottom: 3rem;
     font-size: 1.125rem;
     line-height: 1.3;
   }
@@ -1045,9 +1054,8 @@ a {
 
 .culture-local {
 
-  svg,
-  .star-titles {
-    margin-top: -3rem;
+  svg {
+    margin-top: -6rem;
   }
 
   svg {
@@ -1078,6 +1086,7 @@ a {
   }
 
   .star-titles {
+    margin-top: -3rem;
     text-align: center;
   }
 

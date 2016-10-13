@@ -105,19 +105,20 @@
         <div class="title-boxed-wrap title-boxed-wrap-line">
           <h2 class="title-boxed title-boxed-line">Breakfast of Champions</h2>
         </div>
+        <p>We wait the HOLE week for Bagel Fridays.<br>Here's how our dozens get doled out.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="content-sub culture-local">
+<section class="content-sub content-sub-with-copy culture-local">
   <div class="grid-wrapper">
     <div class="pure-g">
       <div class="pure-u-lg-1-1">
         <div class="title-boxed-wrap title-boxed-wrap-line">
           <h2 class="title-boxed title-boxed-line">Local Spots We Love</h2>
         </div>
-        <p>Team meeting? Birthday bash? Just ‘cuz?<br>These are our favorite happy hour hangouts.</p>
+        <p>Team meeting? Birthday bash? Just 'cuz?<br>These are our favorite happy hour hangouts.</p>
       </div>
     </div>
     <div class="pure-u-md-1-12"></div>

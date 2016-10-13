@@ -1003,16 +1003,27 @@ a {
 
 .culture-jams {
 
-  img {
-    animation-name: spin;
+  .record {
+    animation-name: recordspin;
     animation-duration: 10000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    transform-origin: 50% 50%;
+  }
+
+  .arm {
+    animation-name: armmove;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 79.58% 7.74%;
   }
 
   ul {
     list-style-type: none;
     column-count: 2;
+    padding: 0px;
+    margin: 0px;
     color: $turquoise-darkest;
     font-weight: bold;
     line-height: 1.5;

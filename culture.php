@@ -83,11 +83,9 @@
       <div class="pure-u-lg-1-1">
         <p>Artists you'll hear playing in our office.</p>
       </div>
-      <div class="pure-u-md-5-12">
-        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/record.svg">
-        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/record-arm.svg">
-      </div>
-      <div class="pure-u-md-7-12">
+      <div class="pure-u-md-1-3">
+        <?php echo file_get_contents(get_template_directory_uri() . '/dist/images/record-player.svg'); ?>
+      </div><div class="pure-u-md-1-12"></div><div class="pure-u-md-1-2">
         <ul>
           <?php while (have_rows('office_bands')) {
             the_row();

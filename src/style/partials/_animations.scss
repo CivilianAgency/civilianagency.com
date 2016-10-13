@@ -1,4 +1,4 @@
-@keyframes spin {
+@keyframes recordspin {
 
   from {
     transform: rotate(0deg);
@@ -6,6 +6,22 @@
 
   to {
     transform: rotate(360deg);
+  }
+
+}
+
+@keyframes armmove {
+
+  0%, 5% {
+    transform: rotate(0deg);
+  }
+
+  95% {
+    transform: rotate(18deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
   }
 
 }

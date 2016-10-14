@@ -1052,6 +1052,26 @@ a {
 
 }
 
+.culture-breakfast {
+
+  .bagel-titles {
+    text-align: center;
+  }
+
+  .bagel-title {
+
+    color: $red;
+    font-size: 1.25rem;
+    line-height: 1.2;
+
+    .bagel-percentage {
+      font-weight: bold;
+    }
+
+  }
+
+}
+
 .culture-local {
 
   svg {
@@ -1108,7 +1128,6 @@ a {
     }
 
   }
-
 
 }
 
@@ -2183,6 +2202,64 @@ footer {
 
   }
 
+  .culture-believe {
+
+    h3 {
+
+      margin-bottom: 2.25rem;
+      font-size: 1.5rem;
+
+      &:before {
+        left: -1.5rem;
+        width: 0.9rem;
+        height: 1.5rem;
+      }
+
+    }
+
+  }
+
+  .culture-jams {
+
+    svg {
+      display: block;
+      margin: 0px auto 2rem;
+      max-width: 250px;
+    }
+
+  }
+
+  .culture-breakfast {
+
+    .bagel-title {
+      font-size: 1rem;
+    }
+
+  }
+
+  .culture-local {
+
+    svg {
+      margin-top: -2rem;
+    }
+
+    .star-titles {
+      margin-top: 0px;
+    }
+
+    .star-title {
+
+      width: 40%;
+      font-size: 1rem;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+    }
+
+  }
+
   .snacks {
 
     .snacks-next {
@@ -2284,6 +2361,16 @@ footer {
 
     .case-header-content {
       padding: 4rem 1rem;
+    }
+
+  }
+
+  .culture-local {
+
+    .star-title {
+      display: block;
+      margin: 0px;
+      width: 100%;
     }
 
   }

@@ -83,10 +83,10 @@
       <div class="pure-u-lg-1-1">
         <p>Artists you'll hear playing in our office.</p>
       </div>
-      <div class="pure-u-md-1-6"></div>
-      <div class="pure-u-md-1-4">
+      <div class="pure-u-lg-1-6"></div>
+      <div class="pure-u-lg-1-4 pure-u-md-1-3">
         <?php echo file_get_contents(get_template_directory_uri() . '/dist/images/record-player.svg'); ?>
-      </div><div class="pure-u-md-1-12"></div><div class="pure-u-md-5-12">
+      </div><div class="pure-u-md-1-12"></div><div class="pure-u-lg-5-12 pure-u-md-7-12">
         <ul>
           <?php while (have_rows('office_bands')) {
             the_row();
@@ -106,6 +106,24 @@
           <h2 class="title-boxed title-boxed-line">Breakfast of Champions</h2>
         </div>
         <p>We wait the HOLE week for Bagel Fridays.<br>Here's how our dozens get doled out.</p>
+        <div class="bagel-titles">
+          <div class="bagel-title bagel-title-1">
+            <div class="bagel-percentage">45%</div>
+            <div class="bagel-name">Honey Wheat</div>
+          </div>
+          <div class="bagel-title bagel-title-2">
+            <div class="bagel-percentage">25%</div>
+            <div class="bagel-name">Everything</div>
+          </div>
+          <div class="bagel-title bagel-title-3">
+            <div class="bagel-percentage">20%</div>
+            <div class="bagel-name">Blueberry</div>
+          </div>
+          <div class="bagel-title bagel-title-4">
+            <div class="bagel-percentage">10%</div>
+            <div class="bagel-name">Sesame</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -121,8 +139,8 @@
         <p>Team meeting? Birthday bash? Just 'cuz?<br>These are our favorite happy hour hangouts.</p>
       </div>
     </div>
-    <div class="pure-u-md-1-12"></div>
-    <div class="pure-u-md-5-6">
+    <div class="pure-u-lg-1-12"></div>
+    <div class="pure-u-lg-5-6">
       <?php echo file_get_contents(get_template_directory_uri() . '/dist/images/chicago_flag.svg'); ?>
       <div class="star-titles">
         <div class="star-title star-title-1">

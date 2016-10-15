@@ -3,6 +3,7 @@ var map, infoBubble;
 var mapCenter = new google.maps.LatLng(41.890687, -87.624778);
 var slideSpeed = 200;
 var transitionSpeed = 600;
+var maxMobileSize = 767;
 
 jQuery(document).ready(function($) {
 
@@ -151,9 +152,23 @@ jQuery(document).ready(function($) {
     var thisIndex = $('.snacks-nav .snacks-point').index($(this));
     var thisItem = $('.snacks .snacks-item').eq(thisIndex);
     $(this).siblings().removeClass('active');
-    thisItem.siblings().removeClass('active');
+    thisItem.siblings('.snacks-item').each(function() {
+      if ($(window).width() <= maxMobileSize) {
+        $(this).attr('style', '').removeClass('active');
+      } else {
+        $(this).fadeOut(transitionSpeed / 2, function() {
+          $(this).removeClass('active');
+        });
+      }
+    });
     $(this).addClass('active');
-    thisItem.addClass('active');
+    if ($(window).width() <= maxMobileSize) {
+      thisItem.addClass('active');
+    } else {
+      thisItem.fadeIn(transitionSpeed / 2, function() {
+        $(this).addClass('active');
+      });
+    }
   });
 
   $.fn.random = function() {

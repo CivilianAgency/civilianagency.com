@@ -717,15 +717,22 @@ a {
 
   }
 
+  &-main {
+    height: 440px;
+  }
+
 }
 
 .snacks-item {
 
+  position: absolute;
   display: none;
-  position: relative;
+  width: 100%;
+  opacity: 0;
+  transition: $transition;
 
   &.active {
-    display: block;
+    opacity: 1;
   }
 
   &,
@@ -1085,19 +1092,19 @@ a {
     transition: $transition;
 
     &.st3-chicagoflag.moved {
-      transform: translate(0px, -35%);
+      transform: translate(0px, -52.5%);
     }
 
     &.st4-chicagoflag.moved {
-      transform: translate(0px, -30%);
+      transform: translate(0px, -45%);
     }
 
     &.st5-chicagoflag.moved {
-      transform: translate(0px, -20%);
+      transform: translate(0px, -30%);
     }
 
     &.st6-chicagoflag.moved {
-      transform: translate(0px, -15%);
+      transform: translate(0px, -22.5%);
     }
 
   }
@@ -2046,6 +2053,21 @@ footer {
 
   }
 
+  .title-boxed-wrap {
+
+    &-line {
+
+      text-align: center;
+
+      &:after {
+        content: '';
+        display: none;
+      }
+
+    }
+
+  }
+
   .case-preview:not(:last-child) {
     margin-bottom: 1.5rem;
   }
@@ -2266,9 +2288,21 @@ footer {
       top: 76px;
     }
 
+    &-main {
+      height: auto;
+    }
+
   }
 
   .snacks-item {
+
+    position: relative;
+    display: none;
+    opacity: 1;
+
+    &.active {
+      display: block;
+    }
 
     .snacks-item-image {
       position: static;

@@ -102,6 +102,10 @@ header {
     border-color: $red;
   }
 
+  .page-template-work & {
+    background-position: center -150px;
+  }
+
   &.header-covered:after {
     content: ' ';
     z-index: 1;
@@ -1558,6 +1562,14 @@ footer {
     height: 47rem;
   }
 
+  .page-header {
+
+    .page-template-work & {
+      background-position: center -50px;
+    }
+
+  }
+
   .case-header .case-header-content {
     padding: 24rem 0px;
   }
@@ -1600,6 +1612,14 @@ footer {
 
   .home-header {
     height: 30rem;
+  }
+
+  .page-header {
+
+    .page-template-work & {
+      background-position: center center;
+    }
+
   }
 
   .case-header .case-header-content {

@@ -106,22 +106,25 @@
           <h2 class="title-boxed title-boxed-line">Breakfast of Champions</h2>
         </div>
         <p>We wait the HOLE week for Bagel Fridays.<br>Here's how our dozens get doled out.</p>
-        <div class="bagel-titles">
-          <div class="bagel-title bagel-title-1">
-            <div class="bagel-percentage">45%</div>
-            <div class="bagel-name">Honey Wheat</div>
-          </div>
-          <div class="bagel-title bagel-title-2">
-            <div class="bagel-percentage">25%</div>
-            <div class="bagel-name">Everything</div>
-          </div>
-          <div class="bagel-title bagel-title-3">
-            <div class="bagel-percentage">20%</div>
-            <div class="bagel-name">Blueberry</div>
-          </div>
-          <div class="bagel-title bagel-title-4">
-            <div class="bagel-percentage">10%</div>
-            <div class="bagel-name">Sesame</div>
+        <div class="bagel-wrap">
+          <?php echo file_get_contents(get_template_directory_uri() . '/dist/images/bagel.svg'); ?>
+          <div class="bagel-titles">
+            <div class="bagel-title bagel-title-1">
+              <div class="bagel-percentage">45%</div>
+              <div class="bagel-name">Honey Wheat</div>
+            </div>
+            <div class="bagel-title bagel-title-2">
+              <div class="bagel-percentage">25%</div>
+              <div class="bagel-name">Everything</div>
+            </div>
+            <div class="bagel-title bagel-title-3">
+              <div class="bagel-percentage">20%</div>
+              <div class="bagel-name">Blueberry</div>
+            </div>
+            <div class="bagel-title bagel-title-4">
+              <div class="bagel-percentage">10%</div>
+              <div class="bagel-name">Sesame</div>
+            </div>
           </div>
         </div>
       </div>

@@ -19,3 +19,7 @@ linters:
     enabled: false
   SelectorDepth:
     enabled: false
+  IdSelector:
+    enabled: false
+  UnnecessaryParentReference:
+    enabled: false

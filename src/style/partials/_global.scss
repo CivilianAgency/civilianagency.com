@@ -818,11 +818,15 @@ a {
       transform: translate(0px, -50%);
       color: $turquoise-darkest;
       background: none;
-      text-align: center;
       font-weight: bold;
-      border: 0px;
-      outline: 0px;
+      text-align: center;
+      text-decoration: none;
       cursor: pointer;
+      outline: 0px;
+
+      .button-title {
+        text-decoration: none;
+      }
 
       img {
         display: block;
@@ -1927,6 +1931,30 @@ footer {
 
   }
 
+  .cares-main {
+    height: 500px;
+  }
+
+  .cares-item {
+
+    .cares-item-content {
+      width: 530px;
+      height: 415px;
+    }
+
+    .cares-item-video-play {
+
+      right: 3rem;
+      font-size: 0.75rem;
+
+      img {
+        width: 4rem;
+      }
+
+    }
+
+  }
+
   footer {
 
     .footer-address {
@@ -2394,7 +2422,8 @@ footer {
 
   }
 
-  .snacks {
+  .snacks,
+  .cares {
 
     .snacks-next {
       top: 76px;
@@ -2406,7 +2435,8 @@ footer {
 
   }
 
-  .snacks-item {
+  .snacks-item,
+  .cares-item {
 
     position: relative;
     display: none;
@@ -2416,16 +2446,34 @@ footer {
       display: block;
     }
 
-    .snacks-item-image {
-      position: static;
+    &-image {
+      position: relative;
       height: 200px;
     }
 
-    &-content {
+    .snacks-item-content,
+    .cares-item-content {
       transform: none;
       width: auto;
       height: auto;
       background: $red-orange;
+    }
+
+    .cares-item-content {
+      background: $red;
+    }
+
+    .cares-item-video-play {
+
+      left: 50%;
+      right: auto;
+      transform: translate(-50%, -50%);
+      font-size: 0.75rem;
+
+      img {
+        width: 3rem;
+      }
+
     }
 
   }

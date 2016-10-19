@@ -207,6 +207,16 @@ jQuery(document).ready(function($) {
     instaFlip();
   }
 
+  $('.colorbox').colorbox({
+    iframe: true,
+    innerWidth: 800,
+    innerHeight: 450,
+    maxWidth: '90%',
+    maxHeight: '60%',
+    className: 'colorbox-window',
+    close: '&times;'
+  });
+
 });
 
 function poiClick(marker, i, map, content) {

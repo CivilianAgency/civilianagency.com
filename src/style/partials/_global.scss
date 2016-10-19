@@ -172,6 +172,24 @@ a {
       transform: translate(0px, -50%);
     }
 
+    &-short {
+
+      display: inline-block;
+      padding-right: 40px;
+      text-decoration: none;
+
+      .page-template-culture .content-main p & {
+
+        color: $red;
+        font-weight: normal;
+
+        &:after {
+          background-image: url('../images/chevron-with-circle-right-red.svg');
+        }
+      }
+
+    }
+
   }
 
 }

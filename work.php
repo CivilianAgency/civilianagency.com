@@ -80,7 +80,6 @@
               </div>
             </div>
           </div>
-
         </div>
         <?php $i++; } wp_reset_query(); ?>
       </div>

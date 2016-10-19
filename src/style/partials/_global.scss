@@ -692,10 +692,15 @@ a {
 
 }
 
-.snacks {
+.snacks,
+.cares {
 
   position: relative;
   margin-top: 3.75rem;
+
+  &.cares {
+    margin-top: 0px;
+  }
 
   .snacks-next {
 
@@ -727,7 +732,8 @@ a {
 
 }
 
-.snacks-item {
+.snacks-item,
+.cares-item {
 
   position: absolute;
   display: none;
@@ -796,7 +802,40 @@ a {
     line-height: 1.5;
   }
 
-  .ways-we-connected {
+  .cares-item {
+
+    &-content {
+      width: 630px;
+      height: 370px;
+      background: transparentize($red, 0.1);
+    }
+
+    &-video-play {
+
+      position: absolute;
+      top: 50%;
+      right: 5.5rem;
+      transform: translate(0px, -50%);
+      color: $turquoise-darkest;
+      background: none;
+      text-align: center;
+      font-weight: bold;
+      border: 0px;
+      outline: 0px;
+      cursor: pointer;
+
+      img {
+        display: block;
+        margin: 0px auto 0.5rem;
+        width: 5rem;
+      }
+
+    }
+
+  }
+
+  .ways-we-connected,
+  .how-we-helped {
 
     p {
       margin: 0px 0px 0.5rem;

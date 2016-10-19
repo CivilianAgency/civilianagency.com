@@ -175,6 +175,31 @@
           <h2 class="title-boxed title-boxed-line">CVLN Cares</h2>
         </div>
       </div>
+      <div class="cares pure-u-lg-1-1">
+        <div class="cares-main">
+          <?php $i = 0; while (have_rows('care')) { the_row(); ?>
+          <div class="cares-item<?php if ($i == 0) { echo ' active'; } ?>"<?php if ($i == 0) { echo ' style="display: block;"'; } ?>">
+            <div class="cares-item-image"<?php if (get_sub_field('care_image')) { echo ' style="background-image: url(\'' . get_sub_field('care_image')['url'] . '\');"'; } ?>>
+              <button class="cares-item-video-play"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/play-button.svg"><div>Watch the Video</div></button>
+            </div>
+            <div class="cares-item-content">
+              <h2><?php echo get_sub_field('care_title'); ?><?php if (get_sub_field('care_subtitle')) { echo ' <span class="subtitle">' . get_sub_field('care_subtitle') . '</span>'; } ?></h2>
+              <div class="pure-g">
+                <div class="how-we-helped pure-u-md-1-3">
+                  <h3>How We Helped</h3>
+                  <?php while (have_rows('how_we_helped')) {
+                    the_row();
+                    echo '<p>' . get_sub_field('title') . '</p>';
+                  } ?>
+                </div><div class="pure-u-md-2-3">
+                  <?php echo get_sub_field('care_content'); ?>
+                </div>
+              </div>
+            </div>
+          </div>
+          <?php $i++; } ?>
+        </div>
+      </div>
     </div>
   </div>
 </section>

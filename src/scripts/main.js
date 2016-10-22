@@ -175,6 +175,19 @@ jQuery(document).ready(function($) {
     return this.eq(Math.floor(Math.random() * this.length));
   };
 
+  function instaFlipSetup() {
+    var windowWidth = $(window).width();
+    if (windowWidth >= 1585) {
+      var gridImageCount = Math.ceil(windowWidth / 396);
+      $('.insta-item img').each(function(i) {
+        if (i > gridImageCount) {
+          $('.insta-extra-wrap').append('<img src="' + $(this).attr('src') + '">');
+          $(this).parents('.insta-item').remove();
+        }
+      });
+    }
+  }
+
   function instaFlip() {
     var newImg = '<img src="' + $('.insta-extra-wrap img').first().attr('src') + '">';
     $('.insta-extra-wrap img').first().remove();
@@ -204,6 +217,7 @@ jQuery(document).ready(function($) {
   }
 
   if ($('body').hasClass('page-template-culture')) {
+    instaFlipSetup();
     instaFlip();
   }
 

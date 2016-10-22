@@ -43,7 +43,7 @@
           </div><div class="pure-u-lg-1-2">
             <p><strong>Want to learn more? Drop us a line.</strong></p>
             <p><a href="#" class="arrow-link">I want to join your team</a></p>
-            <p><a href="#" class="arrow-link">I want to join your client list</a></p>
+            <p><a href="#" class="arrow-link">I want to partner with you</a></p>
             <p><a href="#" class="arrow-link">I just want to chat</a></p>
           </div>
           <div class="copyright pure-u-lg-1-1">

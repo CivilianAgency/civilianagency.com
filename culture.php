@@ -7,15 +7,12 @@
   <div class="instagram-grid">
     <div class="pure-g">
       <?php
-        for ($x = 0; $x < 9; $x++) {
-          if ($x == 1 || $x == 7) {
-            echo instaItemOutput(null, true);
-          }
+        for ($x = 0; $x < 16; $x++) {
           echo instaItemOutput(get_field('culture_image_grid_item')[$x]);
         }
-        if (count(get_field('culture_image_grid_item')) > 8) {
+        if (count(get_field('culture_image_grid_item')) > 16) {
           echo '<div class="insta-extra-wrap">';
-          for ($x = 9; $x < count(get_field('culture_image_grid_item')); $x++) {
+          for ($x = 17; $x < count(get_field('culture_image_grid_item')); $x++) {
             echo instaItemOutput(get_field('culture_image_grid_item')[$x], false, true);
           }
           echo '</div>';

@@ -1713,6 +1713,27 @@ footer {
 
   .instagram-grid {
 
+    .insta-extra {
+
+      &.extra-0,
+      &.extra-1 {
+        background: $red;
+      }
+
+      &.extra-6,
+      &.extra-7,
+      &.extra-8,
+      &.extra-9 {
+        background: $yellow;
+      }
+
+      &.extra-14,
+      &.extra-15 {
+        background: $turquoise;
+      }
+
+    }
+
     .insta-item {
 
       $insta-dimension: 198px;
@@ -2210,8 +2231,8 @@ footer {
       @for $i from 1 through 8 {
         &:nth-child(#{$i}),
         &:nth-child(#{8 + $i}) {
-          $x: ($i - 1) * $insta-dimension;
-          left: #{$x};
+          $x: ($insta-dimension * (5 - $i));
+          left: calc(50% - #{$x});
         }
       }
 
@@ -2677,8 +2698,8 @@ footer {
       @for $i from 1 through 8 {
         &:nth-child(#{$i}),
         &:nth-child(#{8 + $i}) {
-          $x: ($i - 1) * $insta-dimension;
-          left: #{$x};
+          $x: ($insta-dimension * (5 - $i));
+          left: calc(50% - #{$x});
         }
       }
 

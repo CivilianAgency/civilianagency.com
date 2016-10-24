@@ -185,13 +185,25 @@ jQuery(document).ready(function($) {
           $(this).parents('.insta-item').remove();
         }
       });
+    } else {
+      $('.insta-item img').each(function(i) {
+        var partialSquares = [0, 7, 8, 15];
+        if ((windowWidth >= 768 && windowWidth < 1050) || (windowWidth >= 500 && windowWidth < 768) || windowWidth < 400) { // 6 full squares wide + 1 half on each side (7 total wide)
+          partialSquares.push(1, 6, 9, 14);
+        }
+        if (partialSquares.indexOf(i) > -1) {
+          $('.insta-extra-wrap').append('<img src="' + $(this).attr('src') + '">');
+          $(this).parents('.insta-item').empty().addClass('insta-extra extra-' + i);
+        }
+      });
     }
+    instaFlip();
   }
 
   function instaFlip() {
     var newImg = '<img src="' + $('.insta-extra-wrap img').first().attr('src') + '">';
     $('.insta-extra-wrap img').first().remove();
-    var gridItemToBeFlipped = $('.instagram-grid .insta-item').random();
+    var gridItemToBeFlipped = $('.instagram-grid .insta-item:not(.insta-extra)').random();
     var flipSideChangeTo = '.back';
     var flipSideChangeFrom = '.front';
     var oldImageSrc, isFiller;
@@ -218,7 +230,6 @@ jQuery(document).ready(function($) {
 
   if ($('body').hasClass('page-template-culture')) {
     instaFlipSetup();
-    instaFlip();
   }
 
   $('.colorbox').colorbox({

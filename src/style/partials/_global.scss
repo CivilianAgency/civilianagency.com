@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  padding-top: 74px;
+  padding-top: 77px;
 }
 
 img {
@@ -76,7 +76,7 @@ header {
 
   .logo-main {
 
-    display: block;
+    display: inline-block;
 
     &.logo-cvln {
       display: none;
@@ -1792,6 +1792,14 @@ footer {
 
   .case-header .case-header-content {
     padding: 8rem 0px;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .culture-jams ul {
+    padding-top: 3rem;
   }
 
 }

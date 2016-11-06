@@ -209,7 +209,7 @@
       <div class="pure-u-lg-3-4">
         <?php if (get_field('culture_careers_title')) { ?><h2><?php echo get_field('culture_careers_title'); ?></h2><?php } ?>
         <?php echo get_field('culture_careers_content'); ?>
-        <p><a class="arrow-link arrow-link-short" href=#" target="_blank">Let's connect</a></p>
+        <p><a class="arrow-link arrow-link-short" href="#" target="_blank">Let's connect</a></p>
       </div>
     </div>
   </div>

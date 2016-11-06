@@ -34,12 +34,16 @@
               <li><a target="_blank" href="https://twitter.com/civilianchi"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/icons/twitter.svg"></a></li>
             </ul>
           </div>
-          <div class="footer-address pure-u-lg-1-2">
-            <p><strong>CIVILIAN</strong></p>
-            <p>444 North Michigan Avenue</p>
-            <p>33rd Floor</p>
-            <p>Chicago, IL 60611</p>
-            <p>Phone: 312.822.1100</p>
+          <div class="footer-address pure-u-lg-1-2" itemscope itemtype="http://schema.org/LocalBusiness">
+            <p><span itemprop="name"><strong>CIVILIAN</strong><span class="hide"> Agency</span></span></p>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <div itemprop="streetAddress">
+                <p>444 North Michigan Avenue</p>
+                <p>33rd Floor</p>
+              </div>
+              <p><span itemprop="addressLocality">Chicago</span>, <span itemprop="addressRegion">IL</span> <span itemprop="postalCode">60611</span></p>
+              <p>Phone: <span itemprop="telephone">312.822.1100</span></p>
+            </div>
           </div><div class="pure-u-lg-1-2">
             <p><strong>Want to learn more? Drop us a line.</strong></p>
             <p><a href="#" class="arrow-link">I want to join your team</a></p>

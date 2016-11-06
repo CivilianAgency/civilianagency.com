@@ -6,13 +6,11 @@
 <script type="text/javascript" src="http://www.cnt-tm-1.com/js/49804.js" ></script>
 <noscript><img src="http://www.cnt-tm-1.com/49804.png" style="display:none;" /></noscript>
 <script type="application/ld+json">
-  { "@context" : "http://schema.org",
-  "@type" : "ProfessionalService",
-  "name" : "Civilian Agency",
-  "url" : "http://www.civilianagency.com/cases/clearchoice/",
-  "sameAs" : [ "http://www.facebook.com/civilianchi",
-    "http://www.twitter.com/civilianchi",
-    "http://www.linkedin.com/company/civilian-chicago"]
+  {
+    "@context" : "http://schema.org",
+    "@type" : "ProfessionalService",
+    "name" : "Civilian Agency",
+    "url" : "<?php $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://"; echo "$protocol$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>"
   }
 </script>
 <script>var themePath = '<?php echo get_template_directory_uri(); ?>/';</script>

@@ -95,12 +95,31 @@ header {
 
   position: relative;
   height: 400px;
-  background: {
-    size: cover;
-    position: center center;
-    repeat: no-repeat;
-  }
   border-bottom: 0.25rem solid $red-orange;
+
+  &,
+  .page-header-secondary-wrapper {
+    background: {
+      size: cover;
+      position: center center;
+      repeat: no-repeat;
+    }
+  }
+
+  .page-header-secondary-wrapper {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: $transition;
+  }
+
+  &:hover .page-header-secondary-wrapper {
+    opacity: 1;
+  }
 
   .page-template-culture & {
     border-color: $red;
@@ -108,6 +127,10 @@ header {
 
   .page-template-work & {
     background-position: center -150px;
+  }
+
+  .page-template-about & {
+    border-color: $green;
   }
 
   &.header-covered:after {
@@ -143,6 +166,11 @@ header {
     .page-template-culture & {
       color: $red;
       border-color: $red;
+    }
+
+    .page-template-about & {
+      color: $green;
+      border-color: $green;
     }
 
   }
@@ -304,6 +332,10 @@ a {
         background: $red;
       }
 
+      .page-template-about & {
+        background: $green;
+      }
+
     }
 
   }
@@ -335,6 +367,11 @@ a {
     .page-template-culture & {
       color: $red;
       border-color: $red;
+    }
+
+    .page-template-about & {
+      color: $green;
+      border-color: $green;
     }
 
   }
@@ -382,8 +419,8 @@ a {
 
   }
 
-  a {
-
+  a,
+  .team-member-main-image {
     display: block;
     position: relative;
     height: 350px;
@@ -392,6 +429,9 @@ a {
       position: center center;
       repeat: no-repeat;
     }
+  }
+
+  a {
 
     &:after {
       z-index: 1;
@@ -402,6 +442,31 @@ a {
       bottom: 0px;
       height: 56%;
       background: linear-gradient(to bottom, transparent 0%, $black 100%);
+    }
+
+  }
+
+  .team-member-rollover-image {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: {
+      size: cover;
+      position: center center;
+      repeat: no-repeat;
+    }
+    opacity: 0;
+    transition: $transition;
+  }
+
+  .team-member-main-image {
+
+    height: 300px;
+
+    &:hover .team-member-rollover-image {
+      opacity: 1;
     }
 
   }
@@ -621,6 +686,10 @@ a {
       color: $red;
     }
 
+    .page-template-about & {
+      color: $green;
+    }
+
   }
 
 }
@@ -641,6 +710,23 @@ a {
     margin-bottom: 3rem;
     font-size: 1.125rem;
     line-height: 1.3;
+  }
+
+  h2 {
+
+    .page-template-about & {
+      color: $green;
+    }
+
+  }
+
+  .page-template-about & {
+
+    p {
+      @extend %main-text;
+      margin-bottom: 1em;
+    }
+
   }
 
 }
@@ -2293,6 +2379,10 @@ footer {
 
     a {
       height: 250px;
+    }
+
+    .team-member-main-image {
+      height: 350px;
     }
 
   }

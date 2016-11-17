@@ -133,6 +133,10 @@ header {
     border-color: $green;
   }
 
+  .page-template-expertise & {
+    border-color: $turquoise;
+  }
+
   &.header-covered:after {
     content: ' ';
     z-index: 1;
@@ -143,6 +147,10 @@ header {
     right: 0px;
     background: $turquoise-darkest;
     opacity: 0.5;
+  }
+
+  &.header-covered-heavy:after {
+    opacity: 0.75;
   }
 
   .page-header-meta {
@@ -171,6 +179,11 @@ header {
     .page-template-about & {
       color: $green;
       border-color: $green;
+    }
+
+    .page-template-expertise & {
+      color: $turquoise;
+      border-color: $turquoise;
     }
 
   }
@@ -336,6 +349,10 @@ a {
         background: $green;
       }
 
+      .page-template-expertise & {
+        background: $turquoise;
+      }
+
     }
 
   }
@@ -372,6 +389,11 @@ a {
     .page-template-about & {
       color: $green;
       border-color: $green;
+    }
+
+    .page-template-expertise & {
+      color: $turquoise;
+      border-color: $turquoise;
     }
 
   }
@@ -690,6 +712,10 @@ a {
       color: $green;
     }
 
+    .page-template-expertise & {
+      color: $turquoise;
+    }
+
   }
 
 }
@@ -718,9 +744,14 @@ a {
       color: $green;
     }
 
+    .page-template-expertise & {
+      color: $turquoise;
+    }
+
   }
 
-  .page-template-about & {
+  .page-template-about &,
+  .page-template-expertise & {
 
     p {
       @extend %main-text;

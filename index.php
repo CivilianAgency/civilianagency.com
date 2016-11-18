@@ -20,7 +20,7 @@
       <div class="pure-g">
         <div class="pure-u-lg-1-8"></div>
         <div class="pure-u-lg-3-4">
-          <h1 class="title-boxed"><?php the_title(); ?></h1>
+          <?php if (is_single()) { ?><h2 class="title-boxed">Blog</h2><?php } else { ?><h1 class="title-boxed"><?php the_title(); ?></h1><?php } ?>
         </div>
       </div>
     </div>
@@ -32,6 +32,7 @@
     <div class="pure-g">
       <div class="pure-u-lg-1-8"></div>
       <div class="pure-u-lg-3-4">
+        <?php if (is_single()) { echo '<h1>' . get_the_title() . '</h1>'; } ?>
         <?php the_content(); ?>
         <?php if (is_single() && have_rows('blog_sub_section')) {
           while (have_rows('blog_sub_section')) {

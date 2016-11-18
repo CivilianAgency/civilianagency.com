@@ -320,6 +320,10 @@ a {
   position: relative;
   text-align: center;
 
+  .content-main & {
+    margin-top: 4rem;
+  }
+
   &-line {
 
     margin-bottom: 4rem;
@@ -712,8 +716,8 @@ a {
       color: $green;
     }
 
-    .page-template-expertise & {
-      color: $turquoise;
+    .page-template-exp & {
+      color: $green;
     }
 
   }
@@ -742,10 +746,6 @@ a {
 
     .page-template-about & {
       color: $green;
-    }
-
-    .page-template-expertise & {
-      color: $turquoise;
     }
 
   }

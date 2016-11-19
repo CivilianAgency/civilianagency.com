@@ -242,6 +242,19 @@ jQuery(document).ready(function($) {
     close: '&times;'
   });
 
+  /*$('.capabilities-guy svg .rollover-block').hover(function() {
+    $(this).addClass('active');
+  }, function() {});*/
+
+  $('.capabilities-guy svg .rollover-block').click(function() {
+    var thisSlug = $(this).data('rollover-slug');
+    $('.capabilities-guy svg .rollover-block').not($(this)).removeClass('active');
+    var thisBox = $('.capabilities-wrap [data-box-slug="' + thisSlug + '"]');
+    $('.capabilities-wrap .capabilities-box').not(thisBox).removeClass('active');
+    $(this).addClass('active');
+    thisBox.addClass('active');
+  });
+
 });
 
 function poiClick(marker, i, map, content) {

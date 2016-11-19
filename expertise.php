@@ -28,6 +28,7 @@
   </div>
 </section>
 
+<?php if (have_rows('expertise_ideas')) { ?>
 <section class="content-sub expertise-ideas">
   <div class="grid-wrapper">
     <div class="pure-g">
@@ -39,16 +40,30 @@
       <div class="pure-u-lg-1-8"></div>
       <div class="pure-u-lg-3-4">
         <div class="pure-g">
-          <div class="pure-lg-1-2">X
+          <div class="pure-lg-1-2">
+            <div class="ideas-scroller">
+              <?php while (have_rows('expertise_ideas')) : the_row(); ?>
+                <div class="idea-title">
+                  <?php the_sub_field('title'); ?>
+                </div>
+              <?php endwhile; ?>
+            </div
           </div>
-          <?php if (get_field('expertise_ideas_text')) { ?><div class="pure-lg-1-2">
-            <h2><?php echo get_field('expertise_ideas_text'); ?></h2>
-          </div><?php } ?>
+          <div class="pure-lg-1-2">
+            <div class="ideas-content">
+              <?php while (have_rows('expertise_ideas')) : the_row(); ?>
+                <div class="idea-content">
+                  <?php the_sub_field('content'); ?>
+                </div>
+              <?php endwhile; ?>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php } ?>
 
 <section class="content-sub expertise-capabilities">
   <div class="grid-wrapper">
@@ -63,7 +78,65 @@
         <?php if (get_field('capabilities_text_intro')) {
           echo get_field('capabilities_text_intro');
         } ?>
-        <div class="capabilities-guy"></div>
+        <div class="capabilities-wrap">
+          <div class="capabilities-guy"><?php echo file_get_contents(get_template_directory_uri() . '/dist/images/buddy-capabilities.svg'); ?></div>
+          <div class="capabilities-box box-analytics" data-box-slug="analytics">
+            <div class="capabilities-box-header">Analytics</div>
+            <div class="capabilities-box-content">
+              <ul>
+                <li>KPI Identification</li>
+                <li>Campaign ROI</li>
+                <li>Dashboard Creation</li>
+                <li>Campaign Reporting</li>
+                <li>Optimization</li>
+                <li>Advanced Data Modeling</li>
+                <li>Attribution</li>
+              </ul>
+            </div>
+          </div>
+          <div class="capabilities-box box-strategy" data-box-slug="strategy">
+            <div class="capabilities-box-header">Strategy</div>
+            <div class="capabilities-box-content">
+              <ul>
+                <li>Strategic Planning</li>
+                <li>Brand Architecture</li>
+                <li>Brand Positioning</li>
+                <li>Customer Journey Mapping</li>
+                <li>Market Research</li>
+                <li>Segmentation</li>
+                <li>Messaging</li>
+              </ul>
+            </div>
+          </div>
+          <div class="capabilities-box box-delivery" data-box-slug="delivery">
+            <div class="capabilities-box-header">Delivery</div>
+            <div class="capabilities-box-content">
+              <ul>
+                <li>Video Shoots</li>
+                <li>Editing/Music/VO</li>
+                <li>Art Buying</li>
+                <li>Photography</li>
+                <li>Print Production</li>
+                <li>Front End Development</li>
+                <li>Trafficking</li>
+              </ul>
+            </div>
+          </div>
+          <div class="capabilities-box box-creativity" data-box-slug="creativity">
+            <div class="capabilities-box-header">Creative</div>
+            <div class="capabilities-box-content">
+              <ul>
+                <li>Art/Design/Copy</li>
+                <li>TV/Video</li>
+                <li>Content Development</li>
+                <li>Video Graphics</li>
+                <li>Animations</li>
+                <li>Full Digital Services</li>
+                <li>Print/OOH/Transit</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -1,6 +1,7 @@
 <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | Chicago</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/dist/images/favicon.png">
 <script src="https://use.typekit.net/vlq5mkr.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <script type="text/javascript" src="http://www.cnt-tm-1.com/js/49804.js" ></script>

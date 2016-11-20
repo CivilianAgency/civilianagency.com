@@ -242,10 +242,6 @@ jQuery(document).ready(function($) {
     close: '&times;'
   });
 
-  /*$('.capabilities-guy svg .rollover-block').hover(function() {
-    $(this).addClass('active');
-  }, function() {});*/
-
   $('.capabilities-guy svg .rollover-block').click(function() {
     var thisSlug = $(this).data('rollover-slug');
     $('.capabilities-guy svg .rollover-block').not($(this)).removeClass('active');
@@ -254,6 +250,28 @@ jQuery(document).ready(function($) {
     $(this).addClass('active');
     thisBox.addClass('active');
   });
+
+  if ($('body').hasClass('page-template-expertise')) {
+
+    $('.ideas-control').click(function() {
+      $('.idea-title.active').removeClass('completed').removeClass('active');
+      var tempTitle;
+      if ($(this).data('direction') == 'down') {
+        tempTitle = $('.idea-title').first().clone();
+        $('.idea-title').first().remove();
+        $('.ideas-scroller').append(tempTitle);
+      } else {
+        tempTitle = $('.idea-title').last().clone();
+        $('.idea-title').last().remove();
+        $('.ideas-scroller').prepend(tempTitle);
+      }
+      $('.idea-title').eq(1).addClass('active completed');
+      var activeIndex = $('.idea-title.active').data('content-index');
+      $('.idea-content').removeClass('active');
+      $('.idea-content[data-content-index="' + activeIndex + '"]').addClass('active');
+    });
+
+  }
 
 });
 

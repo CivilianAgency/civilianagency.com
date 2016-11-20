@@ -39,23 +39,31 @@
       </div>
       <div class="pure-u-lg-1-8"></div>
       <div class="pure-u-lg-3-4">
-        <div class="pure-g">
-          <div class="pure-lg-1-2">
-            <div class="ideas-scroller">
-              <?php while (have_rows('expertise_ideas')) : the_row(); ?>
-                <div class="idea-title">
-                  <?php the_sub_field('title'); ?>
+        <div class="ideas-wrap">
+          <div class="pure-g">
+            <div class="pure-u-md-1-2">
+              <div class="ideas-move-wrap">
+                <div class="ideas-controls">
+                  <i class="fa fa-caret-up ideas-control ideas-control-up" data-direction="up" aria-hidden="true"></i>
+                  <i class="fa fa-caret-down ideas-control ideas-control-down" data-direction="down" aria-hidden="true"></i>
                 </div>
-              <?php endwhile; ?>
-            </div
-          </div>
-          <div class="pure-lg-1-2">
-            <div class="ideas-content">
-              <?php while (have_rows('expertise_ideas')) : the_row(); ?>
-                <div class="idea-content">
+                <div class="ideas-get">Get</div>
+                <div class="ideas-scroller">
+                  <?php $i = 0; while (have_rows('expertise_ideas')) : the_row(); ?>
+                  <div class="idea-title<?php if ($i == 1) {  echo ' active completed'; } ?>" data-content-index="<?php echo $i; ?>">
+                    <div class="idea-title-inner"><?php the_sub_field('title'); ?></div>
+                  </div>
+                  <?php $i++; endwhile; ?>
+                </div>
+              </div>
+            </div><div class="pure-u-md-1-2">
+              <div class="ideas-content">
+                <?php $i = 0; while (have_rows('expertise_ideas')) : the_row(); ?>
+                <div class="idea-content<?php if ($i == 1) {  echo ' active'; } ?>" data-content-index="<?php echo $i; ?>">
                   <?php the_sub_field('content'); ?>
                 </div>
-              <?php endwhile; ?>
+                <?php $i++; endwhile; ?>
+              </div>
             </div>
           </div>
         </div>

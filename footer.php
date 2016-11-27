@@ -46,9 +46,9 @@
             </div>
           </div><div class="pure-u-lg-1-2">
             <p><strong>Want to learn more? Drop us a line.</strong></p>
-            <p><a href="#" class="arrow-link">I want to join your team</a></p>
-            <p><a href="#" class="arrow-link">I want to partner with you</a></p>
-            <p><a href="#" class="arrow-link">I just want to chat</a></p>
+            <p><a href="mailto:lorig@civilianagency.com" target="_blank" class="arrow-link">I want to join your team</a></p>
+            <p><a href="mailto:gary@civilianagency.com" target="_blank" class="arrow-link">I want to partner with you</a></p>
+            <p><a href="mailto:hello@civilianagency.com" target="_blank" class="arrow-link">I just want to chat</a></p>
           </div>
           <div class="copyright pure-u-lg-1-1">
             <p>&copy; <?php echo date('Y'); ?> CIVILIAN | Proud member of the <a href="http://www.mdc-partners.com/#agencies/civilian">MDC Network</a></p>

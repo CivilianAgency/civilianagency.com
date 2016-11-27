@@ -374,6 +374,10 @@ a {
   font-weight: bold;
   text-transform: uppercase;
 
+  &.title-with-bg {
+    background: $white;
+  }
+
   &-line {
 
     position: relative;

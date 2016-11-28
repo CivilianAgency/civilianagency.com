@@ -1222,6 +1222,23 @@ a {
 
 .culture-jams {
 
+  svg {
+
+    width: 320px;
+    height: 320px;
+
+    @media screen and (max-width: 1279px) {
+      width: 245px;
+      height: 245px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 250px;
+      height: 250px;
+    }
+
+  }
+
   .record {
     animation-name: recordspin;
     animation-duration: 10000ms;
@@ -1326,9 +1343,31 @@ a {
 .culture-local {
 
   svg {
+
     position: relative;
     z-index: -1;
     margin-top: -6rem;
+    width: 799px;
+    height: 533px;
+
+    @media screen and (max-width: 1023px) {
+      width: 736px;
+      height: 490px;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 400px;
+      height: 266px;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 250px;
+      height: 166px;
+    }
+
   }
 
   .star-pattern {
@@ -2079,11 +2118,13 @@ footer {
 }
 
 .capabilities-guy {
+
   z-index: 2;
   position: relative;
   display: block;
   margin: 0px auto;
   width: 200px;
+  height: 340px;
 
   svg {
 
@@ -2939,7 +2980,6 @@ footer {
     svg {
       display: block;
       margin: 0px auto 2rem;
-      max-width: 250px;
     }
 
   }

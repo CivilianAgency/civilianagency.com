@@ -42,9 +42,9 @@
                 <p>33rd Floor</p>
               </div>
               <p><span itemprop="addressLocality">Chicago</span>, <span itemprop="addressRegion">IL</span> <span itemprop="postalCode">60611</span></p>
-              <p>Phone: <span itemprop="telephone">312.822.1100</span></p>
+              <p>Phone: <a href="tel:+13128221100"><span itemprop="telephone">312.822.1100</span></a></p>
             </div>
-          </div><div class="pure-u-lg-1-2">
+          </div><div class="pure-u-lg-1-2 footer-contact-links">
             <p><strong>Want to learn more? Drop us a line.</strong></p>
             <p><a href="mailto:lorig@civilianagency.com" target="_blank" class="arrow-link">I want to join your team</a></p>
             <p><a href="mailto:gary@civilianagency.com" target="_blank" class="arrow-link">I want to partner with you</a></p>

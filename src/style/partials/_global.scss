@@ -263,7 +263,7 @@ a {
 
       &:nth-child(1) a:before {
         content: '01';
-        color: $green-dark;
+        color: $red-orange;
       }
 
       &:nth-child(2) a:before {
@@ -3052,6 +3052,11 @@ footer {
       background: $red-orange;
     }
 
+    .ways-we-connected,
+    .how-we-helped {
+      margin-bottom: 1.5rem;
+    }
+
     .cares-item-content {
       background: $red;
     }
@@ -3128,7 +3133,18 @@ footer {
   }
 
   footer {
+
     padding-bottom: 3rem;
+
+    .footer-contact-links {
+
+      p {
+        margin-bottom: 2rem;
+      }
+
+    }
+
+
   }
 
   .ideas-wrap {

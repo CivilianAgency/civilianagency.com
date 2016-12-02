@@ -8,6 +8,13 @@ var maxMobileSize = 767;
 jQuery(document).ready(function($) {
 
   if ($('body').hasClass('home')) {
+
+    if ($(window).width() <= maxMobileSize) {
+      var poster = $('.home-header video').attr('poster');
+      $('.home-header').prepend('<div class="video-replacement" style="background-image: url(\'' + poster + '\');"></div>');
+      $('.home-header video').remove();
+    }
+
     map = new google.maps.Map(document.getElementById('google-map'), {
       center: mapCenter,
       scrollwheel: false,

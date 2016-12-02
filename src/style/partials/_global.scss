@@ -266,34 +266,60 @@ a {
         margin-right: 1rem;
       }
 
-      &:nth-child(1) a:before {
-        content: '01';
-        color: $red-orange;
+      &:nth-child(1) a {
+
+        &:before {
+          content: '01';
+          color: $red-orange;
+        }
+
+        &:hover {
+          border-bottom-color: $red-orange;
+        }
+
       }
 
-      &:nth-child(2) a:before {
-        content: '02';
-        color: $turquoise;
+      &:nth-child(2) a {
+
+        &:before {
+          content: '02';
+          color: $turquoise;
+        }
+
+        &:hover {
+          border-bottom-color: $turquoise;
+        }
+
       }
 
-      &:nth-child(3) a:before {
-        content: '03';
-        color: $red;
+      &:nth-child(3) a {
+
+        &:before {
+          content: '03';
+          color: $red;
+        }
+
+        &:hover {
+          border-bottom-color: $red;
+        }
+
       }
 
-      &:nth-child(4) a:before {
-        content: '04';
-        color: $green;
+      &:nth-child(4) a {
+
+        &:before {
+          content: '04';
+          color: $green;
+        }
+
+        &:hover {
+          border-bottom-color: $green;
+        }
+
       }
 
-      &:nth-child(5) a:before {
-        content: '05';
-        color: $turquoise;
-      }
-
-      &:nth-child(6) a:before {
-        content: '06';
-        color: $green-dark;
+      a {
+        border-bottom: 3px solid transparent;
       }
 
     }
@@ -2689,6 +2715,7 @@ footer {
         a {
           display: block;
           padding: 1rem;
+          border-bottom: 0px;
         }
 
       }

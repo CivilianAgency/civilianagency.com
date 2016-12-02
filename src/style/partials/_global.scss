@@ -204,6 +204,10 @@ a {
     display: block;
     line-height: 1;
 
+    &:hover {
+      text-decoration: underline;
+    }
+
     &:after {
       content: ' ';
       position: absolute;
@@ -580,32 +584,40 @@ a {
   padding-bottom: 1rem;
   color: $white;
 
+  a:hover {
+
+    &:after {
+      background-image: url('../images/chevron-with-circle-right-reversed.svg');
+    }
+
+  }
+
   &:nth-child(1) {
 
-    background: $turquoise-darkest;
+    background-color: $turquoise-darkest;
 
     a:hover {
-      background: $turquoise-darkest-hover;
+      background-color: $turquoise-darkest-hover;
     }
 
   }
 
   &:nth-child(2) {
 
-    background: $turquoise;
+    background-color: $turquoise;
 
     a:hover {
-      background: $turquoise-hover;
+      background-color: $turquoise-hover;
     }
 
   }
 
   &:nth-child(3) {
 
-    background: $red-orange;
+    background-color: $red-orange;
 
     a:hover {
-      background: $red-orange-hover;
+      background-color: $red-orange-hover;
     }
 
   }
@@ -834,6 +846,10 @@ a {
     line-height: 1.2;
     font-weight: 600;
     text-decoration: none;
+
+    &:hover:after {
+      background-image: url('../images/chevron-with-circle-right-turquoise-darkest-reversed.svg');
+    }
 
     &:after {
       background-image: url('../images/chevron-with-circle-right-turquoise-darkest.svg');
@@ -1881,6 +1897,22 @@ footer {
     font-size: 0.875rem;
     line-height: 1.5;
     text-align: center;
+  }
+
+  .footer-contact-links {
+
+    a {
+
+      &:hover {
+
+        &:after {
+          background-image: url('../images/chevron-with-circle-right-reversed.svg');
+        }
+
+      }
+
+    }
+
   }
 
 }

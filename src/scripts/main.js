@@ -280,6 +280,10 @@ jQuery(document).ready(function($) {
 
   }
 
+  $('.rollover-wrap').click(function() {
+    $(this).toggleClass('active');
+  });
+
 });
 
 function poiClick(marker, i, map, content) {

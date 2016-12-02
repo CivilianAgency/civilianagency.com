@@ -118,8 +118,13 @@ header {
     transition: $transition;
   }
 
-  &:hover .page-header-secondary-wrapper {
-    opacity: 1;
+  &:hover,
+  &.active {
+
+    .page-header-secondary-wrapper {
+      opacity: 1;
+    }
+
   }
 
   .page-template-culture & {
@@ -505,8 +510,13 @@ a {
 
     height: 300px;
 
-    &:hover .team-member-rollover-image {
-      opacity: 1;
+    &:hover,
+    &.active {
+
+      .team-member-rollover-image {
+        opacity: 1;
+      }
+
     }
 
   }

@@ -1938,6 +1938,7 @@ footer {
   .idea-content {
 
     margin: 0px 1rem;
+    word-wrap: break-word;
 
     p {
       margin: 0.5rem 0px;
@@ -1950,56 +1951,29 @@ footer {
 .capabilities-wrap {
 
   position: relative;
+  padding: 1.75rem 0px;
+  margin: 2rem 3.5rem 0px;
   text-align: center;
+
+  @media screen and (max-width: 1023px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
   .capabilities-box {
 
-    z-index: 1;
+    z-index: 2;
+    position: absolute;
     width: 200px;
     background: $white;
-
-    &,
-    &:after {
-      display: none;
-      position: absolute;
-      border-style: solid;
-      border-width: 2px;
-    }
-
-    &.active {
-
-      &,
-      &:after {
-        display: block;
-      }
-
-    }
+    border-style: solid;
+    border-width: 2px;
+    opacity: 0;
+    transition: $transition;
 
     &:after {
       z-index: 0;
       content: ' ';
-    }
-
-    &.box-analytics {
-
-      top: 0px;
-      right: 0px;
-      border-color: $red-orange;
-
-      .capabilities-box-header {
-        background: $red-orange;
-      }
-
-      &.active:after {
-        top: 15px;
-        right: 193px;
-        height: 15px;
-        width: 125px;
-        border-color: $red-orange;
-        border-left-width: 0px;
-        border-bottom-width: 0px;
-      }
-
     }
 
     &.box-strategy {
@@ -2012,26 +1986,23 @@ footer {
         background: $grey-off;
       }
 
-      &.active:after {
+    }
 
-        top: 15px;
-        left: 193px;
-        height: 15px;
-        width: 153px;
-        border-color: $grey-off;
-        border-left-width: 0px;
-        border-bottom-width: 0px;
+    &.box-analytics {
 
-        @media screen and (max-width: 1023px) {
-          width: 161px;
-        }
+      top: 0px;
+      right: 0px;
+      border-color: $red-orange;
+
+      .capabilities-box-header {
+        background: $red-orange;
       }
 
     }
 
     &.box-delivery {
 
-      bottom: 0px;
+      bottom: 19px;
       left: 0px;
       border-color: $turquoise;
 
@@ -2039,21 +2010,11 @@ footer {
         background: $turquoise;
       }
 
-      &.active:after {
-        bottom: 45px;
-        left: 193px;
-        height: 150px;
-        width: 100px;
-        border-color: $turquoise;
-        border-left-width: 0px;
-        border-bottom-width: 0px;
-      }
-
     }
 
-    &.box-creativity {
+    &.box-creative {
 
-      bottom: 0px;
+      bottom: 17px;
       right: 0px;
       border-color: $yellow;
 
@@ -2061,25 +2022,27 @@ footer {
         background: $yellow;
       }
 
-      &.active:after {
-        top: -10px;
-        right: 193px;
-        height: 15px;
-        width: 125px;
-        border-color: $yellow;
-        border-left-width: 0px;
-        border-bottom-width: 0px;
-      }
-
     }
 
   }
 
   .capabilities-box-header {
+
     padding: 0.5rem;
     color: $white;
-    font-weight: bold;
-    text-transform: uppercase;
+
+    .capabilities-box-header-title {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .capabilities-box-header-subtitle {
+      margin-top: 0.25rem;
+      font-style: italic;
+      opacity: 0;
+      transition: $transition;
+    }
+
   }
 
   .capabilities-box-content {
@@ -2100,31 +2063,123 @@ footer {
 
   }
 
+  &.active {
+
+    .capabilities-box {
+
+      opacity: 1;
+      transition-duration: 1s;
+
+      .capabilities-box-header-subtitle {
+        opacity: 1;
+        transition-delay: 0.75s;
+      }
+
+      &.box-analytics {
+
+        transition-delay: 2s;
+
+        .capabilities-box-header-subtitle {
+          transition-delay: 2.75s;
+        }
+
+      }
+
+      &.box-delivery {
+
+        transition-delay: 4s;
+
+        .capabilities-box-header-subtitle {
+          transition-delay: 4.75s;
+        }
+
+      }
+
+      &.box-creative {
+
+        transition-delay: 6s;
+
+        .capabilities-box-header-subtitle {
+          transition-delay: 6.75s;
+        }
+
+      }
+
+    }
+
+    svg {
+
+      .line {
+
+        stroke-dashoffset: 0;
+        transition: all 3s;
+
+        &.line-strategy {
+          transition-delay: 1s;
+        }
+
+        &.line-analytics {
+          transition-delay: 3s;
+        }
+
+        &.line-delivery {
+          transition-delay: 5s;
+        }
+
+        &.line-creative {
+          transition-delay: 7s;
+        }
+
+      }
+
+      .prop {
+
+        opacity: 1;
+
+        &.prop-strategy {
+          transition-delay: 1.5s;
+        }
+
+        &.prop-analytics {
+          transition-delay: 3.5s;
+        }
+
+        &.prop-delivery {
+          transition-delay: 5.5s;
+        }
+
+        &.prop-creative {
+          transition-delay: 7.5s;
+        }
+
+      }
+
+    }
+
+  }
+
 }
 
 .capabilities-guy {
 
+  $guy-hw-ratio: 335 / 367;
   z-index: 2;
   position: relative;
   display: block;
   margin: 0px auto;
-  width: 200px;
-  height: 340px;
+  width: 600px;
+  height: #{round(600 * $guy-hw-ratio)}px;
 
   svg {
 
-    .rollover-block {
+    .line {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+    }
 
-      display: block;
+    .prop {
       opacity: 0;
       transition: $transition;
-
-      &.active,
-      &:hover {
-        opacity: 1;
-        cursor: pointer;
-      }
-
     }
 
   }
@@ -2497,18 +2552,6 @@ footer {
 
     .footer-address {
       margin-bottom: 2rem;
-    }
-
-  }
-
-  .capabilities-wrap .capabilities-box {
-
-    position: static;
-    margin: 2rem auto 0px;
-
-    &.active:after {
-      content: '';
-      display: none;
     }
 
   }
@@ -3130,9 +3173,31 @@ footer {
 
     }
 
-
   }
 
+  .capabilities-wrap {
+
+    margin: 0px;
+    padding: 0px;
+
+    .capabilities-guy {
+      display: none;
+    }
+
+    .capabilities-box {
+
+      position: static;
+      margin: 2rem auto 0px;
+
+      &,
+      .capabilities-box-header-subtitle {
+        opacity: 1;
+        transition: none;
+      }
+
+    }
+
+  }
 
 }
 

@@ -262,6 +262,14 @@ jQuery(document).ready(function($) {
     $(this).toggleClass('active');
   });
 
+  if ($('body').hasClass('page-template-expertise')) {
+    $('.expertise-capabilities').waypoint(function(direction) {
+      if (direction == 'down') {
+        $('.capabilities-wrap').addClass('active');
+      }
+    }, { offset: '50%' });
+  }
+
 });
 
 function poiClick(marker, i, map, content) {

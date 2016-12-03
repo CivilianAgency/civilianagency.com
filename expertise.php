@@ -61,29 +61,20 @@
           <h2 class="title-boxed title-boxed-line">Capabilities</h2>
         </div>
       </div>
+      <?php if (get_field('capabilities_text_intro')) { ?>
       <div class="pure-u-lg-1-8"></div>
       <div class="pure-u-lg-3-4">
-        <?php if (get_field('capabilities_text_intro')) {
-          echo get_field('capabilities_text_intro');
-        } ?>
+        <?php echo get_field('capabilities_text_intro'); ?>
+      </div>
+      <?php } ?>
+      <div class="pure-u-lg-1-1">
         <div class="capabilities-wrap">
-          <div class="capabilities-guy"><?php echo file_get_contents(get_template_directory_uri() . '/dist/images/buddy-capabilities.svg'); ?></div>
-          <div class="capabilities-box box-analytics" data-box-slug="analytics">
-            <div class="capabilities-box-header">Analytics</div>
-            <div class="capabilities-box-content">
-              <ul>
-                <li>KPI Identification</li>
-                <li>Campaign ROI</li>
-                <li>Dashboard Creation</li>
-                <li>Campaign Reporting</li>
-                <li>Optimization</li>
-                <li>Advanced Data Modeling</li>
-                <li>Attribution</li>
-              </ul>
-            </div>
-          </div>
+          <div class="capabilities-guy"><?php echo file_get_contents(get_template_directory_uri() . '/dist/images/buddy-full-no-boxes.svg'); ?></div>
           <div class="capabilities-box box-strategy" data-box-slug="strategy">
-            <div class="capabilities-box-header">Strategy</div>
+            <div class="capabilities-box-header">
+              <div class="capabilities-box-header-title">Strategy</div>
+              <div class="capabilities-box-header-subtitle">guides our ideas</div>
+            </div>
             <div class="capabilities-box-content">
               <ul>
                 <li>Strategic Planning</li>
@@ -96,8 +87,28 @@
               </ul>
             </div>
           </div>
+          <div class="capabilities-box box-analytics" data-box-slug="analytics">
+            <div class="capabilities-box-header">
+              <div class="capabilities-box-header-title">Analytics</div>
+              <div class="capabilities-box-header-subtitle">brains behind the work</div>
+            </div>
+            <div class="capabilities-box-content">
+              <ul>
+                <li>KPI Identification</li>
+                <li>Campaign ROI</li>
+                <li>Dashboard Creation</li>
+                <li>Campaign Reporting</li>
+                <li>Optimization</li>
+                <li>Advanced Data Modeling</li>
+                <li>Attribution</li>
+              </ul>
+            </div>
+          </div>
           <div class="capabilities-box box-delivery" data-box-slug="delivery">
-            <div class="capabilities-box-header">Delivery</div>
+            <div class="capabilities-box-header">
+              <div class="capabilities-box-header-title">Delivery</div>
+              <div class="capabilities-box-header-subtitle">making things move</div>
+            </div>
             <div class="capabilities-box-content">
               <ul>
                 <li>Video Shoots</li>
@@ -110,8 +121,11 @@
               </ul>
             </div>
           </div>
-          <div class="capabilities-box box-creativity" data-box-slug="creativity">
-            <div class="capabilities-box-header">Creative</div>
+          <div class="capabilities-box box-creative" data-box-slug="creative">
+            <div class="capabilities-box-header">
+              <div class="capabilities-box-header-title">Creative</div>
+              <div class="capabilities-box-header-subtitle">heartbeat of the agency</div>
+            </div>
             <div class="capabilities-box-content">
               <ul>
                 <li>Art/Design/Copy</li>

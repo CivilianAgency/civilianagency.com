@@ -666,6 +666,15 @@ a {
   overflow: hidden;
   position: relative;
   padding: 60px 0px 0px;
+  border-bottom: 0.25rem solid transparent;
+
+  .case-ctca & {
+    border-bottom-color: $turquoise;
+  }
+
+  .case-clearchoice & {
+    border-bottom-color: $blue-off;
+  }
 
   video {
     z-index: 0;
@@ -1654,8 +1663,8 @@ a {
     }
 
     p {
-      font-weight: bold;
-      line-height: 1.4;
+      font-size: 1.125rem;
+      line-height: 1.375rem;
     }
 
   }

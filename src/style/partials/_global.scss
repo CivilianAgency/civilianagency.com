@@ -2111,7 +2111,7 @@ footer {
 
       .line {
 
-        stroke-dashoffset: 0;
+        stroke-dashoffset: 0px;
         transition: all 3s;
 
         &.line-strategy {
@@ -2173,8 +2173,8 @@ footer {
   svg {
 
     .line {
-      stroke-dasharray: 500;
-      stroke-dashoffset: 500;
+      stroke-dasharray: 500px;
+      stroke-dashoffset: 500px;
     }
 
     .prop {

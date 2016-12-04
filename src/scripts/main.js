@@ -203,16 +203,16 @@ jQuery(document).ready(function($) {
   if ($('body').hasClass('page-template-culture')) {
     $('.culture-local').waypoint(function(direction) {
       if (direction == 'down') {
-        $('.st3-chicagoflag').addClass('moved');
+        $('.star-pattern-1').addClass('moved');
         $('.star-title-1').addClass('active');
         setTimeout(function() {
-          $('.st4-chicagoflag').addClass('moved');
+          $('.star-pattern-2').addClass('moved');
           $('.star-title-2').addClass('active');
           setTimeout(function() {
-            $('.st5-chicagoflag').addClass('moved');
+            $('.star-pattern-3').addClass('moved');
             $('.star-title-3').addClass('active');
             setTimeout(function() {
-              $('.st6-chicagoflag').addClass('moved');
+              $('.star-pattern-4').addClass('moved');
               $('.star-title-4').addClass('active');
             }, transitionSpeed);
           }, transitionSpeed);

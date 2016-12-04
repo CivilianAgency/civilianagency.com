@@ -238,9 +238,14 @@ a {
         color: $red;
         font-weight: normal;
 
+        &:hover:after {
+          background-image: url('../images/chevron-with-circle-right-red-reversed.svg');
+        }
+
         &:after {
           background-image: url('../images/chevron-with-circle-right-red.svg');
         }
+
       }
 
     }

@@ -4,6 +4,111 @@ var mapCenter = new google.maps.LatLng(41.890687, -87.624778);
 var slideSpeed = 200;
 var transitionSpeed = 600;
 var maxMobileSize = 767;
+var mapStyle = [{
+	"featureType": "landscape",
+	"elementType": "all",
+	"stylers": [{
+		"hue": "#ffbb00"
+	}, {
+		"saturation": 43.40
+	}, {
+		"lightness": 37.60
+	}, {
+		"gamma": 1
+	}]
+}, {
+	"featureType": "landscape",
+	"elementType": "geometry.fill",
+	"stylers": [{
+		"saturation": "10"
+	}]
+}, {
+	"featureType": "landscape.natural.terrain",
+	"elementType": "all",
+	"stylers": [{
+		"color": "#000000"
+	}]
+}, {
+	"featureType": "poi",
+	"elementType": "all",
+	"stylers": [{
+		"hue": "#00FF6A"
+	}, {
+		"saturation": -1.0989
+	}, {
+		"lightness": 11.20
+	}, {
+		"gamma": 1
+	}]
+}, {
+	"featureType": "poi.park",
+	"elementType": "geometry",
+	"stylers": [{
+		"color": "#46b978"
+	}, {
+		"saturation": "-0"
+	}, {
+		"lightness": "60"
+	}]
+}, {
+	"featureType": "road.highway",
+	"elementType": "all",
+	"stylers": [{
+		"hue": "#FFC200"
+	}, {
+		"saturation": -61.8
+	}, {
+		"lightness": 45.60
+	}, {
+		"gamma": 1
+	}]
+}, {
+	"featureType": "road.arterial",
+	"elementType": "all",
+	"stylers": [{
+		"hue": "#FF0300"
+	}, {
+		"saturation": -100
+	}, {
+		"lightness": 51.20
+	}, {
+		"gamma": 1
+	}]
+}, {
+	"featureType": "road.local",
+	"elementType": "all",
+	"stylers": [{
+		"hue": "#FF0300"
+	}, {
+		"saturation": -100
+	}, {
+		"lightness": 52
+	}, {
+		"gamma": 1
+	}]
+}, {
+	"featureType": "water",
+	"elementType": "all",
+	"stylers": [{
+		"hue": "#0078FF"
+	}, {
+		"saturation": -13.20
+	}, {
+		"lightness": 2.40
+	}, {
+		"gamma": 1
+	}]
+}, {
+	"featureType": "water",
+	"elementType": "geometry",
+	"stylers": [{
+		"color": "#20a8b6"
+	}, {
+		"lightness": "0"
+	}, {
+		"gamma": "3"
+	}]
+}];
 
 jQuery(document).ready(function($) {
 
@@ -20,7 +125,7 @@ jQuery(document).ready(function($) {
       scrollwheel: false,
       zoom: 16,
       disableDefaultUI: true,
-      mapTypeId: google.maps.MapTypeId.HYBRID
+      styles: mapStyle
     });
 
     var cvlnMarker = new google.maps.Marker({
@@ -273,7 +378,7 @@ jQuery(document).ready(function($) {
 });
 
 function poiClick(marker, i, map, content) {
-  google.maps.event.addListener(marker, 'click', (function(marker, i) {
+  google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
     return function() {
       map.panTo(marker.getPosition());
       infoBubble.setContent('<div class="map-infobubble">' + content + '</div>');

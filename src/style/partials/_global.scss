@@ -1902,10 +1902,22 @@ footer {
   }
 
   .copyright {
+
     padding-top: 3rem;
     font-size: 0.875rem;
     line-height: 1.5;
     text-align: center;
+
+    a {
+
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+    }
+
   }
 
   .footer-contact-links {

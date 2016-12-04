@@ -36,20 +36,51 @@
           <h2 class="title-boxed title-boxed-line">Leadership Team</h2>
         </div>
       </div>
-      <div class="pure-u-lg-1-8"></div>
-      <div class="pure-u-lg-3-4">
-        <div class="pure-g">
-          <?php if (have_rows('leadership_team_member')) : while (have_rows('leadership_team_member')) : the_row(); ?><div class="leadership-team-member preview-card preview-card-tight pure-u-sm-1-2">
-            <div class="team-member-main-image<?php if (get_sub_field('rollover_image')) { echo ' rollover-wrap'; } ?>" style="background-image: url('<?php echo get_sub_field('main_image')['url']; ?>');"><?php if (get_sub_field('rollover_image')) { echo '<div class="team-member-rollover-image rollover-secondary" style="background-image: url(\'' . get_sub_field('rollover_image')['url'] . '\');"></div>'; } ?></div>
+      <?php if (have_rows('leadership_team_member')) { ?>
+      <div class="pure-u-lg-1-1">
+        <div class="pure-g"><?php
+            $teamCount = count(get_field('leadership_team_member'));
+            $teamRows = $teamCount / 3;
+            $teamRowsFull = floor($teamRows);
+            $i = 1;
+            $rowCount = 1;
+            while (have_rows('leadership_team_member')) {
+              the_row();
+              if (($i - 1) % 3 == 0) {
+                if ($i != 1) {
+                  echo '</div><div class="pure-g">';
+                }
+                if (($teamCount - $i) < 3) {
+                  if (($teamCount - $i) == 1) {
+                    echo '<div class="pure-u-sm-1-6"></div>';
+                  } else if (($teamCount - $i) == 0) {
+                    echo '<div class="pure-u-sm-1-3"></div>';
+                  }
+                }
+              }
+              echo '<!-- ' . $i . '-->';
+              echo '<!-- Left: ' . ($teamCount - $i) . '-->';
+          ?><div class="leadership-team-member preview-card preview-card-tight-third pure-u-sm-1-3">
+            <div class="team-member-main-image<?php if (get_sub_field('rollover_image')) { echo ' rollover-wrap'; } ?>" style="background-image: url('<?php echo get_sub_field('main_image')['url']; ?>');"><?php if (get_sub_field('rollover_image')) {
+              echo '<div class="team-member-rollover-image rollover-secondary" style="background-image: url(\'' . get_sub_field('rollover_image')['url'] . '\');">';
+                if (get_sub_field('rollover_caption')) {
+                  echo '<div class="caption">' . get_sub_field('rollover_caption') . '</div>';
+                }
+              echo '</div>';
+            } ?></div>
             <h2><?php echo get_sub_field('title'); ?></h2>
-          </div><?php endwhile; endif; ?>
-          <?php if (get_field('leadership_outro')) { ?>
-          <div class="pure-u-lg-1-1">
-            <?php echo get_field('leadership_outro'); ?>
-          </div>
-          <?php } ?>
+          </div><?php $i++; } ?>
         </div>
       </div>
+      <?php } ?>
+      <?php if (get_field('leadership_outro')) { ?>
+      <div class="pure-u-lg-1-8"></div>
+      <div class="pure-u-lg-3-4">
+        <div class="leadership-explanation pure-u-lg-1-1">
+          <?php echo get_field('leadership_outro'); ?>
+        </div>
+      </div>
+      <?php } ?>
     </div>
   </div>
 </section>

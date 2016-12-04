@@ -1502,19 +1502,19 @@ a {
     transition: $transition;
 
     &.st3-chicagoflag.moved {
-      transform: translate(0px, -52.5%);
+      transform: translate(0px, -66px);
     }
 
     &.st4-chicagoflag.moved {
-      transform: translate(0px, -45%);
+      transform: translate(0px, -58px);
     }
 
     &.st5-chicagoflag.moved {
-      transform: translate(0px, -30%);
+      transform: translate(0px, -39px);
     }
 
     &.st6-chicagoflag.moved {
-      transform: translate(0px, -22.5%);
+      transform: translate(0px, -29px);
     }
 
   }

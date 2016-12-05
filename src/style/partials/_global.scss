@@ -2151,7 +2151,7 @@ footer {
 
       .capabilities-box-header-subtitle {
         opacity: 1;
-        transition-delay: 0.75s;
+        transition-delay: 1.5s;
       }
 
       &.box-creative {
@@ -2159,27 +2159,27 @@ footer {
         transition-delay: 2s;
 
         .capabilities-box-header-subtitle {
-          transition-delay: 2.75s;
+          transition-delay: 2.5s;
         }
 
       }
 
       &.box-delivery {
 
-        transition-delay: 4s;
+        transition-delay: 3s;
 
         .capabilities-box-header-subtitle {
-          transition-delay: 4.75s;
+          transition-delay: 3.5s;
         }
 
       }
 
       &.box-analytics {
 
-        transition-delay: 6s;
+        transition-delay: 4s;
 
         .capabilities-box-header-subtitle {
-          transition-delay: 6.75s;
+          transition-delay: 4.5s;
         }
 
       }
@@ -2198,15 +2198,15 @@ footer {
         }
 
         &.line-creative {
-          transition-delay: 3s;
+          transition-delay: 2.5s;
         }
 
         &.line-delivery {
-          transition-delay: 5s;
+          transition-delay: 3.5s;
         }
 
         &.line-analytics {
-          transition-delay: 7s;
+          transition-delay: 4.5s;
         }
 
       }
@@ -2220,15 +2220,15 @@ footer {
         }
 
         &.prop-creative {
-          transition-delay: 3.5s;
+          transition-delay: 2.5s;
         }
 
         &.prop-delivery {
-          transition-delay: 5.5s;
+          transition-delay: 3.5s;
         }
 
         &.prop-analytics {
-          transition-delay: 7.5s;
+          transition-delay: 5s;
         }
 
       }

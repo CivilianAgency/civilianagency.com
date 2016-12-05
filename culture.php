@@ -177,7 +177,7 @@
           <?php $i = 0; while (have_rows('care')) { the_row(); ?>
           <div class="cares-item<?php if ($i == 0) { echo ' active'; } ?>"<?php if ($i == 0) { echo ' style="display: block;"'; } ?>">
             <div class="cares-item-image"<?php if (get_sub_field('care_image')) { echo ' style="background-image: url(\'' . get_sub_field('care_image')['url'] . '\');"'; } ?>>
-              <a href="https://player.vimeo.com/video/15164945?autoplay=1&title=0&byline=0&portrait=0" class="colorbox cares-item-video-play"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/play-button.svg"><div class="button-title">Watch the Video</div></a>
+              <?php if (get_sub_field('care_video_url')) { ?><a href="<?php echo get_sub_field('care_video_url'); ?>" class="colorbox cares-item-video-play"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/play-button.svg"><div class="button-title">Watch the Video</div></a><?php } ?>
             </div>
             <div class="cares-item-content">
               <h2><?php echo get_sub_field('care_title'); ?><?php if (get_sub_field('care_subtitle')) { echo ' <span class="subtitle">' . get_sub_field('care_subtitle') . '</span>'; } ?></h2>

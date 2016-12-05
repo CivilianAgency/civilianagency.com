@@ -275,53 +275,57 @@ a {
         margin-right: 1rem;
       }
 
-      &:nth-child(1) a {
+      &:nth-child(1) {
 
-        &:before {
+        a:before {
           content: '01';
           color: $red-orange;
         }
 
-        &:hover {
+        a:hover,
+        &.current-menu-item a {
           border-bottom-color: $red-orange;
         }
 
       }
 
-      &:nth-child(2) a {
+      &:nth-child(2) {
 
-        &:before {
+        a:before {
           content: '02';
           color: $turquoise;
         }
 
-        &:hover {
+        a:hover,
+        &.current-menu-item a {
           border-bottom-color: $turquoise;
         }
 
       }
 
-      &:nth-child(3) a {
+      &:nth-child(3) {
 
-        &:before {
+        a:before {
           content: '03';
           color: $red;
         }
 
-        &:hover {
+        a:hover,
+        &.current-menu-item a {
           border-bottom-color: $red;
         }
 
       }
 
-      &:nth-child(4) a {
+      &:nth-child(4) {
 
-        &:before {
+        a:before {
           content: '04';
           color: $green;
         }
 
-        &:hover {
+        a:hover,
+        &.current-menu-item a {
           border-bottom-color: $green;
         }
 
@@ -1976,6 +1980,8 @@ footer {
 
     a {
 
+      text-decoration: none;
+
       &:hover {
 
         &:after {
@@ -2148,7 +2154,7 @@ footer {
         transition-delay: 0.75s;
       }
 
-      &.box-analytics {
+      &.box-creative {
 
         transition-delay: 2s;
 
@@ -2168,7 +2174,7 @@ footer {
 
       }
 
-      &.box-creative {
+      &.box-analytics {
 
         transition-delay: 6s;
 
@@ -2191,7 +2197,7 @@ footer {
           transition-delay: 1s;
         }
 
-        &.line-analytics {
+        &.line-creative {
           transition-delay: 3s;
         }
 
@@ -2199,7 +2205,7 @@ footer {
           transition-delay: 5s;
         }
 
-        &.line-creative {
+        &.line-analytics {
           transition-delay: 7s;
         }
 
@@ -2213,7 +2219,7 @@ footer {
           transition-delay: 1.5s;
         }
 
-        &.prop-analytics {
+        &.prop-creative {
           transition-delay: 3.5s;
         }
 
@@ -2221,7 +2227,7 @@ footer {
           transition-delay: 5.5s;
         }
 
-        &.prop-creative {
+        &.prop-analytics {
           transition-delay: 7.5s;
         }
 

@@ -139,6 +139,8 @@ jQuery(document).ready(function($) {
       }
     });
 
+		poiClick(cvlnMarker, 0, map, '<div class="point-title">CIVILIAN</div><div class="point-description">444 North Michigan Avenue, 33rd Floor</div>');
+
     if (pointsOI.length >= 1) {
       for (i = 0; i < pointsOI.length; i++) {
         var thisLatLng = new google.maps.LatLng(pointsOI[i][2], pointsOI[i][3]);
@@ -162,18 +164,19 @@ jQuery(document).ready(function($) {
         poiClick(marker, i, map, content);
       }
       infoBubble = new InfoBubble({
-        map: map,
-        hideCloseButton: true,
-        arrowPosition: 30,
-        arrowSize: 0,
-        padding: 0,
-        minHeight: 10,
-        maxHeight: 400,
-        minWidth: 10,
-        maxWidth: 200,
-        borderRadius: 0,
-        borderColor: '#e94d3a',
-        borderWidth: 2
+				map: map,
+				hideCloseButton: true,
+				arrowPosition: 30,
+				arrowSize: 0,
+				padding: 0,
+				minHeight: 10,
+				maxHeight: 400,
+				minWidth: 10,
+				maxWidth: 200,
+				borderRadius: 0,
+				borderColor: '#e94d3a',
+				borderWidth: 2,
+				disableAutoPan: true
       });
     }
   }
@@ -380,7 +383,6 @@ jQuery(document).ready(function($) {
 function poiClick(marker, i, map, content) {
   google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
     return function() {
-      map.panTo(marker.getPosition());
       infoBubble.setContent('<div class="map-infobubble">' + content + '</div>');
       infoBubble.open(map, this);
       google.maps.event.addListener(infoBubble, 'domready', function() {

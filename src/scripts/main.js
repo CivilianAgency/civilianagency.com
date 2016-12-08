@@ -381,7 +381,11 @@ jQuery(document).ready(function($) {
 });
 
 function poiClick(marker, i, map, content) {
-  google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
+	var markerAction = 'mouseover';
+	if (jQuery(window).width() <= maxMobileSize) {
+		markerAction = 'click';
+	}
+  google.maps.event.addListener(marker, markerAction, (function(marker, i) {
     return function() {
       infoBubble.setContent('<div class="map-infobubble">' + content + '</div>');
       infoBubble.open(map, this);

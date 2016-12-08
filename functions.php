@@ -10,7 +10,7 @@ remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
 
 function civ_custom_scripts() {
-  $cacheVersion = '2.0.26';
+  $cacheVersion = '2.0.27';
   wp_enqueue_style('civ-fonts-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
   wp_enqueue_style('civ-style', get_template_directory_uri() . '/dist/style/style.css', null, $cacheVersion);
 

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="buddy-capabilities" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 367.4 334.7" style="enable-background:new 0 0 367.4 334.7;" xml:space="preserve">
+<g id="lines" class="lines-wrap">
+	<polyline id="line-creative" class="line line-creative" style="fill:none;stroke:#F9BE00;stroke-miterlimit:10;" points="203.4,159.5 280.3,159.5
+		280.3,217.4 321.5,217.4 	"/>
+	<polyline id="line-delivery" class="line line-delivery" style="fill:none;stroke:#00A5B5;stroke-miterlimit:10;" points="3.4,216.2 125.1,216.2 125.1,289.3
+		"/>
+	<polyline id="line-analytics" class="line line-analytics" style="fill:none;stroke:#FF4338;stroke-miterlimit:10;" points="367.4,0.5 215.2,0.5 215.2,86.5
+		"/>
+	<polyline id="line-strategy"  class="line line-strategy" style="fill:none;stroke:#9F958B;stroke-miterlimit:10;" points="0,0.5 166.2,0.5 166.2,100.5 	"/>
+</g>
+<g id="buddy">
+	<path style="fill:#CD202E;" d="M200,213.4c-0.5,2.9,0.2,8.5,1.4,11.2l32,69.4c1.6,3.5,3.5,7.6,0.7,12c-1.6,2.6-4.5,4.1-7.6,4.1l0,0
+		c-5.4,0-7.8-4.1-9.8-7.3l-39.5-66.5l-10.7,21.8c-2.5,5.1-7.5,12.3-11.3,16.5l-21.6,23.3c-2.8,3-5,5.4-9.1,5.4c-3.4,0-6.6-2-8.1-5.1
+		c-2.5-5.2,0.5-9,3.2-12.4l21.3-26.4c2.3-2.8,5.3-8.6,6.3-12.1l7.9-27.6c1.1-4,2.5-11.3,2.8-15.4l3.5-42.4
+		c-17.2,5.7-34.1,28.2-39.8,37.6c-2.4,3.9-4.5,7.3-9.6,7.4h0c-3.1,0-6.1-1.7-7.7-4.4c-2.6-4.5-0.7-8,1.5-12.1
+		c1.3-2.3,33.1-58.5,76.1-55.1c18.6,1.6,24.5,15.5,28.4,24.8c0.9,2.1,1.8,4.2,2.8,6.1l24.5,44.3c2.3,4.2,0.9,9.7-3.2,12.2
+		c-4.2,2.5-9.4,1.3-12-2.8l-18.2-29.1L200,213.4z"/>
+	<g>
+		<path style="fill:#CD202E;" d="M211.5,99.8c1.9,11.6-6,22.6-17.6,24.5c-11.6,1.9-22.6-6-24.5-17.6c-1.9-11.6,5.9-22.6,17.5-24.5
+			C198.6,80.3,209.6,88.2,211.5,99.8z"/>
+	</g>
+</g>
+<g id="props">
+
+		<path id="prop-creative" class="prop prop-creative" style="fill-rule:evenodd;clip-rule:evenodd;fill:#F9BE00;stroke:#FFFFFF;stroke-width:1.125;stroke-miterlimit:10;" d="
+		M213.4,164.9c3.6-3.7,3.6-9.6,0-13.3c-1.9-1.9-4.3-2.8-6.7-2.8c-3.4,0.1-9,4.6-9,4.6s-5.8-4.6-9.2-4.6c-2.4,0-4.7,0.9-6.5,2.8
+		c-3.6,3.7-3.6,9.6,0,13.3l15.7,16L213.4,164.9z"/>
+	<g id="prop-delivery" class="prop prop-delivery">
+		<g>
+			<g>
+				<polygon style="fill:#FFFFFF;" points="228.9,282.6 239.2,292.8 250.7,297.3 257.7,297.5 253.7,304.5 239.4,303.4 226,290.8
+									"/>
+				<g>
+					<path style="fill:#00A5B5;" d="M240.8,291.8c-0.6,1.1-1.2,2.1-1.7,3.1c-0.3,0.5-0.2,1.1,0.1,1.6c0.4,0.5,0.9,0.7,1.4,0.5
+						c0.3-0.1,0.6-0.4,0.8-0.7c0.6-1,1.2-2.1,1.9-3.3c1,0.4,2,0.9,3.1,1.3c-0.1,0.7-0.2,1.5-0.3,2.2c-0.1,0.6-0.2,1.3-0.2,1.9
+						c-0.1,0.9,0.4,1.6,1.1,1.8c0.7,0.1,1.3-0.3,1.4-1.2c0.1-1,0.3-2.1,0.4-3.1c0-0.2,0.1-0.4,0.1-0.6c1.3,0.2,2.6,0.4,3.9,0.6
+						c0,0.9,0,1.8,0,2.7c0,0.9,0.5,1.6,1.3,1.7c0.8,0.1,1.3-0.5,1.3-1.4c0-1.1,0-2.1,0-3.3c1.6-0.2,3.2-0.4,4.9-0.6
+						c-0.2,0.5-0.4,1-0.6,1.5c-1,2.5-1.6,5.2-2,8c-0.1,0.4-0.2,0.6-0.5,0.8c-10.1,4.4-22,9.7-32.1,14c-1,0.5-2.1,0.9-3.1,1.3
+						c-0.7,0.3-1.4,0-1.8-0.8c-1.9-4.3-3.4-8.6-3.6-13.3c-0.2-2.1-2.9-7.3-2.9-7.3s-3-5.2-3.4-5.7c0.9-0.5,1.7-1,2.5-1.5
+						c3.3-1.9,8.3-4.8,11.6-6.7c1.6-0.9,3.1-1.9,4.7-2.8c0.1-0.1,0.4-0.1,0.5,0c1.2,1,5,5.1,6.2,6.2c-0.9,0.7-1.8,1.5-2.8,2.3
+						c-0.1,0.1-0.3,0.2-0.4,0.3c-0.5,0.5-0.6,1.3-0.1,1.9c0.5,0.6,1.3,0.8,1.8,0.3c1.2-0.9,2.3-1.8,3.4-2.8c0.5-0.4,0.8-0.5,1.4-0.1
+						C239.5,291.1,240.1,291.4,240.8,291.8z M221.7,306.7c1.6,3.5,5.5,5.3,8.7,3.9c3.1-1.4,4.4-5.4,2.9-8.9
+						c-1.6-3.6-5.5-5.3-8.6-3.9C221.4,299.2,220.1,303.2,221.7,306.7z"/>
+					<path style="fill:#F9BE00;" d="M221.1,321.9c11.5-5,24.8-10.9,36.3-15.9c0.5,1.2,1,2.3,1.6,3.5c-0.1,0.1-0.3,0.2-0.4,0.2
+						c-10.9,4.7-23.6,10.4-34.5,15.1c-0.9,0.4-1.6-0.1-2.2-1.4C221.6,323,221.4,322.5,221.1,321.9z"/>
+					<path style="fill:#F9BE00;" d="M259.4,303.5c0.1-0.4,0.1-0.6,0.1-0.9c0.6-2,1.1-3.9,1.7-5.8c0.2-0.6,0.6-1.1,0.9-1.6
+						c0.5-0.7,1-1.1,1.9-1.1c1.7,0,3.4-0.2,5.1-0.2c1.3,0,1.6,0.6,0.9,1.8c-0.7,1.3-1.8,2.2-3,3.1
+						C264.8,300.6,262.2,302,259.4,303.5z"/>
+					<path style="fill:#F9BE00;" d="M271.4,296.3c1,1.6,1.4,3.1,0.4,4.4c-1.4,1.7-3.1,2.9-4.8,4c-2,1.2-4.1,2.3-6.1,3.4
+						c-0.1,0.1-0.2,0.1-0.4,0.2c-0.4-0.9-1.2-2.4-1.5-3.3C263.5,302.7,268.1,300.5,271.4,296.3z"/>
+					<path style="fill:#F9BE00;stroke:#FFFFFF;stroke-miterlimit:10;" d="M221.4,307.1c-1.7-3.8-0.3-8.1,3.1-9.6
+						c3.4-1.5,7.6,0.4,9.3,4.2c1.7,3.8,0.3,8.1-3.1,9.6C227.3,312.8,223.1,311,221.4,307.1z"/>
+				</g>
+			</g>
+			<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="206.3" y1="296.3" x2="229.8" y2="282.7"/>
+		</g>
+		<g>
+			<g>
+				<g>
+					<polygon style="fill:#FFFFFF;" points="144.1,288.3 136.9,300.9 135.4,313.2 136.9,320 129.2,317.8 126.6,303.8 135.5,287.6
+											"/>
+					<g>
+						<path style="fill:#00A5B5;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:10;" d="M138.2,302.1c-1.2-0.3-2.3-0.6-3.4-0.9
+							c-0.6-0.2-1.1,0-1.5,0.5c-0.4,0.5-0.5,1-0.2,1.4c0.2,0.3,0.6,0.5,0.9,0.6c1.2,0.4,2.4,0.7,3.6,1c-0.2,1.1-0.3,2.1-0.5,3.3
+							c-0.7,0.1-1.5,0.2-2.2,0.3c-0.6,0.1-1.3,0.2-1.9,0.3c-0.9,0.1-1.5,0.8-1.4,1.5c0,0.7,0.7,1.2,1.5,1.1c1-0.1,2.1-0.3,3.1-0.4
+							c0.2,0,0.4,0,0.6-0.1c0.1,1.3,0.3,2.6,0.4,3.9c-0.8,0.2-1.7,0.4-2.6,0.7c-0.9,0.2-1.4,0.9-1.3,1.7c0.1,0.8,0.8,1.1,1.7,0.9
+							c1-0.3,2.1-0.5,3.2-0.8c0.6,1.5,1.2,3,1.8,4.6c-0.6-0.1-1.1-0.2-1.6-0.2c-2.7-0.4-5.5-0.2-8.3,0.1c-0.4,0.1-0.6,0-0.9-0.3
+							c-6.8-8.7-14.9-18.8-21.6-27.5c-0.7-0.9-1.4-1.8-2.1-2.7c-0.5-0.6-0.4-1.4,0.3-2c3.6-2.9,7.5-5.4,12-6.8
+							c2-0.7,6.3-4.7,6.3-4.7s4.3-4.2,4.7-4.7c0.7,0.7,1.4,1.4,2.1,2.1c2.7,2.7,6.7,6.8,9.4,9.5c1.3,1.3,2.6,2.6,3.9,3.9
+							c0.1,0.1,0.2,0.4,0.1,0.5c-0.7,1.4-3.7,6.1-4.4,7.6c-1-0.7-1.9-1.4-2.9-2.1c-0.1-0.1-0.3-0.2-0.4-0.3
+							c-0.6-0.4-1.4-0.2-1.9,0.3c-0.5,0.6-0.4,1.4,0.1,1.9c1.2,0.9,2.4,1.8,3.6,2.6c0.5,0.3,0.7,0.7,0.4,1.3
+							C138.5,300.7,138.4,301.4,138.2,302.1z M118.9,287.5c-3,2.4-3.8,6.6-1.6,9.4c2.1,2.7,6.4,2.9,9.4,0.5c3-2.4,3.8-6.6,1.6-9.4
+							C126.2,285.3,122,285,118.9,287.5z"/>
+						<path style="fill:#F9BE00;" d="M104.1,290.7c7.7,9.9,16.8,21.3,24.5,31.1c-1,0.8-2,1.6-3,2.4c-0.1-0.1-0.2-0.2-0.3-0.3
+							c-7.3-9.4-16-20.3-23.3-29.6c-0.6-0.7-0.3-1.6,0.8-2.5C103.2,291.4,103.6,291.1,104.1,290.7z"/>
+						<path style="fill:#F9BE00;" d="M131.6,323.1c0.4,0,0.6-0.1,0.9-0.1c2,0.1,4.1,0.1,6.1,0.2c0.6,0,1.2,0.3,1.8,0.5
+							c0.8,0.3,1.3,0.7,1.5,1.6c0.5,1.6,1,3.2,1.5,4.9c0.3,1.3-0.2,1.7-1.5,1.3c-1.4-0.4-2.6-1.2-3.7-2.1
+							C135.7,327.6,133.7,325.4,131.6,323.1z"/>
+						<path style="fill:#F9BE00;" d="M141.6,333c-1.3,1.4-2.6,2.1-4.2,1.5c-2-0.9-3.6-2.2-5.1-3.7c-1.7-1.6-3.2-3.4-4.8-5
+							c-0.1-0.1-0.2-0.2-0.3-0.3c0.7-0.6,2.1-1.7,2.8-2.3C133.4,326.9,136.7,330.7,141.6,333z"/>
+						<path style="fill:#F9BE00;stroke:#FFFFFF;stroke-miterlimit:10;" d="M118.5,287.2c3.3-2.6,7.8-2.4,10.1,0.6
+							c2.3,2.9,1.5,7.5-1.8,10.1c-3.2,2.6-7.8,2.3-10.1-0.6C114.4,294.4,115.2,289.8,118.5,287.2z"/>
+					</g>
+				</g>
+				<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="128.8" y1="272.9" x2="147.1" y2="291.3"/>
+			</g>
+			<path style="fill:#00A5B5;stroke:#FFFFFF;stroke-miterlimit:10;" d="M105.6,291.2c-0.5-0.6-0.4-1.4,0.3-2c3.6-2.9,7.5-5.4,12-6.8
+				c2-0.7,6.3-4.7,6.3-4.7s4.3-4.2,4.7-4.7c0.7,0.7,1.4,1.4,2.1,2.1"/>
+		</g>
+	</g>
+	<g id="prop-strategy" class="prop prop-strategy">
+		<path style="fill:#9F958B;" d="M206,115.8c-9.8,0-10.9-1.7-12.7-6.4c-0.6-1.6-0.8-3-1-4.1c-0.3-2-0.5-2.6-1.8-2.6
+			c-1.3,0-1.5,0.6-1.8,2.6c-0.2,1.1-0.4,2.5-1,4.1c-1.8,4.8-2.9,6.4-12.7,6.4c-8.8,0-9.2-7.2-9.4-10.3c0-0.6-0.1-1-0.1-1.3
+			c-0.4-1.5-1.2-2.1-2.1-2.8l-0.2-0.1c-0.8-0.6-0.9-1.5-0.7-2.2c0.2-0.5,0.5-0.8,1-0.8c0.1,0,0.6-0.1,1.1-0.3
+			c2.1-0.6,6.4-1.7,10.8-1.7c3.3,0,6.8,0.7,9.8,1.2c2.2,0.4,4.1,0.8,5.3,0.8c1.3,0,3.2-0.4,5.3-0.8c3.1-0.6,6.5-1.2,9.8-1.2
+			c4.3,0,8.7,1.2,10.8,1.7c0.5,0.1,1,0.3,1.1,0.3l0,0c0.4,0,0.8,0.3,1,0.8c0.2,0.7,0.1,1.6-0.7,2.2l-0.2,0.1
+			c-0.9,0.7-1.7,1.3-2.1,2.8c-0.1,0.2-0.1,0.7-0.1,1.3C215.2,108.6,214.8,115.8,206,115.8z M200.6,99.9c-1.5,0-2.8,0.6-3.8,1.8
+			c-1,1.2-1.3,2.8-1,4.2c1,4.1,3.3,6.2,6.7,6.2h3.2c3.3,0,6-2.7,6-6.1c0.1-2.8-0.2-4.4-1.1-5.3c-0.5-0.6-1.4-0.8-2.5-0.8H200.6z
+			 M172.7,99.9c-1.1,0-1.9,0.3-2.5,0.8c-0.8,0.9-1.2,2.5-1.1,5.3c0,3.4,2.7,6.1,6,6.1h3.2c3.4,0,5.8-2.2,6.7-6.2c0.3-1.4,0-3-1-4.2
+			c-0.9-1.2-2.3-1.8-3.8-1.8H172.7z"/>
+		<path style="fill:#FFFFFF;" d="M205.7,96.8c5.6,0,11.3,2,11.9,2s0.9,1.4,0,2.1c-0.9,0.7-2,1.4-2.5,3.2s0.8,11.2-9,11.2
+			c-9.9,0-10.6-1.7-12.2-6.1c-1.6-4.4-0.5-7.1-3.3-7.1c-2.8,0-1.7,2.7-3.3,7.1c-1.6,4.4-2.4,6.1-12.2,6.1c-9.9,0-8.6-9.4-9-11.2
+			c-0.5-1.8-1.5-2.5-2.5-3.2c-0.9-0.7-0.6-2.1,0-2.1c0.6,0,6.2-2,11.9-2c5.6,0,12.1,2,15.2,2C193.6,98.8,200,96.8,205.7,96.8
+			 M202.6,112.6h3.2c3.6,0,6.5-3,6.5-6.6c0.1-3.9-0.5-6.6-4-6.6h-7.6c-3.6,0-6,3.4-5.2,6.6C196.4,110.4,199,112.6,202.6,112.6
+			 M175.2,112.6h3.2c3.6,0,6.2-2.2,7.2-6.6c0.7-3.2-1.7-6.6-5.2-6.6h-7.6c-3.6,0-4.2,2.7-4,6.6C168.7,109.6,171.6,112.6,175.2,112.6
+			 M205.7,95.8c-3.3,0-6.8,0.7-9.9,1.3c-2.2,0.4-4,0.8-5.3,0.8c-1.2,0-3.1-0.4-5.3-0.8c-3.1-0.6-6.6-1.3-9.9-1.3
+			c-4.4,0-8.8,1.2-10.9,1.8c-0.4,0.1-0.9,0.2-1,0.3c-0.6,0-1.2,0.5-1.4,1.2c-0.3,0.8-0.1,2,0.9,2.7l0.2,0.1c0.9,0.6,1.6,1.2,1.9,2.5
+			c0,0.2,0.1,0.7,0.1,1.2c0.2,3.2,0.7,10.7,9.9,10.7c10.2,0,11.4-1.9,13.2-6.8c0.6-1.7,0.9-3.1,1.1-4.2c0.4-2.1,0.5-2.2,1.3-2.2
+			c0.8,0,1,0.1,1.3,2.2c0.2,1.1,0.4,2.5,1.1,4.2c1.8,4.8,2.9,6.8,13.2,6.8c9.2,0,9.7-7.5,9.9-10.7c0-0.5,0.1-1,0.1-1.2
+			c0.4-1.3,1.1-1.9,1.9-2.5l0.2-0.1c1-0.7,1.1-1.9,0.9-2.7c-0.2-0.7-0.8-1.2-1.4-1.2c-0.1,0-0.6-0.1-1-0.3
+			C214.5,97,210.1,95.8,205.7,95.8L205.7,95.8z M202.6,111.6c-4,0-5.6-3.2-6.3-5.8c-0.3-1.3,0-2.7,0.9-3.7c0.8-1.1,2-1.6,3.4-1.6
+			h7.6c1,0,1.6,0.2,2.1,0.7c0.7,0.8,1,2.3,0.9,4.9c0,3.1-2.5,5.7-5.5,5.7H202.6L202.6,111.6z M175.2,111.6c-3,0-5.5-2.5-5.5-5.6
+			c-0.1-2.7,0.2-4.2,0.9-4.9c0.5-0.5,1.1-0.7,2.1-0.7h7.6c1.3,0,2.5,0.6,3.4,1.6c0.9,1.1,1.2,2.5,0.9,3.8c-0.6,2.7-2.2,5.8-6.2,5.8
+			H175.2L175.2,111.6z"/>
+	</g>
+	<g id="prop-analytics" class="prop prop-analytics">
+		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#FF4338;" d="M202.6,101c-5.6,0-12-2.3-19.6-7.1l-0.9-0.6l1.1-0.3
+			c3.1-0.9,6.6-2.7,10.3-4.6c5.8-2.9,11.7-6,16.5-6c0.4,0,0.8,0,1.2,0.1l0.1,0l0.1,0c0,0,11.1,4,14.4,5.2l1.3,0.5l-1.3,0.5
+			c-1.6,0.6-3,1.9-4.5,3.3c-1,1-2.2,2-3.4,2.7C213.8,97.6,209.3,101,202.6,101C202.6,101,202.6,101,202.6,101z M169.3,96.2
+			c-2.3-12.8-2.4-25.4,11.8-30.5l1-0.4l-0.4,1c-1.4,3.6,1.8,11.9,4.2,17.9c1,2.5,1.8,4.6,2.3,6.2l0.1,0.4l-0.4,0.2
+			c-2,0.9-4,1.5-5.9,2.1l-12.6,3.6L169.3,96.2z M222.4,95.8c-1.1,0-2.3-0.2-3.6-0.6l-1-0.3l0.8-0.6c0.9-0.7,1.8-1.5,2.7-2.3
+			c1.7-1.6,3.5-3.2,5.6-3.5l0.3,0l0.2,0.3c0.8,1.1,0.7,3,0,4.4C226.8,94.2,225.5,95.8,222.4,95.8z M188.3,90.2
+			c-0.4-1.7-1.4-4.3-2.5-6.9c-2.8-6.9-5.9-14.6-3.3-18l0.1-0.1l0.2,0c0.6-0.2,1.3-0.3,2-0.4c1.4-0.2,2.7-0.2,4-0.2
+			c12.7,0,17.4,8,21.4,17l0.3,0.7l-0.8,0c-4.8,0-10.4,3-15.3,5.6c-1.9,1-3.7,2-5.4,2.8l-0.5,0.2L188.3,90.2z M180.8,64.8
+			c0.2-1.1,1-1.8,2-1.8c0.6,0,1.3,0.3,1.8,0.8l0.7,0.7l-0.9,0.2c-1,0.2-2,0.4-2.9,0.7l-0.8,0.3L180.8,64.8z"/>
+		<path style="fill:#FFFFFF;" d="M182.8,63.5c0.5,0,1,0.2,1.4,0.7c-1,0.2-2,0.4-2.9,0.7C181.5,64,182.1,63.5,182.8,63.5 M188.8,65
+			c12.2,0,16.8,7.4,21,16.7c-6.7,0-14.7,5.6-20.9,8.4c-1.5-6-9.3-20-5.9-24.5c0.7-0.2,1.3-0.3,2-0.4C186.3,65.1,187.6,65,188.8,65
+			 M181.2,66.2c-2,5.3,4.8,18.6,6.5,24.4c-1.8,0.8-3.7,1.5-5.8,2c-4,1.2-8.1,2.3-12.1,3.5C167.5,83.4,167.4,71.2,181.2,66.2
+			 M209.9,83c0.4,0,0.8,0,1.2,0.1c0,0,11.1,4,14.4,5.2c-1.7,0.6-3.2,2-4.7,3.4c-1.1,1-2.2,1.9-3.3,2.7c-4.1,3.1-8.5,6.3-14.9,6.3
+			c-4.9,0-11.1-1.8-19.3-7C191.2,91.1,202.4,83,209.9,83 M226.9,89.1c1.2,1.7,0.4,6.3-4.5,6.3c-1,0-2.1-0.2-3.5-0.6
+			c0.9-0.7,1.8-1.5,2.7-2.3C223.4,90.9,225,89.4,226.9,89.1 M182.8,62.5c-1.2,0-2.2,0.9-2.5,2.2l-0.2,0.8
+			c-13.8,5.4-13.6,18-11.4,30.8l0.2,1.1l1.1-0.3l11.7-3.3l1,0.6c7.7,4.8,14.2,7.1,19.8,7.1c6.6,0,11.1-3.2,15-6.1l1,0.3
+			c1.4,0.4,2.6,0.6,3.8,0.6c3.3,0,4.8-1.8,5.4-2.9c0.9-1.6,0.9-3.7,0-4.9l-0.1-0.1l0.7-0.2l-2.5-0.9c-3.3-1.2-14.4-5.2-14.4-5.2
+			l-0.1,0l-0.1,0c-0.1,0-0.1,0-0.2,0l-0.3-0.7c-4.1-9.1-8.9-17.3-21.9-17.3c-1,0-2.1,0.1-3.2,0.2l-0.7-0.7
+			C184.4,62.8,183.6,62.5,182.8,62.5L182.8,62.5z"/>
+	</g>
+</g>
+<g id="boxes" style="display:none;">
+	<g id="box-creative" style="display:inline;">
+		<rect x="318.9" y="232.8" style="fill:none;stroke:#F9BE00;stroke-miterlimit:10;" width="152.8" height="144"/>
+		<rect x="318.9" y="195.8" style="fill:#F9BE00;stroke:#F9BE00;stroke-miterlimit:10;" width="152.8" height="37.1"/>
+		<rect x="318.9" y="202.2" style="fill:none;" width="152.8" height="33.9"/>
+		<text transform="matrix(1 0 0 1 364.0358 212.2566)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:'EnzoOT-Bold'; font-size:14px;">CREATIVE</tspan><tspan x="-28.5" y="14.4" style="fill:#FFFFFF; font-family:'EnzoOT-LightIta'; font-size:12px;">heartbeat of the agency </tspan></text>
+		<text transform="matrix(1 0 0 1 350.9681 251.7565)"><tspan x="0" y="0" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Art/Design/Copy </tspan><tspan x="17.5" y="18.5" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">TV/Video  </tspan><tspan x="-13.2" y="37" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Content Development</tspan><tspan x="4.9" y="55.5" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Video Graphics</tspan><tspan x="14.4" y="74" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Animations</tspan><tspan x="-6.6" y="92.5" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Full Digital Services</tspan><tspan x="-2.7" y="111" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Print/OOH/Transit</tspan></text>
+	</g>
+	<g id="box-delivery" style="display:inline;">
+		<rect x="-107.2" y="226.3" style="fill:none;stroke:#00A5B5;stroke-miterlimit:10;" width="152.8" height="152.8"/>
+		<rect x="-107.5" y="195.8" style="fill:#00A5B5;stroke:#00A5B5;stroke-miterlimit:10;" width="153.4" height="36.7"/>
+		<rect x="-107.3" y="201.8" style="fill:none;" width="152.8" height="33.9"/>
+		<text transform="matrix(1 0 0 1 -62.739 211.8958)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:'EnzoOT-Bold'; font-size:14px;">delivery</tspan><tspan x="-19.5" y="14.4" style="fill:#FFFFFF; font-family:'EnzoOT-LightIta'; font-size:12px;">making things move</tspan></text>
+		<text transform="matrix(1 0 0 1 -65.5983 251.7563)"><tspan x="0" y="0" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Video Shoots</tspan><tspan x="-10.5" y="18.5" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Editing/Music/VO</tspan><tspan x="7.8" y="37" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Art Buying</tspan><tspan x="0.9" y="55.5" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Photography</tspan><tspan x="-7.5" y="74" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Print Production</tspan><tspan x="-27.1" y="92.5" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Front End Development</tspan><tspan x="6.7" y="111" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Trafficking</tspan></text>
+	</g>
+	<g id="box-analytics" style="display:inline;">
+		<rect x="319.2" y="12.2" style="fill:none;stroke:#FF4338;stroke-miterlimit:10;" width="152.2" height="152.2"/>
+		<rect x="318.9" y="-17.8" style="fill:#FF4338;stroke:#FF4338;stroke-miterlimit:10;" width="152.8" height="37.6"/>
+		<rect x="318.9" y="-10.5" style="fill:none;" width="152.8" height="33.9"/>
+		<text transform="matrix(1 0 0 1 358.821 -0.4482)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:'EnzoOT-Bold'; font-size:14px;">Analytics</tspan><tspan x="-21.4" y="14.4" style="fill:#FFFFFF; font-family:'EnzoOT-LightIta'; font-size:12px;">brains behind the work</tspan></text>
+		<text transform="matrix(1 0 0 1 351.0586 37.8595)"><tspan x="0" y="0" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">KPI Identification</tspan><tspan x="7" y="18.5" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Campaign ROI</tspan><tspan x="-8.2" y="37" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Dashboard Creation</tspan><tspan x="-9.6" y="55.5" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Campaign Reporting</tspan><tspan x="10.2" y="74" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Optimization</tspan><tspan x="-21.3" y="92.5" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Advanced Data Modeling</tspan><tspan x="16.2" y="111" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Attribution</tspan></text>
+	</g>
+	<g id="box-strategy" style="display:inline;">
+		<rect x="-107.2" y="18.9" style="fill:none;stroke:#9F958B;stroke-miterlimit:10;" width="152.8" height="145.5"/>
+		<rect x="-107.5" y="-17.8" style="fill:#9F958B;stroke:#9F958B;stroke-miterlimit:10;" width="153.4" height="36.8"/>
+		<rect x="-107.2" y="-11.5" style="fill:none;" width="152.8" height="33.9"/>
+		<text transform="matrix(1 0 0 1 -65.0407 -1.4482)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:'EnzoOT-Bold'; font-size:14px;">STRATEGY</tspan><tspan x="-6.7" y="14.4" style="fill:#FFFFFF; font-family:'EnzoOT-LightIta'; font-size:12px;">guides our ideas </tspan></text>
+		<text transform="matrix(1 0 0 1 -78.6901 37.8594)"><tspan x="0" y="0" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Strategic Planning</tspan><tspan x="-0.8" y="18.5" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Brand Architecture</tspan><tspan x="1.6" y="37" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Brand Positioning</tspan><tspan x="-20.3" y="55.5" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Customer Journey Mapping</tspan><tspan x="4.1" y="74" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Market Research</tspan><tspan x="10.7" y="92.5" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;">Segmentation</tspan><tspan x="18.3" y="111" style="fill:#004750; font-family:'EnzoOT-Medi'; font-size:12px;"> Messaging</tspan></text>
+	</g>
+</g>
+</svg>

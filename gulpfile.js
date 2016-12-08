@@ -1,83 +1,74 @@
 var gulp          = require('gulp'),
+    sourcemaps    = require('gulp-sourcemaps'),
     sass          = require('gulp-sass'),
     scsslint      = require('gulp-scss-lint'),
     autoprefixer  = require('gulp-autoprefixer'),
-    jshint        = require('gulp-jshint'),
-    rename        = require('gulp-rename'),
     concat        = require('gulp-concat'),
+    jshint        = require('gulp-jshint'),
     uglify        = require('gulp-uglify'),
+    filter        = require('gulp-filter'),
     imagemin      = require('gulp-imagemin'),
     pngquant      = require('imagemin-pngquant'),
-    filter        = require('gulp-filter'),
-    browserSync   = require('browser-sync');
+    browserSync   = require('browser-sync').create(),
+    reload        = browserSync.reload,
+    sourcemaps    = require('gulp-sourcemaps'),
+    livereload = require('gulp-livereload');
 
-gulp.task('browser-sync', function() {
-  browserSync({
-    server: {
-      baseDir: './'
-    },
-    open: false
-  });
-});
+    cp            = require('child_process');
 
-gulp.task('scss-lint', function() {
-  return gulp.src('assets/src/style/**/*.scss')
-    .pipe(scsslint());
-});
+var paths = {
+  src: 'src/',
+  build: 'dist/'
+};
 
 gulp.task('sass', function() {
-  return gulp.src('assets/src/style/*.scss')
+  gulp.src(paths.src + 'style/**/*.scss')
+    .pipe(scsslint());
+  return gulp.src(paths.src + 'style/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(autoprefixer({
-      browsers: ['last 10 versions', 'ie 9', 'ie 8'],
+      browsers: ['last 10 versions', 'ie 9'],
       errLogToConsole: true,
       sync: true
     }))
     .on('error', function(error) { console.log(error.message); })
-    .pipe(gulp.dest('assets/dist/style'))
-    .pipe(filter('**/*.css'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(paths.build + 'style'))
+    .pipe(livereload());
 });
 
-gulp.task('lint', function() {
-  return gulp.src(['assets/src/scripts/**/*.js', ])
+gulp.task('js', function() {
+  return gulp.src([paths.src + 'scripts/vendor/**/*.js', paths.src + 'scripts/*.js'])
     .pipe(jshint())
-    .pipe(jshint.reporter('default'));
-});
-
-gulp.task('minify', function() {
-  gulp.src(['assets/src/scripts/vendor/jquery.waypoints.js', 'assets/src/scripts/cases/*.js'])
-    .pipe(concat('cases.js'))
-    .pipe(gulp.dest('assets/dist/scripts'))
-    .pipe(rename('cases.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('assets/dist/scripts'));
-  return gulp.src(['assets/src/scripts/*.js', 'assets/src/scripts/vendor/**/*.js'])
+    .pipe(jshint.reporter('default'))
+    .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('assets/dist/scripts'))
-    .pipe(rename('all.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('assets/dist/scripts'));
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(paths.build + 'scripts'));
 });
 
-gulp.task('imagemin', function() {
-  return gulp.src('assets/images/**/*')
+gulp.task('images', function() {
+  return gulp.src(paths.src + 'images/**/*')
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [{ removeViewBox: false }],
       use: [pngquant()]
-    }));
+    }))
+    .pipe(gulp.dest(paths.build + 'images'));
 });
 
-gulp.task('bs-reload', function() {
-  browserSync.reload();
+gulp.task('fonts', function() {
+  return gulp.src(paths.src + 'fonts/**/*')
+    .pipe(gulp.dest(paths.build + 'fonts'));
 });
 
-gulp.task('default', ['scss-lint', 'sass', 'lint', 'minify', 'imagemin', 'browser-sync'], function() {
-  gulp.watch('assets/src/style/**/*.scss', ['scss-lint', 'sass']);
-  gulp.watch('assets/src/scripts/**/*.js', ['lint', 'minify']);
-  gulp.watch('assets/images/**/*', ['imagemin']);
-  gulp.watch(['*.html', 'cases/ctca/*.html', 'cases/clearchoice/*.html'], ['bs-reload']);
+gulp.task('watch', function() {
+  gulp.watch(paths.src + 'style/**/*.scss', gulp.series('sass'));
+  gulp.watch(paths.src + 'scripts/**/*.js', gulp.series('js'));
+  gulp.watch(paths.src + 'images/**/*', gulp.parallel('images'));
+  gulp.watch(paths.src + 'fonts/**/*', gulp.parallel('fonts'));
 });
+
+gulp.task('default', gulp.parallel(gulp.parallel('sass', 'js', 'images', 'fonts'), 'watch'));

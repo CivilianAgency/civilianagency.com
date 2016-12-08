@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg id="record-player" class="record-player" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 900 900" style="enable-background:new 0 0 900 900;" xml:space="preserve">
+<style type="text/css">
+		.st0-recordplayer{display:none;}
+
+		.st1-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.0496,0,12.0496,0,12.0496;}
+
+		.st2-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,11.9403,0,11.9403,0,11.9403;}
+
+		.st3-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,11.9406,0,11.9406,0,11.9406;}
+
+		.st4-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,11.8905,0,11.8905,0,11.8905;}
+
+		.st5-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.0798,0,12.0798,0,12.0798;}
+
+		.st6-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.1212,0,12.1212,0,12.1212;}
+
+		.st7-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.0702,0,12.0702,0,12.0702;}
+
+		.st8-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.0226,0,12.0226,0,12.0226;}
+
+		.st9-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,11.7989,0,11.7989,0,11.7989;}
+
+		.st10-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.1805,0,12.1805,0,12.1805;}
+
+		.st11-recordplayer{fill:none;stroke:#CE2030;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,12.037,0,12.037,0,12.037;}
+	.st12-recordplayer{fill:none;stroke:#CE2030;stroke-width:8;stroke-miterlimit:10;}
+	.st13-recordplayer{fill:none;stroke:#54AFC3;stroke-width:8;stroke-miterlimit:10;}
+	.st14-recordplayer{fill:none;stroke:#EEBA1D;stroke-width:8;stroke-miterlimit:10;}
+	.st15-recordplayer{fill:none;stroke:#CE2031;stroke-width:8;stroke-miterlimit:10;}
+	.st16-recordplayer{fill:#CE2031;stroke:#CE2031;stroke-width:8;stroke-miterlimit:10;}
+	.st17-recordplayer{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
+	.st18-recordplayer{fill:#CE2031;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st19-recordplayer{fill:#CE2031;}
+	.st2-recordplayer0-recordplayer{fill:none;stroke:#CE2031;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g id="Guides" class="st0-recordplayer">
+</g>
+<g id="Record" class="record">
+	<g id="Dots">
+		<g>
+			<circle class="st1-recordplayer" cx="450" cy="450" r="333.7"/>
+		</g>
+		<g>
+			<circle class="st2-recordplayer" cx="450" cy="450" r="319.2"/>
+		</g>
+		<g>
+			<circle class="st3-recordplayer" cx="450" cy="450" r="290.8"/>
+		</g>
+		<g>
+			<circle class="st4-recordplayer" cx="450" cy="450" r="278.2"/>
+		</g>
+		<g>
+			<circle class="st5-recordplayer" cx="450" cy="450" r="248"/>
+		</g>
+		<g>
+			<circle class="st6-recordplayer" cx="450" cy="450" r="237.3"/>
+		</g>
+		<g>
+			<circle class="st7-recordplayer" cx="450" cy="450" r="207.5"/>
+		</g>
+		<g>
+			<circle class="st8-recordplayer" cx="450" cy="450" r="195.2"/>
+		</g>
+		<g>
+			<circle class="st9-recordplayer" cx="450" cy="450" r="169"/>
+		</g>
+		<g>
+			<circle class="st10-recordplayer" cx="450" cy="450" r="157"/>
+		</g>
+		<g>
+			<circle class="st11-recordplayer" cx="450" cy="450" r="143.7"/>
+		</g>
+	</g>
+	<g id="Circles" class="circles">
+		<circle class="st12-recordplayer" cx="450" cy="450" r="347"/>
+		<circle class="st13-recordplayer" cx="450" cy="450" r="305.5"/>
+		<circle class="st14-recordplayer" cx="450" cy="450" r="263.6"/>
+		<circle class="st15-recordplayer" cx="450" cy="450" r="222.1"/>
+		<circle class="st13-recordplayer" cx="450" cy="450" r="181.7"/>
+		<circle class="st16-recordplayer" cx="450" cy="450" r="128.5"/>
+		<circle class="st17-recordplayer" cx="450" cy="450" r="7"/>
+	</g>
+</g>
+<g id="Arm" class="arm">
+	<circle class="st16-recordplayer" cx="845.4" cy="144.5" r="33.1"/>
+	<circle class="st18-recordplayer" cx="845.4" cy="144.5" r="31"/>
+	<g>
+		<line class="st15-recordplayer" x1="836.2" y1="176.5" x2="736.4" y2="548.7"/>
+
+			<rect x="826.7" y="178.2" transform="matrix(0.9659 0.2588 -0.2588 0.9659 76.0731 -209.6178)" class="st19-recordplayer" width="14.9" height="11.8"/>
+	</g>
+	<g id="Layer_5">
+		<rect x="729.4" y="540" class="st16-recordplayer" width="17.7" height="42.7"/>
+		<line class="st2-recordplayer0-recordplayer" x1="726.6" y1="550" x2="700.8" y2="550"/>
+	</g>
+</g>
+</svg>

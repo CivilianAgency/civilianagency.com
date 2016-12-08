@@ -21,12 +21,12 @@
 <section class="home-previews">
   <div class="grid-wrapper">
     <div class="pure-g">
-      <?php while (have_rows('section_preview')) { the_row(); ?><div class="home-preview pure-u-lg-1-3">
+      <?php while (have_rows('section_preview')) { the_row(); ?><a href="<?php the_sub_field('link_target'); ?>" class="home-preview pure-u-lg-1-3">
         <h3 class="title-boxed"><?php the_sub_field('boxed_title'); ?></h3>
         <h2><?php the_sub_field('subtitle'); ?></h2>
         <?php the_sub_field('content'); ?>
-        <a class="arrow-link arrow-link-centered" href="<?php the_sub_field('link_target'); ?>"><?php the_sub_field('link_text'); ?></a>
-      </div><?php } ?>
+        <div class="div-arrow-link arrow-link arrow-link-centered" href="<?php the_sub_field('link_target'); ?>"><?php the_sub_field('link_text'); ?></div>
+      </a><?php } ?>
     </div>
   </div>
 </section>

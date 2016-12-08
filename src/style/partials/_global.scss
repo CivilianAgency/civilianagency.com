@@ -196,7 +196,8 @@ header {
 
 }
 
-a {
+a,
+.div-arrow-link {
 
   &.arrow-link {
 
@@ -621,23 +622,18 @@ a {
 
 .home-preview {
 
+  display: inline-block;
+  vertical-align: top;
   padding: 2.5rem;
   padding-bottom: 1rem;
   color: $white;
-
-  a:hover {
-
-    &:after {
-      background-image: url('../images/chevron-with-circle-right-reversed.svg');
-    }
-
-  }
+  text-decoration: none;
 
   &:nth-child(1) {
 
     background-color: $turquoise-darkest;
 
-    a:hover {
+    &:hover {
       background-color: $turquoise-darkest-hover;
     }
 
@@ -647,7 +643,7 @@ a {
 
     background-color: $turquoise;
 
-    a:hover {
+    &:hover {
       background-color: $turquoise-hover;
     }
 
@@ -657,8 +653,22 @@ a {
 
     background-color: $red-orange;
 
-    a:hover {
+    &:hover {
       background-color: $red-orange-hover;
+    }
+
+  }
+
+  &:hover {
+
+    .div-arrow-link {
+
+      text-decoration: underline;
+
+      &:after {
+        background-image: url('../images/chevron-with-circle-right-reversed.svg');
+      }
+
     }
 
   }
@@ -685,7 +695,7 @@ a {
     letter-spacing: 0.5px;
   }
 
-  a {
+  .div-arrow-link {
 
     margin-left: -2.5rem;
     margin-right: -2.5rem;

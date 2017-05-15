@@ -40,27 +40,36 @@
       <div class="pure-u-lg-1-1">
         <div class="pure-g"><?php
             $teamCount = count(get_field('leadership_team_member'));
-            $teamRows = $teamCount / 3;
+            $divisor = 3;
+            if ($teamCount == 4) {
+              $divisor = 2;
+            }
+            $teamRows = $teamCount / $divisor;
             $teamRowsFull = floor($teamRows);
             $i = 1;
             $rowCount = 1;
             while (have_rows('leadership_team_member')) {
               the_row();
-              if (($i - 1) % 3 == 0) {
+              if (($i - 1) % $divisor == 0) {
                 if ($i != 1) {
                   echo '</div><div class="pure-g">';
                 }
-                if (($teamCount - $i) < 3) {
+                if ($teamCount == 4) {
+                  echo '<div class="pure-u-sm-1-2 fourth-off"></div>';
+                }
+                if (($teamCount - $i) < $divisor) {
                   if (($teamCount - $i) == 1) {
-                    echo '<div class="pure-u-sm-1-6"></div>';
+                    if ($teamCount != 4) {
+                      echo '<div class="pure-u-sm-1-6"></div>';
+                    }
                   } else if (($teamCount - $i) == 0) {
-                    echo '<div class="pure-u-sm-1-3"></div>';
+                    if ($teamCount != 4) {
+                      echo '<div class="pure-u-sm-1-3"></div>';
+                    }
                   }
                 }
               }
-              echo '<!-- ' . $i . '-->';
-              echo '<!-- Left: ' . ($teamCount - $i) . '-->';
-          ?><div class="leadership-team-member preview-card preview-card-tight-third pure-u-sm-1-3">
+          ?><div class="leadership-team-member preview-card preview-card-tight-<?php if ($teamCount == 4) { echo 'fourth pure-u-sm-1-4'; } else { echo 'third pure-u-sm-1-3'; } ?>">
             <div class="team-member-main-image<?php if (get_sub_field('rollover_image')) { echo ' rollover-wrap'; } ?>" style="background-image: url('<?php echo get_sub_field('main_image')['url']; ?>');"><?php if (get_sub_field('rollover_image')) {
               echo '<div class="team-member-rollover-image rollover-secondary" style="background-image: url(\'' . get_sub_field('rollover_image')['url'] . '\');">';
                 if (get_sub_field('rollover_caption')) {

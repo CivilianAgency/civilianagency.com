@@ -515,6 +515,17 @@ a,
 
   }
 
+  &-tight-fourth {
+
+    margin-right: 2%;
+    width: 30%;
+
+    &:nth-of-type(2n+1) {
+      margin-right: 0px;
+    }
+
+  }
+
   a,
   .team-member-main-image {
     display: block;
@@ -616,6 +627,14 @@ a,
     font-size: 1.25rem;
     line-height: 1.5rem;
     font-weight: normal;
+  }
+
+}
+
+.pure-u-sm-1-2.fourth-off {
+
+  @media screen and (min-width: 768px) {
+    width: 19%;
   }
 
 }
@@ -2883,7 +2902,8 @@ footer {
   .preview-card {
 
     &-tight,
-    &-tight-third {
+    &-tight-third,
+    &-tight-fourth {
 
       &,
       &:nth-child(2n),

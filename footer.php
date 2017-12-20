@@ -46,7 +46,7 @@
             </div>
           </div><div class="pure-u-lg-1-2 footer-contact-links">
             <p><strong>Want to learn more? Drop us a line.</strong></p>
-            <p><a href="mailto:lorig@civilianagency.com" target="_blank" class="arrow-link">I want to join your team</a></p>
+            <p><a href="mailto:mattm@civilianagency.com" target="_blank" class="arrow-link">I want to join your team</a></p>
             <p><a href="mailto:hello@civilianagency.com" target="_blank" class="arrow-link">I want to partner with you</a></p>
             <p><a href="mailto:hello@civilianagency.com" target="_blank" class="arrow-link">I just want to chat</a></p>
           </div>
